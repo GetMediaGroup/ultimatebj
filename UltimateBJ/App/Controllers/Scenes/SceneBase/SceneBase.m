@@ -9,6 +9,7 @@
 #import "SceneGame.h"
 #import "SharedProgressManager.h"
 #import "SharedDeviceHelper.h"
+#import "SceneMenu.h"
 
 #include <mach/mach.h>
 #import <sys/sysctl.h>
@@ -50,6 +51,11 @@ static SceneBase *_currentScene = nil;
 
     switch (type)
     {
+        case EST_MENU:
+        {
+            _currentScene = [SceneMenu createScene];
+            break;
+        }
         case EST_GAME:
         {
             _currentScene = [SceneGame createScene];

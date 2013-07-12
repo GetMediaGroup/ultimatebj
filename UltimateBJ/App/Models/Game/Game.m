@@ -12,4 +12,24 @@
 {
 
 }
+
+//! Designated initializer
+- (id)init
+{
+
+    self = [super init];
+
+    if (self)
+    {
+        [self _prepare];
+    }
+
+    return self;
+}
+
+- (void)_prepare
+{
+
+}
+
 @end

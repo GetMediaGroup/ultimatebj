@@ -5,13 +5,15 @@
 //
 
 
+#import "SceneMenu.h"
 #import "SceneGame.h"
 
 
-@implementation SceneGame
+@implementation SceneMenu
 {
 
 }
+
 /*
  * Static
  */
@@ -29,7 +31,7 @@
  */
 - (ESceneType)type
 {
-    return EST_GAME;
+    return EST_MENU;
 }
 
 /*

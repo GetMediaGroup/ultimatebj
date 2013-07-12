@@ -5,52 +5,35 @@
 //
 
 
-#import "SceneGame.h"
+#import <Foundation/Foundation.h>
+#import "SceneBase.h"
 
 
-@implementation SceneGame
-{
+@interface SceneMenu : SceneBase
 
-}
 /*
  * Static
  */
 
 //! Default creator for scene. Need override in derived classes.
-+ (SceneBase *)createScene
-{
-    SceneGame *result = [[SceneGame alloc] init];
-
-    return result;
-}
++ (SceneBase *)createScene;
 
 /*
  * Properties
  */
-- (ESceneType)type
-{
-    return EST_GAME;
-}
+
+@property (nonatomic, readonly) ESceneType type;
 
 /*
- * Instance
+ * Instance methods
  */
 
 //! Load all resources here
-- (void)loadResources
-{
-
-}
+- (void)loadResources;
 
 //! Prepare scene. Init all game objects here
-- (void)prepare
-{
+- (void)prepare;
 
-}
 
-- (void)_initGameObjects
-{
-
-}
 
 @end

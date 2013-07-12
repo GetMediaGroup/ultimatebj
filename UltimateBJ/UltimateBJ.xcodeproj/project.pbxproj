@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C532A00EF9DE8D551F41C0 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
+		67C5334474898FC850F3398E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
 		67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C531EFC99293118F20DE6A /* SharedProgressManager.m */; };
+		67C5339AEC3B93A0A90DF80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
 		67C534757601FEE1EC639BC5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53F7D06C4478BC68C32EF /* Game.m */; };
+		67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
 		67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5314A81692266CE8507B6 /* SceneGame.m */; };
 		67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C533D48415600D79900775 /* SharedDeviceHelper.m */; };
+		67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532C2CC6661B30B32E64F /* SceneMenu.m */; };
 		67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C535E6539AA6B64F683EF7 /* SceneBase.m */; };
+		67C53FDBDDB3D4361C385995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
+		67C53FE1734696FC5F4EAAFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
 		DC1BE6A214F417CC00F49D25 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68E14F417CC00F49D25 /* Ubuntu-C.ttf */; };
@@ -63,12 +70,6 @@
 		DCC1A26C13A94EE6005BD75D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A26A13A94EE6005BD75D /* MainMenu.xib */; };
 		DCC1A26E13A94EE6005BD75D /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A26D13A94EE6005BD75D /* fps_images.png */; };
 		DCC1A27013A94EE6005BD75D /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A26F13A94EE6005BD75D /* icon.icns */; };
-		DCC1A3A913A94F1A005BD75D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A38E13A94F1A005BD75D /* AppDelegate.m */; };
-		DCC1A3AA13A94F1A005BD75D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A38E13A94F1A005BD75D /* AppDelegate.m */; };
-		DCC1A3AB13A94F1A005BD75D /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39013A94F1A005BD75D /* HelloWorldLayer.m */; };
-		DCC1A3AC13A94F1A005BD75D /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39013A94F1A005BD75D /* HelloWorldLayer.m */; };
-		DCC1A3AD13A94F1A005BD75D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39113A94F1A005BD75D /* main.m */; };
-		DCC1A3AE13A94F1A005BD75D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A39113A94F1A005BD75D /* main.m */; };
 		DCC1A3AF13A94F1A005BD75D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A39513A94F1A005BD75D /* config.lua */; };
 		DCC1A3B013A94F1A005BD75D /* config.lua in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A39513A94F1A005BD75D /* config.lua */; };
 		DCF95CD213A97EC500AE3B80 /* libcocos2d-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF95CC913A97EC500AE3B80 /* libcocos2d-mac.a */; };
@@ -80,13 +81,20 @@
 		67C53109FE3B359D5E57AC89 /* SceneBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBase.h; sourceTree = "<group>"; };
 		67C5314A81692266CE8507B6 /* SceneGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneGame.m; sourceTree = "<group>"; };
 		67C531EFC99293118F20DE6A /* SharedProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedProgressManager.m; sourceTree = "<group>"; };
+		67C532C2CC6661B30B32E64F /* SceneMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneMenu.m; sourceTree = "<group>"; };
+		67C5330F3A008DC6C36EF5AB /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		67C53385B63156F2B1FD0E32 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67C533D48415600D79900775 /* SharedDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDeviceHelper.m; sourceTree = "<group>"; };
+		67C534474CC66D340962FF3D /* SceneMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneMenu.h; sourceTree = "<group>"; };
 		67C53509F68B98B87E10D49F /* ELanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELanguageType.h; sourceTree = "<group>"; };
 		67C535E6539AA6B64F683EF7 /* SceneBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneBase.m; sourceTree = "<group>"; };
 		67C536229A56BC019375BAF2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDeviceHelper.h; sourceTree = "<group>"; };
+		67C539016286C087DC5CE6B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67C539549EDFAFAC55C0D08B /* EDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDeviceType.h; sourceTree = "<group>"; };
 		67C53AEDD6DA12E4AA111364 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
+		67C53C6E106DB6A932C00505 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProgressManager.h; sourceTree = "<group>"; };
 		67C53F7D06C4478BC68C32EF /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
@@ -146,11 +154,6 @@
 		DCC1A26D13A94EE6005BD75D /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = Resources/fps_images.png; sourceTree = "<group>"; };
 		DCC1A26F13A94EE6005BD75D /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = Resources/icon.icns; sourceTree = "<group>"; };
 		DCC1A27113A94EE6005BD75D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		DCC1A38D13A94F1A005BD75D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DCC1A38E13A94F1A005BD75D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DCC1A38F13A94F1A005BD75D /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		DCC1A39013A94F1A005BD75D /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
-		DCC1A39113A94F1A005BD75D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCC1A39213A94F1A005BD75D /* Prefix-iOS.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Prefix-iOS.pch"; sourceTree = "<group>"; };
 		DCC1A39313A94F1A005BD75D /* Prefix-Mac.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Prefix-Mac.pch"; sourceTree = "<group>"; };
 		DCC1A39513A94F1A005BD75D /* config.lua */ = {isa = PBXFileReference; explicitFileType = sourcecode.applescript; fileEncoding = 4; path = config.lua; sourceTree = "<group>"; };
@@ -207,8 +210,21 @@
 			children = (
 				67C53BC50FB1776A4FDB37BB /* Controllers */,
 				67C53C25BCEE6DBE2D33806B /* Models */,
+				67C53625023B93C8E8604203 /* System */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		67C53625023B93C8E8604203 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */,
+				67C53C6E106DB6A932C00505 /* AppDelegate.m */,
+				67C53385B63156F2B1FD0E32 /* AppDelegate.h */,
+				67C5330F3A008DC6C36EF5AB /* HelloWorldLayer.h */,
+				67C539016286C087DC5CE6B0 /* main.m */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 		67C53771E3414400F6FA829D /* SceneBase */ = {
@@ -226,6 +242,7 @@
 				67C53771E3414400F6FA829D /* SceneBase */,
 				67C53A1477D3D8CF581920A2 /* SceneGame */,
 				67C530C8B50D1477FCE71E22 /* ESceneType.h */,
+				67C53D9690075BB177FCDFB6 /* SceneMenu */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -274,6 +291,15 @@
 				67C536229A56BC019375BAF2 /* Game.h */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		67C53D9690075BB177FCDFB6 /* SceneMenu */ = {
+			isa = PBXGroup;
+			children = (
+				67C532C2CC6661B30B32E64F /* SceneMenu.m */,
+				67C534474CC66D340962FF3D /* SceneMenu.h */,
+			);
+			path = SceneMenu;
 			sourceTree = "<group>";
 		};
 		67C53F1EBBA0F729EFE4C369 /* SharedDeviceHelper */ = {
@@ -398,10 +424,6 @@
 		DCC1A38C13A94F1A005BD75D /* Projectfiles */ = {
 			isa = PBXGroup;
 			children = (
-				DCC1A38F13A94F1A005BD75D /* HelloWorldLayer.h */,
-				DCC1A39013A94F1A005BD75D /* HelloWorldLayer.m */,
-				DCC1A38D13A94F1A005BD75D /* AppDelegate.h */,
-				DCC1A38E13A94F1A005BD75D /* AppDelegate.m */,
 				DCC1A39413A94F1A005BD75D /* Resources */,
 				DCC1A3CF13A94F2C005BD75D /* Supporting Files */,
 			);
@@ -422,7 +444,6 @@
 		DCC1A3CF13A94F2C005BD75D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DCC1A39113A94F1A005BD75D /* main.m */,
 				DCC1A39213A94F1A005BD75D /* Prefix-iOS.pch */,
 				DCC1A39313A94F1A005BD75D /* Prefix-Mac.pch */,
 			);
@@ -566,14 +587,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC1A3A913A94F1A005BD75D /* AppDelegate.m in Sources */,
-				DCC1A3AB13A94F1A005BD75D /* HelloWorldLayer.m in Sources */,
-				DCC1A3AD13A94F1A005BD75D /* main.m in Sources */,
 				67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */,
 				67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */,
 				67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */,
 				67C534757601FEE1EC639BC5 /* Game.m in Sources */,
 				67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */,
+				67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */,
+				67C53FDBDDB3D4361C385995 /* AppDelegate.m in Sources */,
+				67C53FE1734696FC5F4EAAFF /* main.m in Sources */,
+				67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,9 +603,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC1A3AA13A94F1A005BD75D /* AppDelegate.m in Sources */,
-				DCC1A3AC13A94F1A005BD75D /* HelloWorldLayer.m in Sources */,
-				DCC1A3AE13A94F1A005BD75D /* main.m in Sources */,
+				67C532A00EF9DE8D551F41C0 /* HelloWorldLayer.m in Sources */,
+				67C5339AEC3B93A0A90DF80F /* AppDelegate.m in Sources */,
+				67C5334474898FC850F3398E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

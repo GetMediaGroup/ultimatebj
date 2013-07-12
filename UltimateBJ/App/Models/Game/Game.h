@@ -9,4 +9,8 @@
 
 
 @interface Game : NSObject
+//! Designated initializer
+- (id)init;
+
 @end
+

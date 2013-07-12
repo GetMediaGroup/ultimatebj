@@ -3,7 +3,9 @@
 
 typedef enum
 {
-    EST_GAME = 0,
+    EST_MENU = 0,
+    EST_GAME,
+
 
     EST_COUNT
 } ESceneType;
