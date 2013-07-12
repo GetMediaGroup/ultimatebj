@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C531EFC99293118F20DE6A /* SharedProgressManager.m */; };
+		67C534757601FEE1EC639BC5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53F7D06C4478BC68C32EF /* Game.m */; };
+		67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5314A81692266CE8507B6 /* SceneGame.m */; };
+		67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C533D48415600D79900775 /* SharedDeviceHelper.m */; };
+		67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C535E6539AA6B64F683EF7 /* SceneBase.m */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
 		DC1BE6A214F417CC00F49D25 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68E14F417CC00F49D25 /* Ubuntu-C.ttf */; };
@@ -71,6 +76,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67C530C8B50D1477FCE71E22 /* ESceneType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESceneType.h; sourceTree = "<group>"; };
+		67C53109FE3B359D5E57AC89 /* SceneBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBase.h; sourceTree = "<group>"; };
+		67C5314A81692266CE8507B6 /* SceneGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneGame.m; sourceTree = "<group>"; };
+		67C531EFC99293118F20DE6A /* SharedProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedProgressManager.m; sourceTree = "<group>"; };
+		67C533D48415600D79900775 /* SharedDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDeviceHelper.m; sourceTree = "<group>"; };
+		67C53509F68B98B87E10D49F /* ELanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELanguageType.h; sourceTree = "<group>"; };
+		67C535E6539AA6B64F683EF7 /* SceneBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneBase.m; sourceTree = "<group>"; };
+		67C536229A56BC019375BAF2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDeviceHelper.h; sourceTree = "<group>"; };
+		67C539549EDFAFAC55C0D08B /* EDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDeviceType.h; sourceTree = "<group>"; };
+		67C53AEDD6DA12E4AA111364 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
+		67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProgressManager.h; sourceTree = "<group>"; };
+		67C53F7D06C4478BC68C32EF /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -177,6 +195,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67C5347D548D4BF08FAE7980 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		67C5348D56D936E07DCD92D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				67C53BC50FB1776A4FDB37BB /* Controllers */,
+				67C53C25BCEE6DBE2D33806B /* Models */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		67C53771E3414400F6FA829D /* SceneBase */ = {
+			isa = PBXGroup;
+			children = (
+				67C53109FE3B359D5E57AC89 /* SceneBase.h */,
+				67C535E6539AA6B64F683EF7 /* SceneBase.m */,
+			);
+			path = SceneBase;
+			sourceTree = "<group>";
+		};
+		67C5397675D2E3D0767B75AB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				67C53771E3414400F6FA829D /* SceneBase */,
+				67C53A1477D3D8CF581920A2 /* SceneGame */,
+				67C530C8B50D1477FCE71E22 /* ESceneType.h */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		67C53A1477D3D8CF581920A2 /* SceneGame */ = {
+			isa = PBXGroup;
+			children = (
+				67C5347D548D4BF08FAE7980 /* views */,
+				67C5314A81692266CE8507B6 /* SceneGame.m */,
+				67C53AEDD6DA12E4AA111364 /* SceneGame.h */,
+			);
+			path = SceneGame;
+			sourceTree = "<group>";
+		};
+		67C53BC50FB1776A4FDB37BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				67C5397675D2E3D0767B75AB /* Scenes */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		67C53BEC64CC3E3350CFEE3C /* SharedProgressManager */ = {
+			isa = PBXGroup;
+			children = (
+				67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */,
+				67C531EFC99293118F20DE6A /* SharedProgressManager.m */,
+			);
+			path = SharedProgressManager;
+			sourceTree = "<group>";
+		};
+		67C53C25BCEE6DBE2D33806B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67C53BEC64CC3E3350CFEE3C /* SharedProgressManager */,
+				67C53D71B7C11C31B4FA21AD /* Game */,
+				67C53F1EBBA0F729EFE4C369 /* SharedDeviceHelper */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67C53D71B7C11C31B4FA21AD /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				67C53F7D06C4478BC68C32EF /* Game.m */,
+				67C536229A56BC019375BAF2 /* Game.h */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		67C53F1EBBA0F729EFE4C369 /* SharedDeviceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				67C539549EDFAFAC55C0D08B /* EDeviceType.h */,
+				67C533D48415600D79900775 /* SharedDeviceHelper.m */,
+				67C53509F68B98B87E10D49F /* ELanguageType.h */,
+				67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */,
+			);
+			path = SharedDeviceHelper;
+			sourceTree = "<group>";
+		};
 		DC1BE68414F417CC00F49D25 /* ubuntu-font-family-0.80 */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +318,7 @@
 				DCFA90ED13B4F6A0009DD35A /* BuildSettings */,
 				DCC1A0E613A94ED5005BD75D /* Frameworks */,
 				DCC1A0E413A94ED5005BD75D /* Products */,
+				67C5348D56D936E07DCD92D8 /* App */,
 			);
 			sourceTree = "<group>";
 		};
@@ -458,6 +569,11 @@
 				DCC1A3A913A94F1A005BD75D /* AppDelegate.m in Sources */,
 				DCC1A3AB13A94F1A005BD75D /* HelloWorldLayer.m in Sources */,
 				DCC1A3AD13A94F1A005BD75D /* main.m in Sources */,
+				67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */,
+				67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */,
+				67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */,
+				67C534757601FEE1EC639BC5 /* Game.m in Sources */,
+				67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
