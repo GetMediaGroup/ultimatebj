@@ -9,11 +9,15 @@
 #import "CCButtonDelegate.h"
 
 
-@interface ButtonView : NSObject <CCButtonDelegate>
+@interface ButtonMenuView : NSObject <CCButtonDelegate>
 
 @property (nonatomic, readonly) CCNode *rootView;
 
 - (id)init:(NSString *)textLabel;
+
+- (void)setPosition:(CGPoint)point;
+
+- (CGSize)getSize;
 
 //! Fires when specify button touch began
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch;

@@ -5,11 +5,11 @@
 //
 
 
-#import "ButtonView.h"
+#import "ButtonMenuView.h"
 #import "CCButton.h"
 
 
-@implementation ButtonView
+@implementation ButtonMenuView
 {
     CCButton *_button;
 
@@ -34,7 +34,6 @@
 - (void)_prepare :(NSString *)textLabel
 {
     _rootView = [CCNode node];
-    _rootView.position = [CCDirector sharedDirector].screenCenter;
 
     _textureButtonNormal = [[CCTextureCache sharedTextureCache] addImage:@"buttonMenuNormal.png"];
     _textureButtonActive = [[CCTextureCache sharedTextureCache] addImage:@"buttonMenuActive.png"];
@@ -52,7 +51,16 @@
     label.position = _button.boundingBoxCenter;
     label.color = ccWHITE;
     [_rootView addChild:label];
+}
 
+- (void)setPosition:(CGPoint)point
+{
+    _rootView.position = point;
+}
+
+- (CGSize)getSize
+{
+    return _button.size;
 }
 
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch
