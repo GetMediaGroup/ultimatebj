@@ -16,7 +16,6 @@
  * Static
  */
 
-//! Default creator for scene. Need override in derived classes.
 + (SceneBase *)createScene
 {
     SceneGame *result = [[SceneGame alloc] init];

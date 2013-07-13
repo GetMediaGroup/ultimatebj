@@ -6,8 +6,7 @@
 
 
 #import "SceneMenu.h"
-#import "SceneGame.h"
-
+#import "ButtonView.h"
 
 @implementation SceneMenu
 {
@@ -18,10 +17,9 @@
  * Static
  */
 
-//! Default creator for scene. Need override in derived classes.
 + (SceneBase *)createScene
 {
-    SceneGame *result = [[SceneGame alloc] init];
+    SceneMenu *result = [[SceneMenu alloc] init];
 
     return result;
 }
@@ -47,12 +45,15 @@
 //! Prepare scene. Init all game objects here
 - (void)prepare
 {
+    [super prepare];
 
+    [self _initGameObjects];
 }
 
 - (void)_initGameObjects
 {
-
+    CCNode *button_test = [[ButtonView alloc] init:@"TEST"].rootView;
+    [self addChild:button_test];
 }
 
 @end

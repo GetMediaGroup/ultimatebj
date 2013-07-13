@@ -20,6 +20,7 @@
 		67C53FDBDDB3D4361C385995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
 		67C53FE1734696FC5F4EAAFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
 		AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF40389F689D5F386FB06 /* CCButton.m */; };
+		AF6EF3A126F4A7E9B86084BA /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF551377902358A182785 /* ButtonView.m */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
 		DC1BE6A214F417CC00F49D25 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68E14F417CC00F49D25 /* Ubuntu-C.ttf */; };
@@ -100,6 +101,8 @@
 		67C53F7D06C4478BC68C32EF /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		AF6EF0B7C418A78EAB4F7966 /* CCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButton.h; sourceTree = "<group>"; };
 		AF6EF40389F689D5F386FB06 /* CCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCButton.m; sourceTree = "<group>"; };
+		AF6EF551377902358A182785 /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
+		AF6EFA024E42E3ADBC887C9D /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
 		AF6EFE9EC579F2391F5D47F7 /* CCButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButtonDelegate.h; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
@@ -302,6 +305,7 @@
 			children = (
 				67C532C2CC6661B30B32E64F /* SceneMenu.m */,
 				67C534474CC66D340962FF3D /* SceneMenu.h */,
+				AF6EFEDBA218F0ADFFA38D2D /* views */,
 			);
 			path = SceneMenu;
 			sourceTree = "<group>";
@@ -325,6 +329,15 @@
 				AF6EF0B7C418A78EAB4F7966 /* CCButton.h */,
 			);
 			path = Cocos2dAdditions;
+			sourceTree = "<group>";
+		};
+		AF6EFEDBA218F0ADFFA38D2D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AF6EF551377902358A182785 /* ButtonView.m */,
+				AF6EFA024E42E3ADBC887C9D /* ButtonView.h */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		AF6EFFF413D3553696E93B76 /* Vendors */ = {
@@ -620,6 +633,7 @@
 				67C53FE1734696FC5F4EAAFF /* main.m in Sources */,
 				67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */,
 				AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */,
+				AF6EF3A126F4A7E9B86084BA /* ButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
