@@ -10,7 +10,7 @@
 
 @implementation SceneMenu
 {
-
+    ButtonView *_buttonTestView;
 }
 
 /*
@@ -52,8 +52,9 @@
 
 - (void)_initGameObjects
 {
-    CCNode *button_test = [[ButtonView alloc] init:@"TEST"].rootView;
-    [self addChild:button_test];
+    _buttonTestView = [[ButtonView alloc] init:@"TEST"];
+    CCNode *_button_test = _buttonTestView.rootView;
+    [self addChild:_button_test];
 }
 
 @end

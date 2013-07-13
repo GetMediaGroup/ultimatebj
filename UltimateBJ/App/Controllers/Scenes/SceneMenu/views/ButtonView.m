@@ -35,6 +35,7 @@
 
     _button = [CCButton spriteWithFile:@"ship-hd.png"];
     _button.delegate = self;
+    //NSLog(@"%@", _button.delegate);
 
     //ToDo: add textLabel
 
@@ -43,7 +44,7 @@
 
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch
 {
-
+     _rootView.scale *= 1.1;
 }
 
 - (void)didButtonTouchMoved:(CCButton *)button touch:(UITouch *)touch
