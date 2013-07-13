@@ -12,11 +12,13 @@
 		67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C531EFC99293118F20DE6A /* SharedProgressManager.m */; };
 		67C5339AEC3B93A0A90DF80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
 		67C534757601FEE1EC639BC5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53F7D06C4478BC68C32EF /* Game.m */; };
+		67C5357E955876D6EF167C92 /* buttonMenuNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */; };
 		67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
 		67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5314A81692266CE8507B6 /* SceneGame.m */; };
 		67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C533D48415600D79900775 /* SharedDeviceHelper.m */; };
 		67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532C2CC6661B30B32E64F /* SceneMenu.m */; };
 		67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C535E6539AA6B64F683EF7 /* SceneBase.m */; };
+		67C53DC9A450E666E1532B50 /* buttonMenuActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53784D06B8CC6D51F782C /* buttonMenuActive.png */; };
 		67C53FDBDDB3D4361C385995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
 		67C53FE1734696FC5F4EAAFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
 		AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF40389F689D5F386FB06 /* CCButton.m */; };
@@ -91,6 +93,8 @@
 		67C53509F68B98B87E10D49F /* ELanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELanguageType.h; sourceTree = "<group>"; };
 		67C535E6539AA6B64F683EF7 /* SceneBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneBase.m; sourceTree = "<group>"; };
 		67C536229A56BC019375BAF2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		67C53784D06B8CC6D51F782C /* buttonMenuActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuActive.png; sourceTree = "<group>"; };
+		67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuNormal.png; sourceTree = "<group>"; };
 		67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDeviceHelper.h; sourceTree = "<group>"; };
 		67C539016286C087DC5CE6B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67C539549EDFAFAC55C0D08B /* EDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDeviceType.h; sourceTree = "<group>"; };
@@ -205,6 +209,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67C532CE5016C2DB2D42305E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67C53784D06B8CC6D51F782C /* buttonMenuActive.png */,
+				67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		67C5347D548D4BF08FAE7980 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +231,7 @@
 				67C53BC50FB1776A4FDB37BB /* Controllers */,
 				67C53C25BCEE6DBE2D33806B /* Models */,
 				67C53625023B93C8E8604203 /* System */,
+				67C532CE5016C2DB2D42305E /* Resources */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -597,6 +611,8 @@
 				DC65617315114B4A00E59F8A /* fps_images-ipadhd.png in Resources */,
 				DC2721A2160CAEB600D88944 /* Default-568h@2x.png in Resources */,
 				DC2721AA160CAFC700D88944 /* iTunesArtwork in Resources */,
+				67C53DC9A450E666E1532B50 /* buttonMenuActive.png in Resources */,
+				67C5357E955876D6EF167C92 /* buttonMenuNormal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

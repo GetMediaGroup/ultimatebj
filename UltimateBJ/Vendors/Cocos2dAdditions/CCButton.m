@@ -56,7 +56,7 @@
 
 - (void)_prepareButton
 {
-    _adjustColorWhenClicked = YES;
+    _adjustColorWhenClicked = NO;
     _enabled = YES;
     _swallowsTouches = YES;
 
