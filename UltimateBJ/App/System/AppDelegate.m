@@ -27,14 +27,7 @@
         [SharedProgressManager shared];
     }
 
-
-
     [SceneBase setScene:EST_MENU];
-
-//    Game *game = [[Game alloc] init];
-//
-//    [[SharedProgressManager shared] didGameStart:game];
-
 
 #ifdef KK_ARC_ENABLED
 	CCLOG(@"ARC is enabled");
