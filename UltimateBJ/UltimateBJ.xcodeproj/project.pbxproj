@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C5324CA2BED0339A7F9BFE /* ECardSuit.h in Resources */ = {isa = PBXBuildFile; fileRef = 67C536FC47B09C29FD5AA12C /* ECardSuit.h */; };
 		67C532A00EF9DE8D551F41C0 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
 		67C5334474898FC850F3398E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
 		67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C531EFC99293118F20DE6A /* SharedProgressManager.m */; };
 		67C5339AEC3B93A0A90DF80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
+		67C53468959083FCB2025D1E /* cardBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C537C8A2D0F74B54F73ECE /* cardBox.png */; };
 		67C534757601FEE1EC639BC5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53F7D06C4478BC68C32EF /* Game.m */; };
+		67C5348F6FB49EB96F551D05 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C536B60210D1F075C5E50D /* Card.m */; };
 		67C5357E955876D6EF167C92 /* buttonMenuNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */; };
 		67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
 		67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5314A81692266CE8507B6 /* SceneGame.m */; };
+		67C537E6137EBDBFC6F88E7E /* background(640x960).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A4B56A97424622FF594 /* background(640x960).png */; };
+		67C53997C9D30C2A7CE8F7AC /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53BB20043291AA855B95C /* CardView.m */; };
 		67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C533D48415600D79900775 /* SharedDeviceHelper.m */; };
 		67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532C2CC6661B30B32E64F /* SceneMenu.m */; };
 		67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C535E6539AA6B64F683EF7 /* SceneBase.m */; };
 		67C53DC9A450E666E1532B50 /* buttonMenuActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53784D06B8CC6D51F782C /* buttonMenuActive.png */; };
+		67C53DF53978B0A88A644353 /* card-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53B271EF10AF7918EB838 /* card-back.png */; };
+		67C53F3F80F871654ECB702C /* background(640x1136).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53AAFE9AA39C36823A929 /* background(640x1136).png */; };
 		67C53FDBDDB3D4361C385995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
 		67C53FE1734696FC5F4EAAFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
 		AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF40389F689D5F386FB06 /* CCButton.m */; };
@@ -81,11 +88,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67C5307E93915243F9B29E5C /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = SOURCE_ROOT; };
 		67C530C8B50D1477FCE71E22 /* ESceneType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESceneType.h; sourceTree = "<group>"; };
 		67C53109FE3B359D5E57AC89 /* SceneBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBase.h; sourceTree = "<group>"; };
 		67C5314A81692266CE8507B6 /* SceneGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneGame.m; sourceTree = "<group>"; };
 		67C531EFC99293118F20DE6A /* SharedProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedProgressManager.m; sourceTree = "<group>"; };
 		67C532C2CC6661B30B32E64F /* SceneMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneMenu.m; sourceTree = "<group>"; };
+		67C533059EA3248C7EBEDF39 /* ECardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECardType.h; sourceTree = "<group>"; };
 		67C5330F3A008DC6C36EF5AB /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		67C53385B63156F2B1FD0E32 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67C533D48415600D79900775 /* SharedDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDeviceHelper.m; sourceTree = "<group>"; };
@@ -93,13 +102,21 @@
 		67C53509F68B98B87E10D49F /* ELanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELanguageType.h; sourceTree = "<group>"; };
 		67C535E6539AA6B64F683EF7 /* SceneBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneBase.m; sourceTree = "<group>"; };
 		67C536229A56BC019375BAF2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		67C536B60210D1F075C5E50D /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		67C536FC47B09C29FD5AA12C /* ECardSuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECardSuit.h; sourceTree = "<group>"; };
 		67C53784D06B8CC6D51F782C /* buttonMenuActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuActive.png; sourceTree = "<group>"; };
 		67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuNormal.png; sourceTree = "<group>"; };
+		67C537C8A2D0F74B54F73ECE /* cardBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBox.png; sourceTree = "<group>"; };
 		67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDeviceHelper.h; sourceTree = "<group>"; };
 		67C539016286C087DC5CE6B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67C539549EDFAFAC55C0D08B /* EDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDeviceType.h; sourceTree = "<group>"; };
+		67C53A4B56A97424622FF594 /* background(640x960).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x960).png"; sourceTree = "<group>"; };
+		67C53AAFE9AA39C36823A929 /* background(640x1136).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x1136).png"; sourceTree = "<group>"; };
 		67C53AEDD6DA12E4AA111364 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
+		67C53B271EF10AF7918EB838 /* card-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card-back.png"; sourceTree = "<group>"; };
+		67C53BB20043291AA855B95C /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = SOURCE_ROOT; };
 		67C53C6E106DB6A932C00505 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67C53D6B5F1665229F5ED3DA /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProgressManager.h; sourceTree = "<group>"; };
 		67C53F7D06C4478BC68C32EF /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
@@ -215,6 +232,10 @@
 			children = (
 				67C53784D06B8CC6D51F782C /* buttonMenuActive.png */,
 				67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */,
+				67C53B271EF10AF7918EB838 /* card-back.png */,
+				67C53A4B56A97424622FF594 /* background(640x960).png */,
+				67C53AAFE9AA39C36823A929 /* background(640x1136).png */,
+				67C537C8A2D0F74B54F73ECE /* cardBox.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -222,6 +243,8 @@
 		67C5347D548D4BF08FAE7980 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				67C53BB20043291AA855B95C /* CardView.m */,
+				67C5307E93915243F9B29E5C /* CardView.h */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -279,6 +302,17 @@
 			path = SceneGame;
 			sourceTree = "<group>";
 		};
+		67C53A31361023EB56D61514 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				67C536B60210D1F075C5E50D /* Card.m */,
+				67C53D6B5F1665229F5ED3DA /* Card.h */,
+				67C533059EA3248C7EBEDF39 /* ECardType.h */,
+				67C536FC47B09C29FD5AA12C /* ECardSuit.h */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		67C53BC50FB1776A4FDB37BB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +345,7 @@
 			children = (
 				67C53F7D06C4478BC68C32EF /* Game.m */,
 				67C536229A56BC019375BAF2 /* Game.h */,
+				67C53A31361023EB56D61514 /* Card */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -615,6 +650,11 @@
 				DC2721AA160CAFC700D88944 /* iTunesArtwork in Resources */,
 				67C53DC9A450E666E1532B50 /* buttonMenuActive.png in Resources */,
 				67C5357E955876D6EF167C92 /* buttonMenuNormal.png in Resources */,
+				67C5324CA2BED0339A7F9BFE /* ECardSuit.h in Resources */,
+				67C53DF53978B0A88A644353 /* card-back.png in Resources */,
+				67C537E6137EBDBFC6F88E7E /* background(640x960).png in Resources */,
+				67C53F3F80F871654ECB702C /* background(640x1136).png in Resources */,
+				67C53468959083FCB2025D1E /* cardBox.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,6 +692,8 @@
 				67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */,
 				AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */,
 				AF6EF3A126F4A7E9B86084BA /* ButtonMenuView.m in Sources */,
+				67C5348F6FB49EB96F551D05 /* Card.m in Sources */,
+				67C53997C9D30C2A7CE8F7AC /* CardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
