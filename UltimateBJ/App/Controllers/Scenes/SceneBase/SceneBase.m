@@ -26,6 +26,8 @@
 
 static SceneBase *_currentScene = nil;
 
+static CCScene* _allocatedScene;
+
 + (SceneBase *)currentScene
 {
     return _currentScene;
@@ -38,7 +40,10 @@ static SceneBase *_currentScene = nil;
 
 + (void)_setScene:(NSNumber *)typeObj
 {
+    BOOL firstLoad = YES;
     ESceneType type = (ESceneType) [typeObj integerValue];
+
+
 
     if (_currentScene)
     {
@@ -47,6 +52,7 @@ static SceneBase *_currentScene = nil;
         [_currentScene _clearScene];
 
         _currentScene = nil;
+        firstLoad = NO;
     }
 
     switch (type)
@@ -69,11 +75,22 @@ static SceneBase *_currentScene = nil;
         }
     }
 
-    CCScene *scene = [CCScene node];
+//    CCScene *scene = [CCScene node];
+//
+//    [scene addChild:_currentScene];
 
-    [scene addChild:_currentScene];
 
-    [[CCDirector sharedDirector] runWithScene:scene];
+    if(_allocatedScene == nil)
+    {
+        _allocatedScene = [[CCScene alloc] init];
+        [_allocatedScene addChild:_currentScene];
+        [[CCDirector sharedDirector] runWithScene:_allocatedScene];
+    }
+    else
+    {
+        [_allocatedScene removeAllChildren];
+        [_allocatedScene addChild:_currentScene];
+    }
 
     [_currentScene loadResources];
 
@@ -119,12 +136,12 @@ static SceneBase *_currentScene = nil;
     [self _reportMemory];
 
 //    [[SharedLoader shared] startLoading];
-    [[CCDirector sharedDirector] stopAnimation];
+//    [[CCDirector sharedDirector] stopAnimation];
 }
 
 - (void)_endLoading
 {
-    [[CCDirector sharedDirector] startAnimation];
+//    [[CCDirector sharedDirector] startAnimation];
 
 //    [[SharedLoader shared] stopLoading];
 
@@ -175,7 +192,7 @@ static SceneBase *_currentScene = nil;
 
         [self removeFromParentAndCleanup:YES];
 
-        [[CCDirector sharedDirector] popScene];
+  //      [[CCDirector sharedDirector] popScene];
 
         [self _clearTextures];
 
