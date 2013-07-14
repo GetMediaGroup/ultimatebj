@@ -48,17 +48,10 @@
 
     switch (type)
     {
-        case EPT_HAND1:
-        {
-            _imageName = @"emptyPlace(98x80).png";
-            _imageActiveName = @"activePlaceRight(98x80).png";
-            _picPoint = ccp(345, 131);
-            break;
-        }
         case EPT_HAND2:
         {
             _imageName = @"emptyPlace(86x86).png";
-            _imageActiveName = @"activePlaceRight(86x86.png)";
+            _imageActiveName = @"activePlaceRight(86x86).png";
             _picPoint = ccp(290, 98.5);
             break;
         }
@@ -74,13 +67,6 @@
             _imageName = @"emptyPlace(86x86).png";
             _imageActiveName = @"activePlaceLeft(86x86).png";
             _picPoint = ccp(145.5, 98.5);
-            break;
-        }
-        case EPT_HAND5:
-        {
-            _imageName = @"emptyPlace(98x80).png";
-            _imageActiveName = @"activePlaceLeft(98x80).png";
-            _picPoint = ccp(85, 131);
             break;
         }
         default:
@@ -105,7 +91,6 @@
 - (void)_activate
 {
     _pic.texture = _textureActivePic;
-    NSLog(@"PlaceView::didButtonTouchBegan");
 }
 
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch

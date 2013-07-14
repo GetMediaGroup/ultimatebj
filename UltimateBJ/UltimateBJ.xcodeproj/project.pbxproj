@@ -35,11 +35,8 @@
 		AF6EF86544703CDEA3803CA3 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF316DD6BA77ADCCD8C25 /* CardView.m */; };
 		AF6EF9BD88D708F4ABDADE8A /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF38F7E4BF5FAA1C86BC4 /* Place.m */; };
 		AF6EFB404FF73657C8ACAA3F /* activePlaceLeft(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFB59263CB2247B4C941F /* activePlaceLeft(86x86).png */; };
-		AF6EFB998B4E1DD4C8A0239F /* emptyPlace(98x80).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFBFBFF284108E286D079 /* emptyPlace(98x80).png */; };
 		AF6EFD5EBFC853DBCCAE43C2 /* MoneyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */; };
-		AF6EFE2A9E347296F8D4CF0B /* activePlaceRight(98x80).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF05686F8052BEDBC562A /* activePlaceRight(98x80).png */; };
 		AF6EFEFF621176DF2D3D6415 /* activePlaceRight(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF2D51F82FE2678044A4F /* activePlaceRight(86x86).png */; };
-		AF6EFF16139B9B2A99D80558 /* activePlaceLeft(98x80).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF265D2F2EF4007CE8D43 /* activePlaceLeft(98x80).png */; };
 		AF6EFF7A6F3C885DBE3E39EF /* emptyPlace(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF2F41831C9497674E430 /* emptyPlace(86x86).png */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
@@ -131,9 +128,7 @@
 		67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProgressManager.h; sourceTree = "<group>"; };
 		67C53F7D06C4478BC68C32EF /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		AF6EF05686F8052BEDBC562A /* activePlaceRight(98x80).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceRight(98x80).png"; sourceTree = "<group>"; };
 		AF6EF0B7C418A78EAB4F7966 /* CCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButton.h; sourceTree = "<group>"; };
-		AF6EF265D2F2EF4007CE8D43 /* activePlaceLeft(98x80).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceLeft(98x80).png"; sourceTree = "<group>"; };
 		AF6EF2D51F82FE2678044A4F /* activePlaceRight(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceRight(86x86).png"; sourceTree = "<group>"; };
 		AF6EF2F41831C9497674E430 /* emptyPlace(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyPlace(86x86).png"; sourceTree = "<group>"; };
 		AF6EF316DD6BA77ADCCD8C25 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
@@ -149,7 +144,6 @@
 		AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyManager.m; sourceTree = "<group>"; };
 		AF6EFB393406F272A2755948 /* PlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceView.m; sourceTree = "<group>"; };
 		AF6EFB59263CB2247B4C941F /* activePlaceLeft(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceLeft(86x86).png"; sourceTree = "<group>"; };
-		AF6EFBFBFF284108E286D079 /* emptyPlace(98x80).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyPlace(98x80).png"; sourceTree = "<group>"; };
 		AF6EFD287A147BE5C65A558C /* EPlaceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPlaceType.h; sourceTree = "<group>"; };
 		AF6EFE9EC579F2391F5D47F7 /* CCButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButtonDelegate.h; sourceTree = "<group>"; };
 		AF6EFF720970E0C004185F9E /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
@@ -266,12 +260,9 @@
 				67C537C8A2D0F74B54F73ECE /* cardBox.png */,
 				AF6EF6C57EA59350802695F7 /* activePlace(60x79).png */,
 				AF6EFB59263CB2247B4C941F /* activePlaceLeft(86x86).png */,
-				AF6EF265D2F2EF4007CE8D43 /* activePlaceLeft(98x80).png */,
 				AF6EF2D51F82FE2678044A4F /* activePlaceRight(86x86).png */,
-				AF6EF05686F8052BEDBC562A /* activePlaceRight(98x80).png */,
 				AF6EFF808723D16BDA2B3299 /* emptyPlace(60x79).png */,
 				AF6EF2F41831C9497674E430 /* emptyPlace(86x86).png */,
-				AF6EFBFBFF284108E286D079 /* emptyPlace(98x80).png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -717,12 +708,9 @@
 				67C53468959083FCB2025D1E /* cardBox.png in Resources */,
 				AF6EF841EFA6E1672AEFFBD7 /* activePlace(60x79).png in Resources */,
 				AF6EFB404FF73657C8ACAA3F /* activePlaceLeft(86x86).png in Resources */,
-				AF6EFF16139B9B2A99D80558 /* activePlaceLeft(98x80).png in Resources */,
 				AF6EFEFF621176DF2D3D6415 /* activePlaceRight(86x86).png in Resources */,
-				AF6EFE2A9E347296F8D4CF0B /* activePlaceRight(98x80).png in Resources */,
 				AF6EF133EFADCFB080C3569D /* emptyPlace(60x79).png in Resources */,
 				AF6EFF7A6F3C885DBE3E39EF /* emptyPlace(86x86).png in Resources */,
-				AF6EFB998B4E1DD4C8A0239F /* emptyPlace(98x80).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

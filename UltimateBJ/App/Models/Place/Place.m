@@ -37,7 +37,10 @@
 {
     _placeMoney = 0;
     _active = NO;
-    _view = [[PlaceView alloc] init:type scene:scene];
+    if (type != EPT_CROUPIER && type != EPT_HAND1 && type != EPT_HAND5)
+    {
+        _view = [[PlaceView alloc] init:type scene:scene];
+    }
 }
 
 - (NSUInteger)returnMoney
