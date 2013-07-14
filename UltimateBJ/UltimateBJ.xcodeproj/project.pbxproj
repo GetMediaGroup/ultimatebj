@@ -19,7 +19,6 @@
 		67C537E6137EBDBFC6F88E7E /* background(640x960).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A4B56A97424622FF594 /* background(640x960).png */; };
 		67C5388CEF379A3C6BA6E0A6 /* CardBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5398B859B3CA79011A10E /* CardBox.m */; };
 		67C5396A2F5F6BAA203D1D13 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532309651609964F481EB /* Card.m */; };
-		67C53997C9D30C2A7CE8F7AC /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53BB20043291AA855B95C /* CardView.m */; };
 		67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C533D48415600D79900775 /* SharedDeviceHelper.m */; };
 		67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532C2CC6661B30B32E64F /* SceneMenu.m */; };
 		67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C535E6539AA6B64F683EF7 /* SceneBase.m */; };
@@ -30,6 +29,8 @@
 		67C53FE1734696FC5F4EAAFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
 		AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF40389F689D5F386FB06 /* CCButton.m */; };
 		AF6EF3A126F4A7E9B86084BA /* ButtonMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF551377902358A182785 /* ButtonMenuView.m */; };
+		AF6EF5216F43BA544C5F9045 /* PlaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EFB393406F272A2755948 /* PlaceView.m */; };
+		AF6EF86544703CDEA3803CA3 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF316DD6BA77ADCCD8C25 /* CardView.m */; };
 		AF6EF9BD88D708F4ABDADE8A /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF38F7E4BF5FAA1C86BC4 /* Place.m */; };
 		AF6EFD5EBFC853DBCCAE43C2 /* MoneyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
@@ -90,7 +91,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		67C5307E93915243F9B29E5C /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = SOURCE_ROOT; };
 		67C530C8B50D1477FCE71E22 /* ESceneType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESceneType.h; sourceTree = "<group>"; };
 		67C53109FE3B359D5E57AC89 /* SceneBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBase.h; sourceTree = "<group>"; };
 		67C53123061BAF36B06FDB31 /* CardBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardBox.h; sourceTree = "<group>"; };
@@ -119,22 +119,25 @@
 		67C53AAFE9AA39C36823A929 /* background(640x1136).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x1136).png"; sourceTree = "<group>"; };
 		67C53AEDD6DA12E4AA111364 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
 		67C53B271EF10AF7918EB838 /* card-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card-back.png"; sourceTree = "<group>"; };
-		67C53BB20043291AA855B95C /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = SOURCE_ROOT; };
 		67C53C6E106DB6A932C00505 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProgressManager.h; sourceTree = "<group>"; };
 		67C53F7D06C4478BC68C32EF /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		AF6EF0B7C418A78EAB4F7966 /* CCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButton.h; sourceTree = "<group>"; };
+		AF6EF316DD6BA77ADCCD8C25 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 		AF6EF3341F3CF5E11D2B14FA /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		AF6EF38F7E4BF5FAA1C86BC4 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		AF6EF40389F689D5F386FB06 /* CCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCButton.m; sourceTree = "<group>"; };
+		AF6EF4A18B51160220C9779C /* PlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceView.h; sourceTree = "<group>"; };
 		AF6EF4E6B6FF61C524E3AEF8 /* MoneyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyManager.h; sourceTree = "<group>"; };
 		AF6EF551377902358A182785 /* ButtonMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonMenuView.m; sourceTree = "<group>"; };
 		AF6EFA024E42E3ADBC887C9D /* ButtonMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonMenuView.h; sourceTree = "<group>"; };
 		AF6EFA619F44C0F0555EAFA3 /* EButtonMenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EButtonMenuType.h; sourceTree = "<group>"; };
 		AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyManager.m; sourceTree = "<group>"; };
+		AF6EFB393406F272A2755948 /* PlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceView.m; sourceTree = "<group>"; };
 		AF6EFD287A147BE5C65A558C /* EPlaceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPlaceType.h; sourceTree = "<group>"; };
 		AF6EFE9EC579F2391F5D47F7 /* CCButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButtonDelegate.h; sourceTree = "<group>"; };
+		AF6EFF720970E0C004185F9E /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -249,15 +252,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		67C5347D548D4BF08FAE7980 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				67C53BB20043291AA855B95C /* CardView.m */,
-				67C5307E93915243F9B29E5C /* CardView.h */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
 		67C5348D56D936E07DCD92D8 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,9 +311,9 @@
 		67C53A1477D3D8CF581920A2 /* SceneGame */ = {
 			isa = PBXGroup;
 			children = (
-				67C5347D548D4BF08FAE7980 /* views */,
 				67C5314A81692266CE8507B6 /* SceneGame.m */,
 				67C53AEDD6DA12E4AA111364 /* SceneGame.h */,
+				AF6EFC921F32C9D0C8840E08 /* views */,
 			);
 			path = SceneGame;
 			sourceTree = "<group>";
@@ -411,6 +405,17 @@
 				AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */,
 			);
 			path = MoneyManager;
+			sourceTree = "<group>";
+		};
+		AF6EFC921F32C9D0C8840E08 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AF6EFF720970E0C004185F9E /* CardView.h */,
+				AF6EF316DD6BA77ADCCD8C25 /* CardView.m */,
+				AF6EF4A18B51160220C9779C /* PlaceView.h */,
+				AF6EFB393406F272A2755948 /* PlaceView.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		AF6EFEDBA218F0ADFFA38D2D /* views */ = {
@@ -723,11 +728,12 @@
 				67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */,
 				AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */,
 				AF6EF3A126F4A7E9B86084BA /* ButtonMenuView.m in Sources */,
-				67C53997C9D30C2A7CE8F7AC /* CardView.m in Sources */,
 				67C5396A2F5F6BAA203D1D13 /* Card.m in Sources */,
 				67C5388CEF379A3C6BA6E0A6 /* CardBox.m in Sources */,
 				AF6EFD5EBFC853DBCCAE43C2 /* MoneyManager.m in Sources */,
 				AF6EF9BD88D708F4ABDADE8A /* Place.m in Sources */,
+				AF6EF86544703CDEA3803CA3 /* CardView.m in Sources */,
+				AF6EF5216F43BA544C5F9045 /* PlaceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
