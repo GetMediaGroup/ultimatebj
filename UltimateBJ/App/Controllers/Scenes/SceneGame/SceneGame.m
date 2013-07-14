@@ -10,7 +10,8 @@
 
 @implementation SceneGame
 {
-
+    CCSprite *_background;
+    CCTexture2D *_textureBackground;
 }
 /*
  * Static
@@ -44,12 +45,21 @@
 //! Prepare scene. Init all game objects here
 - (void)prepare
 {
+    [super prepare];
 
+    [self _initBackground];
+    [self _initGameObjects];
+}
+
+- (void)_initBackground
+{
+    _textureBackground = [[CCTextureCache sharedTextureCache] addImage:@"background(640x960).png"];
+    _background = [CCSprite spriteWithTexture:_textureBackground];
+    [self addChild:_background];
 }
 
 - (void)_initGameObjects
 {
-
 }
 
 @end
