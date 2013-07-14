@@ -26,4 +26,8 @@
 
 -(id) initWithOwner:(Card *) owner;
 
+-(void) moveTo:(CGPoint) point;
+
+-(void) cleanupView;
+
 @end

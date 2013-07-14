@@ -8,16 +8,24 @@
 #import <Foundation/Foundation.h>
 
 @class SceneGame;
+@class Card;
 
 
 @interface CardBox : NSObject
 
 //Designated initializer
--(id) initWithObject:(SceneGame *) scene;
+- (id)initWithObject:(SceneGame *)scene;
 
--(void) showCards;
+- (Card *)getCardFromBox:(CGPoint)point;
+
+- (void)putCardToBox:(Card *)card;
+
+-(void) shuffleCards;
+
+
+- (void)showCards;
 
 //! Returns game scene which the cardBox is posted on
-@property (nonatomic, readonly) SceneGame *gameScene;
+@property(nonatomic, readonly) SceneGame *gameScene;
 
 @end
