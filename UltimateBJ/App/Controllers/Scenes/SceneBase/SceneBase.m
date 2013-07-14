@@ -26,7 +26,7 @@
 
 static SceneBase *_currentScene = nil;
 
-static CCScene* _allocatedScene;
+static CCScene *_allocatedScene;
 
 + (SceneBase *)currentScene
 {
@@ -42,7 +42,6 @@ static CCScene* _allocatedScene;
 {
     BOOL firstLoad = YES;
     ESceneType type = (ESceneType) [typeObj integerValue];
-
 
 
     if (_currentScene)
@@ -75,22 +74,14 @@ static CCScene* _allocatedScene;
         }
     }
 
-//    CCScene *scene = [CCScene node];
-//
-//    [scene addChild:_currentScene];
+    CCScene *scene = [CCScene node];
 
+    [scene addChild:_currentScene];
 
-    if(_allocatedScene == nil)
-    {
-        _allocatedScene = [[CCScene alloc] init];
-        [_allocatedScene addChild:_currentScene];
-        [[CCDirector sharedDirector] runWithScene:_allocatedScene];
-    }
+    if ([[CCDirector sharedDirector] runningScene] == nil)
+        [[CCDirector sharedDirector] runWithScene:scene];
     else
-    {
-        [_allocatedScene removeAllChildren];
-        [_allocatedScene addChild:_currentScene];
-    }
+        [[CCDirector sharedDirector] replaceScene:scene];
 
     [_currentScene loadResources];
 
@@ -192,7 +183,7 @@ static CCScene* _allocatedScene;
 
         [self removeFromParentAndCleanup:YES];
 
-  //      [[CCDirector sharedDirector] popScene];
+        //      [[CCDirector sharedDirector] popScene];
 
         [self _clearTextures];
 
