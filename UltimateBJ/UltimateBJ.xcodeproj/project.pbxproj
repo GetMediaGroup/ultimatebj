@@ -107,6 +107,7 @@
 		AF6EF40389F689D5F386FB06 /* CCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCButton.m; sourceTree = "<group>"; };
 		AF6EF551377902358A182785 /* ButtonMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonMenuView.m; sourceTree = "<group>"; };
 		AF6EFA024E42E3ADBC887C9D /* ButtonMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonMenuView.h; sourceTree = "<group>"; };
+		AF6EFA619F44C0F0555EAFA3 /* EButtonMenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EButtonMenuType.h; sourceTree = "<group>"; };
 		AF6EFE9EC579F2391F5D47F7 /* CCButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButtonDelegate.h; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
@@ -350,6 +351,7 @@
 			children = (
 				AF6EF551377902358A182785 /* ButtonMenuView.m */,
 				AF6EFA024E42E3ADBC887C9D /* ButtonMenuView.h */,
+				AF6EFA619F44C0F0555EAFA3 /* EButtonMenuType.h */,
 			);
 			path = views;
 			sourceTree = "<group>";

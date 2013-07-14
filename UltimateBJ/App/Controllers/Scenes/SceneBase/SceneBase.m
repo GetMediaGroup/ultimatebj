@@ -175,8 +175,15 @@ static SceneBase *_currentScene = nil;
 
         [[CCDirector sharedDirector] popScene];
 
+        [self _clearTextures];
+
         [[CCTextureCache sharedTextureCache] removeAllTextures];
     }
+}
+
+- (void)_clearTextures
+{
+    NSAssert(NO, @"Must be scene to clear");
 }
 
 //! Default creator for scene. Need override in derived classes.

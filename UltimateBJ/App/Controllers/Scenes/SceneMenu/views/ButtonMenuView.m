@@ -7,6 +7,8 @@
 
 #import "ButtonMenuView.h"
 #import "CCButton.h"
+#import "ESceneType.h"
+#import "SceneBase.h"
 
 
 @implementation ButtonMenuView
@@ -19,13 +21,14 @@
 }
 
 // Designated initializer
-- (id)init:(NSString *)textLabel
+- (id)init:(NSString *)textLabel buttonType:(EButtonMenuType)buttonType
 {
     self = [super init];
 
     if (self)
     {
         [self _prepare:textLabel];
+        _buttonType = buttonType;
     }
 
     return self;
@@ -66,6 +69,26 @@
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch
 {
     _button.texture = _textureButtonActive;
+
+    switch (_buttonType)
+    {
+        case EBMT_NEWGAME:
+        {
+            [SceneBase setScene:EST_GAME];
+            break;
+        }
+        case EBMT_HIGHSCORE:
+        {
+            //ToDo: Need to load SceneHighScore here
+            break;
+        }
+        default:
+        {
+            //Not implemented
+            NSAssert(NO, @"No scene to change!");
+            break;
+        }
+    }
 }
 
 - (void)didButtonTouchMoved:(CCButton *)button touch:(UITouch *)touch
@@ -75,16 +98,16 @@
 
 - (void)didButtonTouchEnded:(CCButton *)button touch:(UITouch *)touch
 {
-    [self didButtonTouchEndedOrCanceled:button touch:touch];
+    [self didButtonTouchEndedOrCanceled];
 }
 
 - (void)didButtonTouchCanceled:(CCButton *)button touch:(UITouch *)touch
 {
-    [self didButtonTouchEndedOrCanceled:button touch:touch];
+    [self didButtonTouchEndedOrCanceled];
 
 }
 
-- (void)didButtonTouchEndedOrCanceled:(CCButton *)button touch:(UITouch *)touch
+- (void)didButtonTouchEndedOrCanceled
 {
     _button.texture = _textureButtonNormal;
 }

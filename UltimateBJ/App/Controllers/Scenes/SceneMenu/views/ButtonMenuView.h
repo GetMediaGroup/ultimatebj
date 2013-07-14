@@ -7,13 +7,16 @@
 
 #import <Foundation/Foundation.h>
 #import "CCButtonDelegate.h"
+#import "EButtonMenuType.h"
 
 
 @interface ButtonMenuView : NSObject <CCButtonDelegate>
 
-@property (nonatomic, readonly) CCNode *rootView;
+@property(nonatomic, readonly) CCNode *rootView;
 
-- (id)init:(NSString *)textLabel;
+@property(nonatomic, readonly) EButtonMenuType buttonType;
+
+- (id)init:(NSString *)textLabel buttonType:(EButtonMenuType)buttonType;
 
 - (void)setPosition:(CGPoint)point;
 

@@ -54,11 +54,11 @@
 - (void)_initGameObjects
 {
     //Init two buttons
-    _buttonStartGameView = [[ButtonMenuView alloc] init:@"New Game"];
+    _buttonStartGameView = [[ButtonMenuView alloc] init:@"New Game" buttonType:EBMT_NEWGAME];
     CCNode *_buttonStartGame = _buttonStartGameView.rootView;
     [self addChild:_buttonStartGame];
 
-    _buttonHighScoreView = [[ButtonMenuView alloc] init:@"High Score"];
+    _buttonHighScoreView = [[ButtonMenuView alloc] init:@"High Score" buttonType:EBMT_HIGHSCORE];
     CCNode *_buttonHighScore = _buttonHighScoreView.rootView;
     [self addChild:_buttonHighScore];
 
@@ -66,6 +66,13 @@
     CGFloat y = ([CCDirector sharedDirector].winSize.height - 2 * [_buttonStartGameView getSize].height) / 3;
     [_buttonHighScoreView setPosition:ccp([CCDirector sharedDirector].screenCenter.x, y)];
     [_buttonStartGameView setPosition:ccp([CCDirector sharedDirector].screenCenter.x, 2 * y + [_buttonStartGameView getSize].height)];
+}
+
+- (void)_clearTextures
+{
+    NSLog(@"Cleanup");
+
+
 }
 
 @end
