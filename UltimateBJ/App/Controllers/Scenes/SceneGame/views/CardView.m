@@ -64,13 +64,26 @@
     return self;
 }
 
+- (void)moveTo:(CGPoint)point
+{
+    ccBezierConfig bezier;
+
+    bezier.endPosition = bezier.controlPoint_1 = bezier.controlPoint_2 = point;
+
+    id bezierAction;
+
+    bezierAction = [CCBezierTo actionWithDuration:2 bezier:bezier];
+
+    CCAction *arcAction = [CCSequence actions:bezierAction, nil];
+
+    [_owner.view.rootView runAction:arcAction];
+
+}
+
+
 - (void)_prepare
 {
     _rootView = [CCNode node];
-    //Тернарный оператор
-
-
-
 
     switch (_owner.suit)
     {
@@ -104,6 +117,17 @@
 
 
     [_rootView addChild:_sprite];
+}
+
+- (void)cleanupView
+{
+
+    _rootView = nil;
+
+    _sprite = nil;
+
+    _textureCardBack = nil;
+
 }
 
 @end
