@@ -13,6 +13,8 @@
 
 @interface CardBox : NSObject
 
+
+
 //Designated initializer
 - (id)initWithObject:(SceneGame *)scene;
 

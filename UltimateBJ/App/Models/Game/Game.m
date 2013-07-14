@@ -51,8 +51,9 @@
 //Test function! Don't use
 -(void) _doGame
 {
-   testCard = [_cardBox getCardFromBox:CGPointMake(200, 200)];
+   testCard = [_cardBox getCardFromBox:CGPointMake(232, 117)];
 
+   testCard.view.rootView.scale=0.65;
 }
 
 

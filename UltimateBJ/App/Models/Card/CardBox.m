@@ -15,6 +15,11 @@
 {
     SceneGame *_gameScene;
     NSMutableArray *_cards;
+
+    CCSprite *_sprite;
+
+    CCNode *_rootView;
+
 }
 
 - (id)initWithObject:(SceneGame *)scene;
@@ -33,7 +38,6 @@
 
 - (void)_prepare
 {
-
     NSInteger i, j;
     for (i = 0; i < 4; i++)
     {
@@ -43,8 +47,26 @@
         }
     }
 
-    NSInteger temp = _cards.count;
-    NSLog(@"Count");
+    [self _showBox];
+}
+
+-(void) _showBox
+{
+    NSInteger xStart = 390;
+    NSInteger yStart = 260;
+
+    _rootView = [CCNode node];
+
+
+
+    _sprite = [CCSprite spriteWithFile:@"cardBox.png"];
+
+
+    [_rootView addChild:_sprite];
+
+    _rootView.position = ccp(xStart, yStart);
+
+    [_gameScene addChild:_rootView];
 }
 
 - (Card *)getCardFromBox:(CGPoint)point;
@@ -87,8 +109,8 @@
 
 - (void)_addCardToScene:(Card *)card
 {
-    NSInteger xStart = 100;
-    NSInteger yStart = 0;
+    NSInteger xStart = 390;
+    NSInteger yStart = 260;
 
     [card initView];
 
@@ -99,8 +121,8 @@
 
 - (void)_addCardsToScene
 {
-    NSInteger xStart = 100;
-    NSInteger yStart = 0;
+    NSInteger xStart = 390;
+    NSInteger yStart = 260;
 
 
     for (Card *card in _cards)
