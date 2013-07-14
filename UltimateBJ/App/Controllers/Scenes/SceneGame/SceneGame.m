@@ -55,6 +55,7 @@
 {
     _textureBackground = [[CCTextureCache sharedTextureCache] addImage:@"background(640x960).png"];
     _background = [CCSprite spriteWithTexture:_textureBackground];
+    _background.anchorPoint = ccp(0, 0);
     [self addChild:_background];
 }
 
