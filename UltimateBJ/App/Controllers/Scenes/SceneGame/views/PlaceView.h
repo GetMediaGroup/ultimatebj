@@ -7,10 +7,26 @@
 
 #import <Foundation/Foundation.h>
 #import "CCButtonDelegate.h"
+#import "EPlaceType.h"
+
+@class SceneGame;
 
 
 @interface PlaceView : NSObject <CCButtonDelegate>
 
 @property(nonatomic, readonly) CCNode *rootView;
+
+
+- (id)init:(EPlaceType)type scene:(SceneGame *)scene;
+
+- (void)cleanup;
+
+- (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch;
+
+- (void)didButtonTouchMoved:(CCButton *)button touch:(UITouch *)touch;
+
+- (void)didButtonTouchEnded:(CCButton *)button touch:(UITouch *)touch;
+
+- (void)didButtonTouchCanceled:(CCButton *)button touch:(UITouch *)touch;
 
 @end

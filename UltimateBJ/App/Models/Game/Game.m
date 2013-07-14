@@ -8,12 +8,14 @@
 #import "Game.h"
 #import "CardBox.h"
 #import "SceneGame.h"
+#import "Place.h"
 
 
 @implementation Game
 {
     SceneGame *_gameScene;
     CardBox *_cardBox;
+    Place *_testPlace;
 }
 
 //! Designated initializer
@@ -35,6 +37,8 @@
 {
     [self _createCardBox];
     [_cardBox showCards];
+
+    _testPlace = [[Place alloc] init:EPT_HAND1 scene:_gameScene];
 }
 
 - (void)_createCardBox

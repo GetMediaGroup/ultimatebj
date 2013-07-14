@@ -6,6 +6,7 @@
 
 
 #import "Place.h"
+#import "SceneGame.h"
 
 
 @implementation Place
@@ -13,24 +14,30 @@
     NSUInteger _placeMoney;
 }
 
-- (id)init:(EPlaceType)type
+- (id)init:(EPlaceType)type scene:(SceneGame *)scene
 {
     self = [super init];
 
     if (self)
     {
         _type = type;
-        [self _prepare];
+        [self _prepare:type scene:scene];
     }
 
     return self;
 }
 
-- (void)_prepare
+- (void)cleanup
+{
+    [_view cleanup];
+    _view = nil;
+}
+
+- (void)_prepare:(EPlaceType)type scene:(SceneGame *)scene
 {
     _placeMoney = 0;
     _active = NO;
-    _view = [[PlaceView alloc] init];
+    _view = [[PlaceView alloc] init:type scene:scene];
 }
 
 - (NSUInteger)returnMoney

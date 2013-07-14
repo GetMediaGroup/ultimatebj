@@ -3,7 +3,11 @@
 
 typedef enum
 {
-    EPT_HAND = 0,
+    EPT_HAND1 = 0,
+    EPT_HAND2,
+    EPT_HAND3,
+    EPT_HAND4,
+    EPT_HAND5,
     EPT_CROUPIER,
 
 

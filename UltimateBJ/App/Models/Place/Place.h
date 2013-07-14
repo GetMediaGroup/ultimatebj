@@ -9,6 +9,8 @@
 #import "PlaceView.h"
 #import "EPlaceType.h"
 
+@class SceneGame;
+
 
 @interface Place : NSObject
 
@@ -18,7 +20,12 @@
 
 @property (nonatomic, readonly) EPlaceType type;
 
-- (id)init;
+@property (nonatomic, readonly) SceneGame *scene;
+
+
+- (id)init:(EPlaceType)type scene:(SceneGame *)scene;
+
+- (void)cleanup;
 
 - (NSUInteger)returnMoney;
 
