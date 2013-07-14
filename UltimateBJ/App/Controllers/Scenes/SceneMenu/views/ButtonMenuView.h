@@ -22,6 +22,8 @@
 
 - (CGSize)getSize;
 
+-(void) clearTextures;
+
 //! Fires when specify button touch began
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch;
 

@@ -167,6 +167,8 @@ static SceneBase *_currentScene = nil;
 {
     @autoreleasepool
     {
+        [[CCTextureCache sharedTextureCache] removeAllTextures];
+
         [[CCDirector sharedDirector].touchDispatcher removeAllDelegates];
 
         [self stopAllActions];
@@ -177,7 +179,7 @@ static SceneBase *_currentScene = nil;
 
         [self _clearTextures];
 
-        [[CCTextureCache sharedTextureCache] removeAllTextures];
+
     }
 }
 

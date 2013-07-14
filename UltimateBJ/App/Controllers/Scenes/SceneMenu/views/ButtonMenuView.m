@@ -66,6 +66,12 @@
     return _button.size;
 }
 
+- (void)clearTextures
+{
+    _textureButtonNormal = nil;
+    _textureButtonActive = nil;
+}
+
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch
 {
     _button.texture = _textureButtonActive;
