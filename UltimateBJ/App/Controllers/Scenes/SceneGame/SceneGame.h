@@ -8,8 +8,12 @@
 #import <Foundation/Foundation.h>
 #import "SceneBase.h"
 
+@class Game;
+
 
 @interface SceneGame : SceneBase
+
+
 
 /*
  * Static

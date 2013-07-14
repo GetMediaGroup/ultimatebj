@@ -7,6 +7,8 @@
 
 #import "SharedProgressManager.h"
 #import "Game.h"
+#import "SceneBase.h"
+#import "CardBox.h"
 
 
 @implementation SharedProgressManager

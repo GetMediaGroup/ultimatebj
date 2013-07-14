@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 
 @class Game;
+@class SceneBase;
+@class CardBox;
 
 //! Interface which provide operations with game money and game progress(include runtime progress).
 @interface SharedProgressManager : NSObject
@@ -17,6 +19,8 @@
  */
 
 @property (nonatomic, readonly) Game *game;
+
+@property (nonatomic, readonly) CardBox *cardbox;
 
 
 

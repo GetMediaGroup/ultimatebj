@@ -17,6 +17,37 @@
     CCTexture2D *_textureCardFace;
 
 }
+
+//Properties
+
+- (CGRect)contentSize
+{
+    CGFloat width = _sprite.contentSize.width * _rootView.scaleX;
+    CGFloat height = _sprite.contentSize.height * _rootView.scaleY;
+
+    CGFloat positionX = _rootView.position.x - width / 2;
+    CGFloat positionY = _rootView.position.y + height / 2;
+
+    return CGRectMake(positionX, positionY, width, height);
+}
+
+- (CGRect)contentSizeAbsolute
+{
+    CGRect result;
+
+    CGPoint absoluteTopLeftPoint = [_rootView convertToWorldSpace:ccp(-self.contentSize.size.width / 2, self.contentSize.size.height / 2)];
+
+    result = CGRectMake(absoluteTopLeftPoint.x,
+            absoluteTopLeftPoint.y,
+            self.contentSize.size.width,
+            self.contentSize.size.height);
+
+    return result;
+}
+
+//Methods
+
+//Designated initializer
 - (id)initWithOwner:(Card *)owner
 {
     NSAssert(owner, @"CardView::initWithOwner. owner should be non nil.");
@@ -38,7 +69,6 @@
     _rootView = [CCNode node];
     //Тернарный оператор
 
-    NSString *SpriteName = [[NSString alloc] init];
 
 
 
@@ -46,8 +76,8 @@
     {
         case ECS_CLUBS:
         {
-          //ToDO: Another switch for type
-          //_textureCardFace = etc
+            //ToDO: Another switch for type
+            //_textureCardFace = etc
         }
         case ECS_DIAMOND:
         {
@@ -61,9 +91,13 @@
         {
 
         }
+        default:
+        {
+
+        }
     }
 
-    _textureCardBack =  [[CCTextureCache sharedTextureCache] addImage:@"card-back.png"];
+    _textureCardBack = [[CCTextureCache sharedTextureCache] addImage:@"card-back.png"];
 
 
     _sprite = [CCSprite spriteWithTexture:_textureCardBack];

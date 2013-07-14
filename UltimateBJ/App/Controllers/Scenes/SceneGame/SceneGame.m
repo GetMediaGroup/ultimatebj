@@ -6,12 +6,15 @@
 
 
 #import "SceneGame.h"
+#import "SharedProgressManager.h"
+#import "Game.h"
 
 
 @implementation SceneGame
 {
     CCSprite *_background;
     CCTexture2D *_textureBackground;
+    Game *_game;
 }
 /*
  * Static
@@ -48,7 +51,10 @@
     [super prepare];
 
     [self _initBackground];
+
     [self _initGameObjects];
+
+     _game=[[Game alloc] initWithObject:self];
 }
 
 - (void)_initBackground

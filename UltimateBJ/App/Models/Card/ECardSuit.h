@@ -9,7 +9,7 @@ typedef enum
     ECS_SPADES,
 
     //Use only for enumerate
-            ECS_COUNT
+    ECS_COUNT
 } ECardSuit;
 
 #endif

@@ -17,6 +17,7 @@
 		67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
 		67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5314A81692266CE8507B6 /* SceneGame.m */; };
 		67C537E6137EBDBFC6F88E7E /* background(640x960).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A4B56A97424622FF594 /* background(640x960).png */; };
+		67C5388CEF379A3C6BA6E0A6 /* CardBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5398B859B3CA79011A10E /* CardBox.m */; };
 		67C5396A2F5F6BAA203D1D13 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532309651609964F481EB /* Card.m */; };
 		67C53997C9D30C2A7CE8F7AC /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53BB20043291AA855B95C /* CardView.m */; };
 		67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C533D48415600D79900775 /* SharedDeviceHelper.m */; };
@@ -90,6 +91,7 @@
 		67C5307E93915243F9B29E5C /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = SOURCE_ROOT; };
 		67C530C8B50D1477FCE71E22 /* ESceneType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESceneType.h; sourceTree = "<group>"; };
 		67C53109FE3B359D5E57AC89 /* SceneBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBase.h; sourceTree = "<group>"; };
+		67C53123061BAF36B06FDB31 /* CardBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardBox.h; sourceTree = "<group>"; };
 		67C5312520981B29C7D5865D /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		67C5314A81692266CE8507B6 /* SceneGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneGame.m; sourceTree = "<group>"; };
 		67C531A3D61BDE407650C0F2 /* ECardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECardType.h; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDeviceHelper.h; sourceTree = "<group>"; };
 		67C539016286C087DC5CE6B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67C539549EDFAFAC55C0D08B /* EDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDeviceType.h; sourceTree = "<group>"; };
+		67C5398B859B3CA79011A10E /* CardBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardBox.m; sourceTree = "<group>"; };
 		67C53A4B56A97424622FF594 /* background(640x960).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x960).png"; sourceTree = "<group>"; };
 		67C53AAFE9AA39C36823A929 /* background(640x1136).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x1136).png"; sourceTree = "<group>"; };
 		67C53AEDD6DA12E4AA111364 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				67C5312520981B29C7D5865D /* Card.h */,
 				67C531A3D61BDE407650C0F2 /* ECardType.h */,
 				67C53266365E02302A3A48C9 /* ECardSuit.h */,
+				67C5398B859B3CA79011A10E /* CardBox.m */,
+				67C53123061BAF36B06FDB31 /* CardBox.h */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -692,6 +697,7 @@
 				AF6EF3A126F4A7E9B86084BA /* ButtonMenuView.m in Sources */,
 				67C53997C9D30C2A7CE8F7AC /* CardView.m in Sources */,
 				67C5396A2F5F6BAA203D1D13 /* Card.m in Sources */,
+				67C5388CEF379A3C6BA6E0A6 /* CardBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,10 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class CardBox;
+@class SceneGame;
+
 
 @interface Game : NSObject
+
 //! Designated initializer
-- (id)init;
+- (id)initWithObject:(SceneGame *) sceneGame;
 
 @end
 

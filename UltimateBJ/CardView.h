@@ -16,6 +16,14 @@
 
 @property (nonatomic, readonly) Card *owner;
 
+//! Represents actually size of current content. Contains top left point and width+height.
+@property (nonatomic, readonly) CGRect contentSize;
+
+//! Represents actually size of current content. Contains top left point(absolute position) and width+height.
+@property (nonatomic, readonly) CGRect contentSizeAbsolute;
+
+
+
 -(id) initWithOwner:(Card *) owner;
 
 @end
