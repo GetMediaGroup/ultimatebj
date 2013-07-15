@@ -20,5 +20,7 @@
 
 -(void) makeDeal;
 
+-(void) makeHit;
+
 @end
 

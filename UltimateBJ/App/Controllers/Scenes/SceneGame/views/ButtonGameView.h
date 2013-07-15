@@ -27,6 +27,10 @@
 
 - (void)clearTextures;
 
+- (void)switchOn;
+
+- (void)switchOff;
+
 //! Fires when specify button touch began
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch;
 

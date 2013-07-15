@@ -59,10 +59,7 @@
 
     _rootView = [CCNode node];
 
-
-
     _sprite = [CCSprite spriteWithFile:@"cardBox.png"];
-
 
     [_rootView addChild:_sprite];
 

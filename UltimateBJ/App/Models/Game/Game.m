@@ -24,6 +24,8 @@
     ButtonGameView *_buttonDeal;
     NSUInteger _gameMoney;
 
+    EPlaceType _currentPlaceType;
+
     CCNode *_moneyView;
     CCLabelTTF *_moneyLabel;
     Card *testCard; //Todo delete
@@ -136,7 +138,51 @@
 
 - (void)_dealEnd
 {
-    NSLog(@"Deal end!");
+    _currentPlaceType = EPT_HAND2;
+
+    Place *tempPlace = _places[_currentPlaceType];
+
+
+    while (tempPlace.active != YES)
+    {
+        _currentPlaceType++;
+        tempPlace= _places[_currentPlaceType];
+    }
+
+
+        NSLog(@"Deal end!");
+    [self _resumeGame];
+}
+
+- (void)_resumeGame
+{
+    for (EButtonGameType gameType = EBGT_DOUBLE; gameType < EBGT_COUNT - 2; gameType++)
+    {
+        [(ButtonGameView *) _playingButtons[gameType] switchOn];
+    }
+}
+
+- (void)makeHit
+{
+
+    for (EButtonGameType gameType = EBGT_DOUBLE; gameType < EBGT_COUNT - 2; gameType++)
+    {
+        [(ButtonGameView *) _playingButtons[gameType] switchOff];
+    }
+
+    CGPoint pointDestination = [ResourceManager getPoint:_currentPlaceType];
+    pointDestination =
+            ccp(pointDestination.x + ((Place *) _places[_currentPlaceType]).countOfCards * 4,
+                    pointDestination.y - ((Place *) _places[_currentPlaceType]).countOfCards * 4);
+
+    [_places[_currentPlaceType] addCardToPlace:[_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:0]];
+    ((Place *) _places[_currentPlaceType]).countOfCards++;
+
+    for (EButtonGameType gameType = EBGT_DOUBLE; gameType < EBGT_COUNT - 2; gameType++)
+    {
+        [(ButtonGameView *) _playingButtons[gameType] performSelector:@selector(switchOn) withObject:nil afterDelay:2.0f];
+    }
+
 }
 
 

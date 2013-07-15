@@ -152,7 +152,7 @@
 
         case EBGT_HIT:
         {
-
+            [_game makeHit];
             break;
         }
         case EBGT_SPLIT:
