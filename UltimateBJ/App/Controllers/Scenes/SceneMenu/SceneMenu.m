@@ -70,7 +70,6 @@
 
 - (void)_clearTextures
 {
-    NSLog(@"Cleanup");
     [_buttonStartGameView clearTextures];
 }
 
