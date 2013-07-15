@@ -64,7 +64,7 @@
     return self;
 }
 
-- (void)moveTo:(CGPoint)point
+- (void)moveToWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns
 {
     ccBezierConfig bezier;
 
@@ -74,12 +74,16 @@
 
     bezierAction = [CCBezierTo actionWithDuration:2 bezier:bezier];
 
-    CCAction *arcAction = [CCSequence actions:bezierAction, nil];
 
-    [_owner.view.rootView runAction:arcAction];
 
+
+
+    id delay = [CCDelayTime actionWithDuration:2.0f*countOfRuns];
+
+    CCAction *arcAction = [CCSequence actions:delay, bezierAction, nil];
+
+    [_owner.view.rootView runAction:arcAction ];
 }
-
 
 - (void)_prepare
 {
@@ -114,7 +118,6 @@
 
 
     _sprite = [CCSprite spriteWithTexture:_textureCardBack];
-
 
     [_rootView addChild:_sprite];
 }

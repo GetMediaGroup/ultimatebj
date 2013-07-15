@@ -7,24 +7,48 @@
 
 #import "Place.h"
 #import "SceneGame.h"
+#import "Game.h"
+#import "Card.h"
 
 
 @implementation Place
 {
-    NSUInteger _placeMoney;
+    Game *_game;
+    NSMutableArray *_cards;
 }
 
-- (id)init:(EPlaceType)type scene:(SceneGame *)scene
+- (id)init:(EPlaceType)type scene:(SceneGame *)scene game:(Game *)game;
 {
     self = [super init];
 
     if (self)
     {
         _type = type;
+        _game = game;
+        _countOfCards = 0;
+        _cards = [NSMutableArray array];
         [self _prepare:type scene:scene];
     }
 
     return self;
+}
+
+- (void)_prepare:(EPlaceType)type  scene:(SceneGame *)scene
+{
+    _placeMoney = 0;
+    if (type == EPT_CROUPIER)
+    {
+        _active = YES;
+    }
+    else
+    {
+        _active = NO;
+
+    }
+    if (type != EPT_CROUPIER && type != EPT_HAND1 && type != EPT_HAND5)
+    {
+        _view = [[PlaceView alloc] init:type scene:scene owner:self];
+    }
 }
 
 - (void)cleanup
@@ -33,15 +57,6 @@
     _view = nil;
 }
 
-- (void)_prepare:(EPlaceType)type scene:(SceneGame *)scene
-{
-    _placeMoney = 0;
-    _active = NO;
-    if (type != EPT_CROUPIER && type != EPT_HAND1 && type != EPT_HAND5)
-    {
-        _view = [[PlaceView alloc] init:type scene:scene owner:self];
-    }
-}
 
 - (NSUInteger)returnMoney
 {
@@ -50,9 +65,20 @@
     return result;
 }
 
-- (void)addMoney:(NSUInteger)money
+- (void)addMoneyToPlace:(NSUInteger)money
 {
     _placeMoney += money;
+}
+
+- (void)subtractMoneyFromGame:(NSUInteger)howMuch
+{
+    [_game subtractMoney:howMuch];
+}
+
+
+- (void)addCardToPlace:(Card *)card
+{
+    [_cards addObject:card];
 }
 
 @end

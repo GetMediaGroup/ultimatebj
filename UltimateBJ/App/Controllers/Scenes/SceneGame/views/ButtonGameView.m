@@ -8,11 +8,14 @@
 #import "ButtonGameView.h"
 #import "CCButton.h"
 #import "SceneGame.h"
+#import "Game.h"
 
 
 @implementation ButtonGameView
 {
     CCButton *_button;
+    Game *_game;
+
 
     CCTexture2D *_textureButtonNormal;
     CCTexture2D *_textureButtonActive;
@@ -20,7 +23,7 @@
 }
 
 // Designated initializer
-- (id)init:(EButtonGameType)buttonType scene:(SceneGame *)scene
+- (id)init:(EButtonGameType)buttonType scene:(SceneGame *)scene  game :(Game *)game
 {
     self = [super init];
 
@@ -55,6 +58,7 @@
             case EBGT_DEAL:
             {
                 _textLabel = @"DEAL";
+                [_game makeDeal];
                 break;
             }
             default:
@@ -65,6 +69,8 @@
             }
         }
         [self _prepare:_textLabel scene:scene];
+
+        _game = game;
     }
 
     return self;
@@ -127,6 +133,7 @@
 
         case EBGT_HIT:
         {
+
             break;
         }
         case EBGT_SPLIT:
@@ -135,6 +142,8 @@
         }
         case EBGT_DEAL:
         {
+            [_game makeDeal];
+            _rootView.visible = NO;
             break;
         }
         default:

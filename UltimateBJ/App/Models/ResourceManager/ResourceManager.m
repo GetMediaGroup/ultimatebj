@@ -1,0 +1,52 @@
+//
+// Created by Roman Bord on 7/15/13.
+//
+// To change the template use AppCode | Preferences | File Templates.
+//
+
+
+#import "ResourceManager.h"
+#import "EPlaceType.h"
+
+
+@implementation ResourceManager
+{
+
+}
+
++(CGPoint) getPoint: (EPlaceType) type
+{
+    CGPoint result;
+    switch (type)
+    {
+        case EPT_HAND2:
+        {
+            result = ccp(295, 113);
+            break;
+        }
+        case EPT_HAND3:
+        {
+
+            result = ccp(228, 105);
+            break;
+        }
+        case EPT_HAND4:
+        {
+            result = ccp(149, 114);
+            break;
+        }
+        case EPT_CROUPIER:
+        {
+            result = ccp(228, 170);
+            break;
+        }
+        default:
+        {
+            NSAssert(NO, @"Invalid type of Place!");
+            break;
+        }
+    }
+    return result;
+}
+
+@end

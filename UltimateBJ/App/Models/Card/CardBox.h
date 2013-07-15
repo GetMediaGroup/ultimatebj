@@ -18,7 +18,7 @@
 //Designated initializer
 - (id)initWithObject:(SceneGame *)scene;
 
-- (Card *)getCardFromBox:(CGPoint)point;
+- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns;
 
 - (void)putCardToBox:(Card *)card;
 

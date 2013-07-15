@@ -14,6 +14,7 @@
 		67C53468959083FCB2025D1E /* cardBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C537C8A2D0F74B54F73ECE /* cardBox.png */; };
 		67C534757601FEE1EC639BC5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53F7D06C4478BC68C32EF /* Game.m */; };
 		67C5357E955876D6EF167C92 /* buttonMenuNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */; };
+		67C53645E4CEE85DA832D4F4 /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5354515A0192F9BAD039C /* ResourceManager.m */; };
 		67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
 		67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5314A81692266CE8507B6 /* SceneGame.m */; };
 		67C537E6137EBDBFC6F88E7E /* background(640x960).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A4B56A97424622FF594 /* background(640x960).png */; };
@@ -112,6 +113,7 @@
 		67C533D48415600D79900775 /* SharedDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDeviceHelper.m; sourceTree = "<group>"; };
 		67C534474CC66D340962FF3D /* SceneMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneMenu.h; sourceTree = "<group>"; };
 		67C53509F68B98B87E10D49F /* ELanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELanguageType.h; sourceTree = "<group>"; };
+		67C5354515A0192F9BAD039C /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManager.m; sourceTree = "<group>"; };
 		67C535E6539AA6B64F683EF7 /* SceneBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneBase.m; sourceTree = "<group>"; };
 		67C536229A56BC019375BAF2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		67C53784D06B8CC6D51F782C /* buttonMenuActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuActive.png; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		67C5398B859B3CA79011A10E /* CardBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardBox.m; sourceTree = "<group>"; };
 		67C53A4B56A97424622FF594 /* background(640x960).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x960).png"; sourceTree = "<group>"; };
 		67C53AAFE9AA39C36823A929 /* background(640x1136).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x1136).png"; sourceTree = "<group>"; };
+		67C53AE64E7C449F8341E6C1 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
 		67C53AEDD6DA12E4AA111364 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
 		67C53B271EF10AF7918EB838 /* card-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card-back.png"; sourceTree = "<group>"; };
 		67C53C6E106DB6A932C00505 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -363,6 +366,7 @@
 				67C5388E51E91751C383E6FC /* Card */,
 				AF6EF888BD92478C5A1E05AF /* MoneyManager */,
 				AF6EF24B6C042743F57DB3FA /* Place */,
+				67C53F92C5B017F61E47D4DC /* ResourceManager */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -395,6 +399,15 @@
 				67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */,
 			);
 			path = SharedDeviceHelper;
+			sourceTree = "<group>";
+		};
+		67C53F92C5B017F61E47D4DC /* ResourceManager */ = {
+			isa = PBXGroup;
+			children = (
+				67C5354515A0192F9BAD039C /* ResourceManager.m */,
+				67C53AE64E7C449F8341E6C1 /* ResourceManager.h */,
+			);
+			path = ResourceManager;
 			sourceTree = "<group>";
 		};
 		AF6EF1C76FA3DC4A47B43E04 /* Cocos2dAdditions */ = {
@@ -762,6 +775,7 @@
 				AF6EF86544703CDEA3803CA3 /* CardView.m in Sources */,
 				AF6EF5216F43BA544C5F9045 /* PlaceView.m in Sources */,
 				AF6EF1BBDCA9672BE5C1965B /* ButtonGameView.m in Sources */,
+				67C53645E4CEE85DA832D4F4 /* ResourceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

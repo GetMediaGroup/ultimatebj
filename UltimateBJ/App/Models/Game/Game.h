@@ -16,5 +16,9 @@
 //! Designated initializer
 - (id)initWithObject:(SceneGame *) sceneGame;
 
+-(void) subtractMoney:(NSUInteger) howMuch;
+
+-(void) makeDeal;
+
 @end
 

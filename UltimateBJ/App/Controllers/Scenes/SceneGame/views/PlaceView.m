@@ -18,6 +18,7 @@
     CCTexture2D *_texturePic;
     CCTexture2D *_textureActivePic;
 
+
     Place *_owner;
 }
 
@@ -51,6 +52,11 @@
     NSString *_imageActiveName;
     CGPoint _picPoint;
 
+
+    _moneyLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d", _owner.placeMoney]
+                                     fontName:@"Marker Felt"
+                                     fontSize:15];
+    _moneyLabel.color = ccWHITE;
     switch (type)
     {
         case EPT_HAND2:
@@ -58,6 +64,11 @@
             _imageName = @"emptyPlace(86x86).png";
             _imageActiveName = @"activePlaceRight(86x86).png";
             _picPoint = ccp(290, 98.5);
+
+
+            _moneyLabel.position = CGPointMake(305, 143);
+
+
             break;
         }
         case EPT_HAND3:
@@ -65,6 +76,9 @@
             _imageName = @"emptyPlace(60x79).png";
             _imageActiveName = @"activePlace(60x79).png";
             _picPoint = ccp(224.5, 89);
+
+            _moneyLabel.position = CGPointMake(235, 136);
+
             break;
         }
         case EPT_HAND4:
@@ -72,6 +86,9 @@
             _imageName = @"emptyPlace(86x86).png";
             _imageActiveName = @"activePlaceLeft(86x86).png";
             _picPoint = ccp(145.5, 98.5);
+
+            _moneyLabel.position = CGPointMake(150, 144);
+
             break;
         }
         default:
@@ -80,6 +97,8 @@
             break;
         }
     }
+    [_rootView addChild:_moneyLabel];
+
 
     _texturePic = [[CCTextureCache sharedTextureCache] addImage:_imageName];
     _textureActivePic = [[CCTextureCache sharedTextureCache] addImage:_imageActiveName];
@@ -102,6 +121,12 @@
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch
 {
     [self _activate];
+
+    [_owner addMoneyToPlace:50];
+
+    [_moneyLabel setString:[NSString stringWithFormat:@"%d", _owner.placeMoney]];
+
+    [_owner subtractMoneyFromGame:50];
 }
 
 - (void)didButtonTouchMoved:(CCButton *)button touch:(UITouch *)touch

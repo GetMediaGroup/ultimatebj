@@ -17,6 +17,7 @@
 
 @property(nonatomic, readonly) CCNode *rootView;
 
+@property (nonatomic, readwrite) CCLabelTTF * moneyLabel;
 
 - (id)init:(EPlaceType)type scene:(SceneGame *)scene owner:(Place *)owner;
 

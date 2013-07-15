@@ -31,8 +31,6 @@
 
     [SceneBase setScene:EST_MENU];
 
-    sleep(1);
-
 #ifdef KK_ARC_ENABLED
 	CCLOG(@"ARC is enabled");
 #else

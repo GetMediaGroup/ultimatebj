@@ -29,7 +29,7 @@
     if (self)
     {
         _gameScene = scene;
-        _cards = [[NSMutableArray alloc] init];
+        _cards = [NSMutableArray array];
         [self _prepare];
     }
 
@@ -46,6 +46,8 @@
             [_cards addObject:[[Card alloc] initWithParams:i type:j]];
         }
     }
+
+    [self shuffleCards];
 
     [self _showBox];
 }
@@ -69,7 +71,7 @@
     [_gameScene addChild:_rootView];
 }
 
-- (Card *)getCardFromBox:(CGPoint)point;
+- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns
 {
     Card *temp = _cards[_cards.count - 1];
 
@@ -77,7 +79,7 @@
 
     [self _addCardToScene:temp];
 
-    [temp.view moveTo:point];
+    [temp.view moveToWithDelay:point countOfRuns:countOfRuns];
 
     return temp;
 }
@@ -115,6 +117,8 @@
     [card initView];
 
     card.view.rootView.position = ccp(xStart, yStart);
+
+    card.view.rootView.scale = 0.65;
 
     [_gameScene addChild:card.view.rootView];
 }

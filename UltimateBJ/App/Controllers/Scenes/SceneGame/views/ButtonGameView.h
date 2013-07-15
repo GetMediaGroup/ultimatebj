@@ -10,6 +10,7 @@
 #import "EButtonGameType.h"
 
 @class SceneGame;
+@class Game;
 
 
 @interface ButtonGameView : NSObject <CCButtonDelegate>
@@ -18,13 +19,13 @@
 
 @property(nonatomic, readonly) EButtonGameType buttonType;
 
-- (id)init:(EButtonGameType)buttonType scene:(SceneGame *)scene;
+- (id)init:(EButtonGameType)buttonType scene:(SceneGame *)scene  game :(Game *)game;
 
 - (void)setPosition:(CGPoint)point;
 
 - (CGSize)getSize;
 
--(void) clearTextures;
+- (void)clearTextures;
 
 //! Fires when specify button touch began
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch;
