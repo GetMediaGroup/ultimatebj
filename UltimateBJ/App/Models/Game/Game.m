@@ -8,6 +8,7 @@
 #import "Game.h"
 #import "CardBox.h"
 #import "SceneGame.h"
+#import "Place.h"
 #import "Card.h"
 #import "CardView.h"
 
@@ -16,6 +17,7 @@
 {
     SceneGame *_gameScene;
     CardBox *_cardBox;
+    NSMutableArray *_places;
     Card *testCard; //Todo delete
 }
 
@@ -37,25 +39,32 @@
 - (void)_prepare
 {
     [self _createCardBox];
+    [self _initPlaces];
+
     [self _doGame];
 }
 
 - (void)_createCardBox
 {
     _cardBox = [[CardBox alloc] initWithObject:_gameScene];
-
-
 }
 
+- (void)_initPlaces
+{
+    _places = [NSMutableArray array];
+    for (EPlaceType placeType = EPT_HAND1; placeType < EPT_COUNT; placeType++)
+    {
+        [_places addObject:[[Place alloc] init:placeType scene:_gameScene]];
+    }
+}
 
 //Test function! Don't use
--(void) _doGame
+- (void)_doGame
 {
-   testCard = [_cardBox getCardFromBox:CGPointMake(232, 117)];
+    testCard = [_cardBox getCardFromBox:CGPointMake(232, 117)];
 
-   testCard.view.rootView.scale=0.65;
+    testCard.view.rootView.scale = 0.65;
 }
-
 
 
 @end
