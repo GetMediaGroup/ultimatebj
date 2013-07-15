@@ -9,6 +9,7 @@
 #import "CCButton.h"
 #import "SceneGame.h"
 #import "Game.h"
+#import "ResourceManager.h"
 
 
 @implementation ButtonGameView
@@ -96,6 +97,12 @@
 
     label.position = _button.boundingBoxCenter;
     label.color = ccWHITE;
+
+    if (_buttonType != EBGT_DEAL)
+    {
+        [self switchOff];
+    }
+
     [_rootView addChild:label];
     [scene addChild:_rootView];
 }
@@ -114,6 +121,18 @@
 {
     _textureButtonNormal = nil;
     _textureButtonActive = nil;
+}
+
+- (void)switchOff
+{
+    _button.delegate = nil;
+    _button.color = [ResourceManager getInactiveButtonColor];
+}
+
+- (void)switchOn
+{
+    _button.delegate = self;
+    _button.color = [ResourceManager getActiveButtonColor];
 }
 
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch
@@ -143,7 +162,7 @@
         case EBGT_DEAL:
         {
             [_game makeDeal];
-            _rootView.visible = NO;
+            [self switchOff];
             break;
         }
         default:

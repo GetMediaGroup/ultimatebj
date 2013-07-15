@@ -24,7 +24,7 @@
     ButtonGameView *_buttonDeal;
     NSUInteger _gameMoney;
 
-    CCNode *_rootView;
+    CCNode *_moneyView;
     CCLabelTTF *_moneyLabel;
     Card *testCard; //Todo delete
 
@@ -58,8 +58,7 @@
 {
     _gameMoney = 1000;
 
-    _rootView = [CCNode node];
-
+    _moneyView = [CCNode node];
 
     _moneyLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d", _gameMoney]
                                      fontName:@"Marker Felt"
@@ -67,8 +66,8 @@
 
     _moneyLabel.position = CGPointMake(60, 20);
     _moneyLabel.color = ccWHITE;
-    [_rootView addChild:_moneyLabel];
-    [_gameScene addChild:_rootView];
+    [_moneyView addChild:_moneyLabel];
+    [_gameScene addChild:_moneyView];
 }
 
 - (void)_createCardBox
@@ -111,6 +110,8 @@
 
 - (void)makeDeal
 {
+    NSUInteger countOfRuns = 0;
+
     for (NSUInteger i = 0; i < 2; i++)
     {
         for (EPlaceType placeType = EPT_HAND1; placeType < EPT_COUNT; placeType++)
@@ -122,14 +123,21 @@
                         ccp(pointDestination.x + ((Place *) _places[placeType]).countOfCards * 4,
                                 pointDestination.y - ((Place *) _places[placeType]).countOfCards * 4);
 
-                static NSUInteger countOfRuns=0;
                 [_places[placeType] addCardToPlace:[_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns++]];
                 ((Place *) _places[placeType]).countOfCards++;
             }
         }
     }
+
+    id _delayDeal = [CCDelayTime actionWithDuration:countOfRuns * [ResourceManager getCardMoveDuration]];
+    id _callDealEnd = [CCCallFunc actionWithTarget:self selector:@selector(_dealEnd)];
+    [_gameScene runAction:[CCSequence actions:_delayDeal, _callDealEnd, nil]];
 }
 
+- (void)_dealEnd
+{
+    NSLog(@"Deal end!");
+}
 
 
 @end

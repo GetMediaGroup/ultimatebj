@@ -13,6 +13,12 @@
 
 
 //Returns point depending on which hand is used
-+(CGPoint) getPoint: (EPlaceType) type;
++ (CGPoint)getPoint:(EPlaceType)type;
+
++ (CGFloat)getCardMoveDuration;
+
++ (ccColor3B)getActiveButtonColor;
+
++ (ccColor3B)getInactiveButtonColor;
 
 @end

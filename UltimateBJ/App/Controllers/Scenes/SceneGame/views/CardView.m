@@ -7,6 +7,7 @@
 
 #import "CardView.h"
 #import "Card.h"
+#import "ResourceManager.h"
 
 
 @implementation CardView
@@ -64,7 +65,7 @@
     return self;
 }
 
-- (void)moveToWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns
+- (void)moveToWithDelay:(CGPoint)point countOfRuns:(NSUInteger)countOfRuns
 {
     ccBezierConfig bezier;
 
@@ -72,17 +73,14 @@
 
     id bezierAction;
 
-    bezierAction = [CCBezierTo actionWithDuration:2 bezier:bezier];
+    bezierAction = [CCBezierTo actionWithDuration:[ResourceManager getCardMoveDuration] bezier:bezier];
 
 
-
-
-
-    id delay = [CCDelayTime actionWithDuration:2.0f*countOfRuns];
+    id delay = [CCDelayTime actionWithDuration:[ResourceManager getCardMoveDuration] * countOfRuns];
 
     CCAction *arcAction = [CCSequence actions:delay, bezierAction, nil];
 
-    [_owner.view.rootView runAction:arcAction ];
+    [_owner.view.rootView runAction:arcAction];
 }
 
 - (void)_prepare

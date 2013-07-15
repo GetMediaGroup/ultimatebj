@@ -49,4 +49,22 @@
     return result;
 }
 
++ (CGFloat)getCardMoveDuration
+{
+    return 1.0f;
+}
+
++ (ccColor3B)getActiveButtonColor
+{
+    ccColor3B result = {255, 255, 255};
+    return result;
+}
+
++ (ccColor3B)getInactiveButtonColor
+{
+    ccColor3B result = {127, 127, 127};
+    return result;
+}
+
+
 @end
