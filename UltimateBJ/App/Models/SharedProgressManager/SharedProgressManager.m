@@ -9,6 +9,7 @@
 #import "Game.h"
 #import "SceneBase.h"
 #import "CardBox.h"
+#import "ECardType.h"
 
 
 @implementation SharedProgressManager
@@ -30,6 +31,85 @@ static SharedProgressManager *_instance = nil;
 
     return _instance;
 }
+
++ (NSUInteger)getScoreToAdd :(ECardType)type
+{
+    NSUInteger result;
+    switch (type)
+    {
+        case ECT_2:
+        {
+            result = 2;
+            break;
+        }
+        case ECT_3:
+        {
+            result = 3;
+            break;
+        }
+        case ECT_4:
+        {
+            result = 4;
+            break;
+        }
+        case ECT_5:
+        {
+            result = 5;
+            break;
+        }
+        case ECT_6:
+        {
+            result = 6;
+            break;
+        }
+        case ECT_7:
+        {
+            result = 7;
+            break;
+        }
+        case ECT_8:
+        {
+            result = 8;
+            break;
+        }
+        case ECT_9:
+        {
+            result = 9;
+            break;
+        }
+        case ECT_10:
+        {
+            result = 10;
+            break;
+        }
+        case ECT_JACK:
+        {
+            result = 10;
+            break;
+        }
+        case ECT_ACE:
+        {
+            result = 10;
+            break;
+        }
+        case ECT_KING:
+        {
+            result = 10;
+            break;
+        }
+        case ECT_QUEEN:
+        {
+            result = 10;
+            break;
+        }
+        default:
+        {
+         NSAssert(NO,@"Card type must be set");
+        }
+    }
+    return result;
+}
+
 
 //! Designated initializer
 - (id)init

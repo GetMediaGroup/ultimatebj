@@ -142,16 +142,18 @@
     {
         case EBGT_DOUBLE:
         {
+            [_game makeDouble];
             break;
         }
         case EBGT_STAND:
         {
+            [_game makeStand];
             break;
         }
 
         case EBGT_HIT:
         {
-
+            [_game makeHit];
             break;
         }
         case EBGT_SPLIT:

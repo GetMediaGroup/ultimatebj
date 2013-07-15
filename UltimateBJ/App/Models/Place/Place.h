@@ -28,6 +28,10 @@
 
 @property (nonatomic, readwrite) NSUInteger placeMoney;
 
+@property (nonatomic, readwrite) NSUInteger score;
+
+@property (nonatomic, readwrite) NSMutableArray *cards;
+
 
 - (id)init:(EPlaceType)type scene:(SceneGame *)scene game:(Game *)game;
 
@@ -40,6 +44,8 @@
 - (void)subtractMoneyFromGame:(NSUInteger)howMuch;
 
 - (void)addCardToPlace:(Card *)card;
+
+- (void)removeCardsFromPlace;
 
 
 @end

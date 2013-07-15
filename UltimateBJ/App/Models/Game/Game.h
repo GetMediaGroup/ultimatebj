@@ -20,5 +20,11 @@
 
 -(void) makeDeal;
 
+-(void) makeHit;
+
+-(void) makeStand;
+
+-(void) makeDouble;
+
 @end
 

@@ -14,7 +14,7 @@
 @implementation Place
 {
     Game *_game;
-    NSMutableArray *_cards;
+//    NSMutableArray *_cards;
 }
 
 - (id)init:(EPlaceType)type scene:(SceneGame *)scene game:(Game *)game;
@@ -26,6 +26,7 @@
         _type = type;
         _game = game;
         _countOfCards = 0;
+        _score = 0;
         _cards = [NSMutableArray array];
         [self _prepare:type scene:scene];
     }
@@ -45,7 +46,7 @@
         _active = NO;
 
     }
-    if (type != EPT_CROUPIER && type != EPT_HAND1 && type != EPT_HAND5)
+    if (type != EPT_HAND1 && type != EPT_HAND5)
     {
         _view = [[PlaceView alloc] init:type scene:scene owner:self];
     }
@@ -79,6 +80,19 @@
 - (void)addCardToPlace:(Card *)card
 {
     [_cards addObject:card];
+}
+
+-(void)removeCardsFromPlace
+{
+    for (Card * card in _cards)
+    {
+      [self _removeCard:card];
+    }
+}
+
+-(void) _removeCard:(Card *) card
+{
+    [_cards removeObject:card];
 }
 
 @end

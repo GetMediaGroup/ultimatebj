@@ -114,6 +114,24 @@
     }
 }
 
+- (void)moveFromScene :(NSUInteger)countOfRuns
+{
+    ccBezierConfig bezier;
+
+    bezier.endPosition = bezier.controlPoint_1 = bezier.controlPoint_2 = ccp(50, 600);
+
+    id bezierAction;
+
+    bezierAction = [CCBezierTo actionWithDuration:[ResourceManager getCardMoveDuration] bezier:bezier];
+
+
+    id delay = [CCDelayTime actionWithDuration:[ResourceManager getCardMoveDuration] * countOfRuns];
+
+    CCAction *arcAction = [CCSequence actions:delay, bezierAction, nil];
+
+    [_owner.view.rootView runAction:arcAction];
+}
+
 - (void)_prepare
 {
     _rootView = [CCNode node];

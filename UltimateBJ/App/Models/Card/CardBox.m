@@ -62,7 +62,6 @@
 
     _sprite = [CCSprite spriteWithFile:@"cardBox.png"];
 
-
     [_rootView addChild:_sprite];
 
     _rootView.position = ccp(xStart, yStart);
@@ -83,10 +82,18 @@
     return temp;
 }
 
-- (void)putCardToBox:(Card *)card
+- (void)putCardToBox:(Card *)card countOfRuns:(NSUInteger)countOfRuns
 {
-    [_cards addObject:card];
+    [_cards insertObject:card atIndex:0];
 
+    [card.view moveToWithDelay:ccp(50, 600) countOfRuns:countOfRuns flip:NO];
+
+    [self performSelector:@selector(_removeCardFromScene:) withObject:card afterDelay:2.0f * countOfRuns];
+
+}
+
+- (void)_removeCardFromScene :(Card *)card
+{
     [_gameScene removeChild:card.view.rootView];
     [card.view cleanupView];
 }
