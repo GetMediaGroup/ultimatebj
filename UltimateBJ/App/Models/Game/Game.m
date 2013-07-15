@@ -123,7 +123,9 @@
                         ccp(pointDestination.x + ((Place *) _places[placeType]).countOfCards * 4,
                                 pointDestination.y - ((Place *) _places[placeType]).countOfCards * 4);
 
-                [_places[placeType] addCardToPlace:[_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns++]];
+                BOOL _isFlip = (placeType == EPT_CROUPIER && i == 0) ? NO : YES;
+                [_places[placeType] addCardToPlace:[_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns++ flip:_isFlip]];
+                if (_isFlip) countOfRuns++;
                 ((Place *) _places[placeType]).countOfCards++;
             }
         }

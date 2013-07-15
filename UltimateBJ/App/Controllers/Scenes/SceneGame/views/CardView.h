@@ -26,7 +26,7 @@
 
 -(id) initWithOwner:(Card *) owner;
 
-- (void)moveToWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns;
+- (void)moveToWithDelay:(CGPoint)point countOfRuns:(NSUInteger)countOfRuns flip:(BOOL)flip;
 
 -(void) cleanupView;
 

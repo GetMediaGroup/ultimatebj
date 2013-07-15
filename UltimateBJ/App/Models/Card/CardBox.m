@@ -52,13 +52,12 @@
     [self _showBox];
 }
 
--(void) _showBox
+- (void)_showBox
 {
     NSInteger xStart = 390;
     NSInteger yStart = 260;
 
     _rootView = [CCNode node];
-
 
 
     _sprite = [CCSprite spriteWithFile:@"cardBox.png"];
@@ -71,7 +70,7 @@
     [_gameScene addChild:_rootView];
 }
 
-- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns
+- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger)countOfRuns flip:(BOOL)flip
 {
     Card *temp = _cards[_cards.count - 1];
 
@@ -79,7 +78,7 @@
 
     [self _addCardToScene:temp];
 
-    [temp.view moveToWithDelay:point countOfRuns:countOfRuns];
+    [temp.view moveToWithDelay:point countOfRuns:countOfRuns flip:flip];
 
     return temp;
 }
@@ -92,7 +91,7 @@
     [card.view cleanupView];
 }
 
--(void) shuffleCards
+- (void)shuffleCards
 {
     NSUInteger count = [_cards count];
     for (NSUInteger i = 0; i < count; ++i)

@@ -14,15 +14,14 @@
 @interface CardBox : NSObject
 
 
-
 //Designated initializer
 - (id)initWithObject:(SceneGame *)scene;
 
-- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns;
+- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger)countOfRuns flip:(BOOL)flip;
 
 - (void)putCardToBox:(Card *)card;
 
--(void) shuffleCards;
+- (void)shuffleCards;
 
 
 - (void)showCards;

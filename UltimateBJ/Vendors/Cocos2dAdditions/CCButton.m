@@ -110,16 +110,16 @@
         {
             if (result)
             {
-                self.color = ccGRAY;
+//                self.color = ccGRAY;
             }
             else
             {
-                self.color = ccWHITE;
+//                self.color = ccWHITE;
             }
         }
         else
         {
-            self.color = ccWHITE;
+//            self.color = ccWHITE;
         }
 
         if (result && _delegate)
@@ -141,11 +141,11 @@
     {
         if ([self _isPointInside:point])
         {
-            self.color = ccGRAY;
+//            self.color = ccGRAY;
         }
         else
         {
-            self.color = ccWHITE;
+//            self.color = ccWHITE;
         }
     }
 
@@ -157,7 +157,7 @@
 
 - (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    self.color = ccWHITE;
+//    self.color = ccWHITE;
 
     _endTouchPosition = [self convertTouchToNodeSpace:touch]; // Apply current end touch position
 

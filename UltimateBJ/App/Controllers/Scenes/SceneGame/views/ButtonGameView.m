@@ -59,7 +59,6 @@
             case EBGT_DEAL:
             {
                 _textLabel = @"DEAL";
-                [_game makeDeal];
                 break;
             }
             default:
