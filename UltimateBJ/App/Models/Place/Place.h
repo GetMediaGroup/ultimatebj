@@ -14,7 +14,7 @@
 
 @interface Place : NSObject
 
-@property (nonatomic, readonly) BOOL active;
+@property (nonatomic, readwrite) BOOL active;
 
 @property (nonatomic, readonly) PlaceView *view;
 
