@@ -39,7 +39,7 @@
     _active = NO;
     if (type != EPT_CROUPIER && type != EPT_HAND1 && type != EPT_HAND5)
     {
-        _view = [[PlaceView alloc] init:type scene:scene];
+        _view = [[PlaceView alloc] init:type scene:scene owner:self];
     }
 }
 

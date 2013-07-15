@@ -9,6 +9,7 @@
 #import "CCButton.h"
 #import "EPlaceType.h"
 #import "SceneGame.h"
+#import "Place.h"
 
 
 @implementation PlaceView
@@ -16,14 +17,17 @@
     CCButton *_pic;
     CCTexture2D *_texturePic;
     CCTexture2D *_textureActivePic;
+
+    Place *_owner;
 }
 
-- (id)init:(EPlaceType)type scene:(SceneGame *)scene
+- (id)init:(EPlaceType)type scene:(SceneGame *)scene owner:(Place *)owner
 {
     self = [super init];
 
     if (self)
     {
+        _owner = owner;
         [self _initView:type scene:scene];
     }
 
@@ -36,6 +40,7 @@
     _texturePic = nil;
     _textureActivePic = nil;
     _rootView = nil;
+    _owner = nil;
 }
 
 - (void)_initView:(EPlaceType)type scene:(SceneGame *)scene
@@ -91,6 +96,7 @@
 - (void)_activate
 {
     _pic.texture = _textureActivePic;
+    _owner.active = YES;
 }
 
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch

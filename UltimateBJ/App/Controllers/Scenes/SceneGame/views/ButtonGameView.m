@@ -1,17 +1,16 @@
 //
-// Created by Alexey Bulavka on 7/12/13.
+// Created by Alexey Bulavka on 7/15/13.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
 
 
-#import "ButtonMenuView.h"
+#import "ButtonGameView.h"
 #import "CCButton.h"
-#import "ESceneType.h"
-#import "SceneBase.h"
+#import "SceneGame.h"
 
 
-@implementation ButtonMenuView
+@implementation ButtonGameView
 {
     CCButton *_button;
 
@@ -21,20 +20,57 @@
 }
 
 // Designated initializer
-- (id)init:(NSString *)textLabel buttonType:(EButtonMenuType)buttonType
+- (id)init:(EButtonGameType)buttonType scene:(SceneGame *)scene
 {
     self = [super init];
 
     if (self)
     {
-        [self _prepare:textLabel];
         _buttonType = buttonType;
+        NSString *_textLabel;
+        switch (_buttonType)
+        {
+            case EBGT_DOUBLE:
+            {
+                _textLabel = @"DOUBLE";
+                break;
+            }
+            case EBGT_STAND:
+            {
+                _textLabel = @"STAND";
+
+                break;
+            }
+
+            case EBGT_HIT:
+            {
+                _textLabel = @"HIT";
+                break;
+            }
+            case EBGT_SPLIT:
+            {
+                _textLabel = @"SPLIT";
+                break;
+            }
+            case EBGT_DEAL:
+            {
+                _textLabel = @"DEAL";
+                break;
+            }
+            default:
+            {
+                //Not implemented
+                NSAssert(NO, @"Uncorrect type of button!");
+                break;
+            }
+        }
+        [self _prepare:_textLabel scene:scene];
     }
 
     return self;
 }
 
-- (void)_prepare :(NSString *)textLabel
+- (void)_prepare :(NSString *)textLabel scene:(SceneGame *)scene
 {
     _rootView = [CCNode node];
 
@@ -42,18 +78,20 @@
     _textureButtonActive = [[CCTextureCache sharedTextureCache] addImage:@"buttonMenuActive.png"];
 
     _button = [CCButton spriteWithTexture:_textureButtonNormal];
-    _button.scale = 0.6;
+    _button.scale = 0.2;
+    _button.anchorPoint = ccp(0, 0);
     _button.delegate = self;
 
     [_rootView addChild:_button];
 
     CCLabelTTF *label = [CCLabelTTF labelWithString:textLabel
                                            fontName:@"Marker Felt"
-                                           fontSize:50];
+                                           fontSize:20];
 
     label.position = _button.boundingBoxCenter;
     label.color = ccWHITE;
     [_rootView addChild:label];
+    [scene addChild:_rootView];
 }
 
 - (void)setPosition:(CGPoint)point
@@ -63,7 +101,7 @@
 
 - (CGSize)getSize
 {
-    return _button.size;
+    return _button.contentSize;
 }
 
 - (void)clearTextures
@@ -78,20 +116,31 @@
 
     switch (_buttonType)
     {
-        case EBMT_NEWGAME:
+        case EBGT_DOUBLE:
         {
-            [SceneBase setScene:EST_GAME];
             break;
         }
-        case EBMT_HIGHSCORE:
+        case EBGT_STAND:
         {
-            //ToDo: Need to load SceneHighScore here
+            break;
+        }
+
+        case EBGT_HIT:
+        {
+            break;
+        }
+        case EBGT_SPLIT:
+        {
+            break;
+        }
+        case EBGT_DEAL:
+        {
             break;
         }
         default:
         {
             //Not implemented
-            NSAssert(NO, @"No scene to change!");
+            NSAssert(NO, @"Uncorrect type of button!");
             break;
         }
     }
