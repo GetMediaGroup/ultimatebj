@@ -19,7 +19,13 @@
 
 @property (nonatomic, readwrite) CCLabelTTF * moneyLabel;
 
+@property (nonatomic, readwrite) CCLabelTTF * scoreLabel;
+
 - (id)init:(EPlaceType)type scene:(SceneGame *)scene owner:(Place *)owner;
+
+-(void) updateScoreLabel;
+
+-(void) updateMoneyLabel;
 
 - (void)cleanup;
 

@@ -52,7 +52,7 @@
     [self _showBox];
 }
 
--(void) _showBox
+- (void)_showBox
 {
     NSInteger xStart = 390;
     NSInteger yStart = 260;
@@ -68,7 +68,7 @@
     [_gameScene addChild:_rootView];
 }
 
-- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns
+- (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger)countOfRuns
 {
     Card *temp = _cards[_cards.count - 1];
 
@@ -81,15 +81,23 @@
     return temp;
 }
 
-- (void)putCardToBox:(Card *)card
+- (void)putCardToBox:(Card *)card countOfRuns:(NSUInteger)countOfRuns
 {
-    [_cards addObject:card];
+    [_cards insertObject:card atIndex:0];
 
+    [card.view moveToWithDelay:ccp(50, 600) countOfRuns:countOfRuns];
+
+    [self performSelector:@selector(_removeCardFromScene:) withObject:card afterDelay:2.0f * countOfRuns];
+
+}
+
+- (void)_removeCardFromScene :(Card *)card
+{
     [_gameScene removeChild:card.view.rootView];
     [card.view cleanupView];
 }
 
--(void) shuffleCards
+- (void)shuffleCards
 {
     NSUInteger count = [_cards count];
     for (NSUInteger i = 0; i < count; ++i)

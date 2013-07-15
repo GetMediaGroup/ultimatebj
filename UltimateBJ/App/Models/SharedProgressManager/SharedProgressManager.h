@@ -6,6 +6,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "ECardType.h"
 
 @class Game;
 @class SceneBase;
@@ -33,6 +34,7 @@
 //! Designated initializer
 - (id)init;
 
++ (NSUInteger)getScoreToAdd :(ECardType)type;
 
 //! Must call when some game starts
 -(void)didGameStart:(Game *)game;

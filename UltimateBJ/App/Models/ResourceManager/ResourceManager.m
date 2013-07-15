@@ -37,7 +37,7 @@
         }
         case EPT_CROUPIER:
         {
-            result = ccp(228, 170);
+            result = ccp(228, 180);
             break;
         }
         default:

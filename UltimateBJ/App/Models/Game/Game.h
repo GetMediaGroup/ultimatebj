@@ -22,5 +22,9 @@
 
 -(void) makeHit;
 
+-(void) makeStand;
+
+-(void) makeDouble;
+
 @end
 

@@ -20,7 +20,7 @@
 
 - (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger) countOfRuns;
 
-- (void)putCardToBox:(Card *)card;
+- (void)putCardToBox:(Card *)card countOfRuns:(NSUInteger) countOfRuns;
 
 -(void) shuffleCards;
 

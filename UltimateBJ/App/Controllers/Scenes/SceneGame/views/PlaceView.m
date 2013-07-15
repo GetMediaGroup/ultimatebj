@@ -53,10 +53,20 @@
     CGPoint _picPoint;
 
 
-    _moneyLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d", _owner.placeMoney]
+    if (type != EPT_CROUPIER)
+    {
+
+        _moneyLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d", _owner.placeMoney]
+                                         fontName:@"Marker Felt"
+                                         fontSize:15];
+        _moneyLabel.color = ccWHITE;
+    }
+
+    _scoreLabel = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d", _owner.score]
                                      fontName:@"Marker Felt"
                                      fontSize:15];
-    _moneyLabel.color = ccWHITE;
+
+    _scoreLabel.color = ccWHITE;
     switch (type)
     {
         case EPT_HAND2:
@@ -67,6 +77,7 @@
 
 
             _moneyLabel.position = CGPointMake(305, 143);
+            _scoreLabel.position = CGPointMake(305, 163);
 
 
             break;
@@ -78,6 +89,7 @@
             _picPoint = ccp(224.5, 89);
 
             _moneyLabel.position = CGPointMake(235, 136);
+            _scoreLabel.position = CGPointMake(235, 156);
 
             break;
         }
@@ -88,7 +100,13 @@
             _picPoint = ccp(145.5, 98.5);
 
             _moneyLabel.position = CGPointMake(150, 144);
+            _scoreLabel.position = CGPointMake(150, 164);
 
+            break;
+        }
+        case EPT_CROUPIER:
+        {
+            _scoreLabel.position = CGPointMake(205, 180);
             break;
         }
         default:
@@ -97,28 +115,46 @@
             break;
         }
     }
-    [_rootView addChild:_moneyLabel];
+    if (type != EPT_CROUPIER)
+    {
+        [_rootView addChild:_moneyLabel];
 
 
-    _texturePic = [[CCTextureCache sharedTextureCache] addImage:_imageName];
-    _textureActivePic = [[CCTextureCache sharedTextureCache] addImage:_imageActiveName];
-    _pic = [CCButton spriteWithTexture:_texturePic];
+        _texturePic = [[CCTextureCache sharedTextureCache] addImage:_imageName];
+        _textureActivePic = [[CCTextureCache sharedTextureCache] addImage:_imageActiveName];
+        _pic = [CCButton spriteWithTexture:_texturePic];
 
-    _pic.position = _picPoint;
-    _pic.anchorPoint = ccp(0, 0);
-    _pic.delegate = self;
+        _pic.position = _picPoint;
+        _pic.anchorPoint = ccp(0, 0);
+        _pic.delegate = self;
 
-    [_rootView addChild:_pic];
+
+        [_rootView addChild:_pic];
+    }
+    [_rootView addChild:_scoreLabel];
+
     [scene addChild:_rootView];
 }
 
-- (void)_activate
+- (void) _activate
 {
     _pic.texture = _textureActivePic;
     _owner.active = YES;
 }
 
-- (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch
+- (void)updateScoreLabel
+{
+    [_scoreLabel setString:[NSString stringWithFormat:@"%d", _owner.score]];
+}
+
+-(void) updateMoneyLabel
+{
+    [_moneyLabel setString:[NSString stringWithFormat:@"%d", _owner.placeMoney]];
+}
+
+- (void)didButtonTouchBegan:(CCButton *)button
+                      touch:
+                              (UITouch *)touch
 {
     [self _activate];
 
@@ -129,17 +165,24 @@
     [_owner subtractMoneyFromGame:50];
 }
 
-- (void)didButtonTouchMoved:(CCButton *)button touch:(UITouch *)touch
+
+- (void)didButtonTouchMoved:(CCButton *)button
+                      touch:
+                              (UITouch *)touch
 {
 
 }
 
-- (void)didButtonTouchEnded:(CCButton *)button touch:(UITouch *)touch
+- (void)didButtonTouchEnded:(CCButton *)button
+                      touch:
+                              (UITouch *)touch
 {
     [self _didButtonTouchEndedOrCanceled];
 }
 
-- (void)didButtonTouchCanceled:(CCButton *)button touch:(UITouch *)touch
+- (void)didButtonTouchCanceled:(CCButton *)button
+                         touch:
+                                 (UITouch *)touch
 {
     [self _didButtonTouchEndedOrCanceled];
 

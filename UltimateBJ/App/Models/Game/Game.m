@@ -13,6 +13,7 @@
 #import "CardView.h"
 #import "ButtonGameView.h"
 #import "ResourceManager.h"
+#import "SharedProgressManager.h"
 
 
 @implementation Game
@@ -113,6 +114,8 @@
 - (void)makeDeal
 {
     NSUInteger countOfRuns = 0;
+    Card *tempCard;
+
 
     for (NSUInteger i = 0; i < 2; i++)
     {
@@ -124,9 +127,19 @@
                 pointDestination =
                         ccp(pointDestination.x + ((Place *) _places[placeType]).countOfCards * 4,
                                 pointDestination.y - ((Place *) _places[placeType]).countOfCards * 4);
-
-                [_places[placeType] addCardToPlace:[_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns++]];
+                tempCard = [_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns];
+                [_places[placeType] addCardToPlace:tempCard];
                 ((Place *) _places[placeType]).countOfCards++;
+                ((Place *) _places[placeType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
+
+
+                [((Place *) _places[placeType]).view updateScoreLabel];
+                countOfRuns++;
+
+                if (((Place *) _places[placeType]).score == 21)
+                {
+                    [self _endGameForPlace:placeType WIN:YES];
+                }
             }
         }
     }
@@ -136,22 +149,49 @@
     [_gameScene runAction:[CCSequence actions:_delayDeal, _callDealEnd, nil]];
 }
 
-- (void)_dealEnd
+- (void)_endGameForPlace:(EPlaceType)placeType WIN:(BOOL)win
 {
-    _currentPlaceType = EPT_HAND2;
-
-    Place *tempPlace = _places[_currentPlaceType];
-
-
-    while (tempPlace.active != YES)
+    if (win == YES)
     {
-        _currentPlaceType++;
-        tempPlace= _places[_currentPlaceType];
+        _gameMoney += ((Place *) _places[placeType]).placeMoney;
     }
 
+    if (placeType != EPT_CROUPIER)
+    {
+        ((Place *) _places[placeType]).placeMoney = 0;
+        ((Place *) _places[placeType]).active = NO;
+    }
 
-        NSLog(@"Deal end!");
+    NSUInteger countOfRuns = 0;
+    for (Card *card in ((Place *) _places[placeType]).cards)
+    {
+        [_cardBox putCardToBox:card countOfRuns:countOfRuns++];
+    }
+
+}
+
+- (void)_dealEnd
+{
+    _currentPlaceType = EPT_HAND1;
+
+    [self _nextPlace];
+
     [self _resumeGame];
+}
+
+- (void)_nextPlace
+{
+    Place *tempPlace = _places[++_currentPlaceType];
+
+    while (tempPlace.active != YES && _currentPlaceType < EPT_CROUPIER)
+    {
+        _currentPlaceType++;
+        tempPlace = _places[_currentPlaceType];
+    }
+    if (_currentPlaceType == EPT_CROUPIER)
+    {
+        [self _croupierTurn];
+    }
 }
 
 - (void)_resumeGame
@@ -164,6 +204,7 @@
 
 - (void)makeHit
 {
+    Card *tempCard;
 
     for (EButtonGameType gameType = EBGT_DOUBLE; gameType < EBGT_COUNT - 2; gameType++)
     {
@@ -175,8 +216,19 @@
             ccp(pointDestination.x + ((Place *) _places[_currentPlaceType]).countOfCards * 4,
                     pointDestination.y - ((Place *) _places[_currentPlaceType]).countOfCards * 4);
 
-    [_places[_currentPlaceType] addCardToPlace:[_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:0]];
+    tempCard = [_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:0];
+
+    [_places[_currentPlaceType] addCardToPlace:tempCard];
     ((Place *) _places[_currentPlaceType]).countOfCards++;
+    ((Place *) _places[_currentPlaceType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
+
+    [((Place *) _places[_currentPlaceType]).view updateScoreLabel];
+
+    if (((Place *) _places[_currentPlaceType]).score > 21)
+    {
+        [self _endGameForPlace:_currentPlaceType WIN:NO];
+        [self _nextPlace];
+    }
 
     for (EButtonGameType gameType = EBGT_DOUBLE; gameType < EBGT_COUNT - 2; gameType++)
     {
@@ -185,5 +237,59 @@
 
 }
 
+- (void)makeStand
+{
+    [self _nextPlace];
+
+}
+
+- (void)makeDouble
+{
+    [self subtractMoney:((Place *) _places[_currentPlaceType]).placeMoney];
+    [((Place *) _places[_currentPlaceType]) addMoneyToPlace:((Place *) _places[_currentPlaceType]).placeMoney];
+    [((Place *) _places[_currentPlaceType]).view updateMoneyLabel];
+    [self _nextPlace];
+}
+
+- (void)_croupierTurn
+{
+    Card *tempCard;
+    NSUInteger countOfRuns = 0;
+    BOOL anyActive = [self _anyActivePlaces];
+
+    while (((Place *) _places[EPT_CROUPIER]).score < 17 && anyActive)
+    {
+        CGPoint pointDestination = [ResourceManager getPoint:_currentPlaceType];
+        pointDestination =
+                ccp(pointDestination.x + ((Place *) _places[_currentPlaceType]).countOfCards * 4,
+                        pointDestination.y - ((Place *) _places[_currentPlaceType]).countOfCards * 4);
+
+        tempCard = [_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns++];
+
+        [_places[_currentPlaceType] addCardToPlace:tempCard];
+        ((Place *) _places[_currentPlaceType]).countOfCards++;
+        ((Place *) _places[_currentPlaceType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
+
+        [((Place *) _places[_currentPlaceType]).view updateScoreLabel];
+    }
+
+    [self performSelector:@selector(_abandoneCroupie) withObject:nil afterDelay:6.0f];
+
+}
+
+- (void) _abandoneCroupie
+{
+    [self _endGameForPlace:EPT_CROUPIER WIN:NO];
+}
+
+- (BOOL)_anyActivePlaces
+{
+    for (NSUInteger i = 0; i < EPT_COUNT - 1; i++)
+    {
+        if (((Place *) _places[i]).active)
+            return YES;
+    }
+    return NO;
+}
 
 @end
