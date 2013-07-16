@@ -153,9 +153,13 @@
     [_gameScene runAction:[CCSequence actions:_delayDeal, _callDealEnd, nil]];
 }
 
-- (void)_endGameForPlace:(EPlaceType)placeType WIN:(BOOL)win
+- (void)_endGameForPlace:(EPlaceType)placeType WIN:(NSUInteger)win
 {
-    if (win == YES)
+    if (win == 1)
+    {
+        _gameMoney += ((Place *) _places[placeType]).placeMoney * 2;
+    }
+    if (win == 2)
     {
         _gameMoney += ((Place *) _places[placeType]).placeMoney;
     }
@@ -166,7 +170,14 @@
         ((Place *) _places[placeType]).active = NO;
     }
 
-    NSUInteger countOfRuns = 0;
+    NSUInteger countOfRuns = 1;
+//TOdo : make another card remove appearence
+//
+//    for (NSUInteger i=(((Place *) _places[placeType]).cards.count); i>0; i--)
+//    {
+//        Card *card = ((Place *) _places[placeType]).cards[i];
+//        [_cardBox putCardToBox: card countOfRuns:countOfRuns++];
+//    }
     for (Card *card in ((Place *) _places[placeType]).cards)
     {
         [_cardBox putCardToBox:card countOfRuns:countOfRuns++];
@@ -230,7 +241,7 @@
 
     if (((Place *) _places[_currentPlaceType]).score > 21)
     {
-        [self _endGameForPlace:_currentPlaceType WIN:NO];
+        [self _endGameForPlace:_currentPlaceType WIN:0];
         [self _nextPlace];
     }
 
@@ -258,7 +269,7 @@
 - (void)_croupierTurn
 {
     Card *tempCard;
-    NSUInteger countOfRuns = 0;
+    NSUInteger countOfRuns = 1;
     BOOL anyActive = [self _anyActivePlaces];
 
     while (((Place *) _places[EPT_CROUPIER]).score < 17 && anyActive)
@@ -278,13 +289,62 @@
         [((Place *) _places[_currentPlaceType]).view updateScoreLabel];
     }
 
+    NSUInteger _croupierScore;
+    if (anyActive)
+    {
+        _croupierScore = ((Place *) _places[_currentPlaceType]).score;
+    }
+
+    if (_croupierScore > 21)
+    {
+        for (Place *place in _places)
+        {
+            if (place.active)
+            {
+                [self _endGameForPlace:place.type WIN:1];
+            }
+        }
+    }
+    else
+    {
+        for (Place *place in _places)
+        {
+            if (place.active)
+            {
+                if (place.score > _croupierScore)
+                {
+                    [self _endGameForPlace:place.type WIN:1];
+                }
+                else if (place.score < _croupierScore)
+                {
+                    [self _endGameForPlace:place.type WIN:0];
+                }
+                else
+                {
+                    [self _endGameForPlace:place.type WIN:2];
+                }
+            }
+        }
+    }
+
+    [_moneyLabel setString:[NSString stringWithFormat:@"%d", _gameMoney]];
+
     [self performSelector:@selector(_abandoneCroupie) withObject:nil afterDelay:6.0f];
 
 }
 
-- (void) _abandoneCroupie
+- (void)_abandoneCroupie
 {
-    [self _endGameForPlace:EPT_CROUPIER WIN:NO];
+    [self _endGameForPlace:EPT_CROUPIER WIN:0];
+    [_cardBox shuffleCards];
+    for (Place *place in _places)
+    {
+        [place.view deactivate];
+
+
+    }
+    [self _initButtons];
+    [self _initPlaces];
 }
 
 - (BOOL)_anyActivePlaces

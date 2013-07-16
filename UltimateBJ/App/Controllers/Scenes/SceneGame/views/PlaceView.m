@@ -136,10 +136,17 @@
     [scene addChild:_rootView];
 }
 
-- (void) _activate
+- (void)_activate
 {
     _pic.texture = _textureActivePic;
     _owner.active = YES;
+}
+
+- (void)deactivate
+{
+    _pic.texture = _texturePic;
+    _owner.active = NO;
+    [_rootView removeAllChildren];
 }
 
 - (void)updateScoreLabel
@@ -147,7 +154,7 @@
     [_scoreLabel setString:[NSString stringWithFormat:@"%d", _owner.score]];
 }
 
--(void) updateMoneyLabel
+- (void)updateMoneyLabel
 {
     [_moneyLabel setString:[NSString stringWithFormat:@"%d", _owner.placeMoney]];
 }

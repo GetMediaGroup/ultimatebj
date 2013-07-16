@@ -29,6 +29,8 @@
 
 - (void)cleanup;
 
+-(void) deactivate;
+
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch;
 
 - (void)didButtonTouchMoved:(CCButton *)button touch:(UITouch *)touch;
