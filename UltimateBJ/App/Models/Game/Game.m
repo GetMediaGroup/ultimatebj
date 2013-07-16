@@ -263,7 +263,7 @@
     [self subtractMoney:((Place *) _places[_currentPlaceType]).placeMoney];
     [((Place *) _places[_currentPlaceType]) addMoneyToPlace:((Place *) _places[_currentPlaceType]).placeMoney];
     [((Place *) _places[_currentPlaceType]).view updateMoneyLabel];
-    [self _nextPlace];
+    [self makeHit];
 }
 
 - (void)_croupierTurn
