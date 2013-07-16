@@ -80,7 +80,6 @@
 		AF6EFD24597970EE4B8BEC9E /* cardFace4.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF628F134F39F09EBE002 /* cardFace4.png */; };
 		AF6EFD4C519B9EA101A88823 /* cardFace0.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF9B5189816F9F32FCFB6 /* cardFace0.png */; };
 		AF6EFD5D03604EC5399456B6 /* cardFace35.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFE1A3C295A243D2943EE /* cardFace35.png */; };
-		AF6EFD5EBFC853DBCCAE43C2 /* MoneyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */; };
 		AF6EFD9A7DC310548447AACD /* cardFace31.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF15E85F979125353DC4A /* cardFace31.png */; };
 		AF6EFDAAA5A8C2F7B26C9743 /* cardFace25.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF2308CB9ABD9F61CD4A9 /* cardFace25.png */; };
 		AF6EFDB0497E8A9851041BBD /* cardFace14.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF858B9F31274AFF9E15C /* cardFace14.png */; };
@@ -213,7 +212,6 @@
 		AF6EF4A18B51160220C9779C /* PlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceView.h; sourceTree = "<group>"; };
 		AF6EF4A9AC4F1B69723E51BC /* cardFace9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace9.png; sourceTree = "<group>"; };
 		AF6EF4E15101ADFD38B837B1 /* cardFace1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace1.png; sourceTree = "<group>"; };
-		AF6EF4E6B6FF61C524E3AEF8 /* MoneyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyManager.h; sourceTree = "<group>"; };
 		AF6EF520B306A2F283372870 /* cardFace5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace5.png; sourceTree = "<group>"; };
 		AF6EF551377902358A182785 /* ButtonMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonMenuView.m; sourceTree = "<group>"; };
 		AF6EF5AB8C700C2F93252537 /* cardFace48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace48.png; sourceTree = "<group>"; };
@@ -237,7 +235,6 @@
 		AF6EFA619F44C0F0555EAFA3 /* EButtonMenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EButtonMenuType.h; sourceTree = "<group>"; };
 		AF6EFAA5DB5F169C44AD8FCD /* cardFace51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace51.png; sourceTree = "<group>"; };
 		AF6EFAFA09611FC7D0A44BE1 /* cardFace2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace2.png; sourceTree = "<group>"; };
-		AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyManager.m; sourceTree = "<group>"; };
 		AF6EFB393406F272A2755948 /* PlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceView.m; sourceTree = "<group>"; };
 		AF6EFB59263CB2247B4C941F /* activePlaceLeft(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceLeft(86x86).png"; sourceTree = "<group>"; };
 		AF6EFBB92E92D7612864DAB0 /* cardFace36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace36.png; sourceTree = "<group>"; };
@@ -470,7 +467,6 @@
 				67C53D71B7C11C31B4FA21AD /* Game */,
 				67C53F1EBBA0F729EFE4C369 /* SharedDeviceHelper */,
 				67C5388E51E91751C383E6FC /* Card */,
-				AF6EF888BD92478C5A1E05AF /* MoneyManager */,
 				AF6EF24B6C042743F57DB3FA /* Place */,
 				67C53F92C5B017F61E47D4DC /* ResourceManager */,
 			);
@@ -534,15 +530,6 @@
 				AF6EFD287A147BE5C65A558C /* EPlaceType.h */,
 			);
 			path = Place;
-			sourceTree = "<group>";
-		};
-		AF6EF888BD92478C5A1E05AF /* MoneyManager */ = {
-			isa = PBXGroup;
-			children = (
-				AF6EF4E6B6FF61C524E3AEF8 /* MoneyManager.h */,
-				AF6EFB1DCE76D2354F5BC03A /* MoneyManager.m */,
-			);
-			path = MoneyManager;
 			sourceTree = "<group>";
 		};
 		AF6EFC921F32C9D0C8840E08 /* views */ = {
@@ -990,7 +977,6 @@
 				AF6EF3A126F4A7E9B86084BA /* ButtonMenuView.m in Sources */,
 				67C5396A2F5F6BAA203D1D13 /* Card.m in Sources */,
 				67C5388CEF379A3C6BA6E0A6 /* CardBox.m in Sources */,
-				AF6EFD5EBFC853DBCCAE43C2 /* MoneyManager.m in Sources */,
 				AF6EF9BD88D708F4ABDADE8A /* Place.m in Sources */,
 				AF6EF86544703CDEA3803CA3 /* CardView.m in Sources */,
 				AF6EF5216F43BA544C5F9045 /* PlaceView.m in Sources */,

@@ -162,8 +162,11 @@
         }
         case EBGT_DEAL:
         {
-            [_game makeDeal];
-            [self switchOff];
+            if ([_game anyActivePlaces])
+            {
+                [_game makeDeal];
+                [self switchOff];
+            }
             break;
         }
         default:

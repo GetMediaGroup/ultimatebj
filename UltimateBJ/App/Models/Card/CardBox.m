@@ -141,5 +141,17 @@
     }
 }
 
+- (void)destroyViews
+{
+    for (Card *card in _cards)
+    {
+        if (card.view)
+        {
+            [card.view cleanupView];
+            card.view = nil;
+        }
+    }
+}
+
 
 @end

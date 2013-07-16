@@ -178,13 +178,11 @@
 
 - (void)cleanupView
 {
-
     _rootView = nil;
 
     _sprite = nil;
 
     _textureCardBack = nil;
-
 }
 
 @end

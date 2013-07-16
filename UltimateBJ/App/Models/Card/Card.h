@@ -14,7 +14,7 @@
 
 @interface Card : NSObject
 
-@property(nonatomic, readonly) CardView *view;
+@property(nonatomic, readwrite) CardView *view;
 
 @property(nonatomic, readonly) ECardType type;
 @property(nonatomic, readonly) ECardSuit suit;

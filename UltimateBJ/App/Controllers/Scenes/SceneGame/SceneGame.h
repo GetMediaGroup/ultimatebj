@@ -39,4 +39,5 @@
 - (void)prepare;
 
 
+- (Game *)getGame;
 @end

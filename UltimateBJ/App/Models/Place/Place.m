@@ -28,6 +28,7 @@
         _countOfCards = 0;
         _score = 0;
         _cards = [NSMutableArray array];
+        _scene = scene;
         [self _prepare:type scene:scene];
     }
 

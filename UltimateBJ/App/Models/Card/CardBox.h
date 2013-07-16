@@ -19,12 +19,14 @@
 
 - (Card *)getCardFromBoxWithDelay:(CGPoint)point countOfRuns:(NSUInteger)countOfRuns flip:(BOOL)flip;
 
-- (void)putCardToBox:(Card *)card countOfRuns:(NSUInteger) countOfRuns;
+- (void)putCardToBox:(Card *)card countOfRuns:(NSUInteger)countOfRuns;
 
 - (void)shuffleCards;
 
 
 - (void)showCards;
+
+- (void)destroyViews;
 
 //! Returns game scene which the cardBox is posted on
 @property(nonatomic, readonly) SceneGame *gameScene;

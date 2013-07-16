@@ -69,4 +69,9 @@
 {
 }
 
+- (Game *)getGame
+{
+    return _game;
+}
+
 @end

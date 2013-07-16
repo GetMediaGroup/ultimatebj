@@ -26,5 +26,8 @@
 
 -(void) makeDouble;
 
+- (BOOL) anyActivePlaces;
+
+- (void)switchDealOn;
 @end
 

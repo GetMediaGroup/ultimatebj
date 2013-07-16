@@ -12,6 +12,7 @@
 #import "Place.h"
 #import "ECardType.h"
 #import "SharedProgressManager.h"
+#import "Game.h"
 
 
 @implementation PlaceView
@@ -172,6 +173,11 @@
                       touch:
                               (UITouch *)touch
 {
+
+    Game *tempGame = [_owner.scene getGame];
+    [tempGame switchDealOn];
+
+
     [self _activate];
 
     [_owner addMoneyToPlace:50];
@@ -179,6 +185,7 @@
     [_moneyLabel setString:[NSString stringWithFormat:@"%d", _owner.placeMoney]];
 
     [_owner subtractMoneyFromGame:50];
+
 }
 
 
