@@ -16,7 +16,6 @@
 
 - (void)initializationComplete
 {
-
     [super initializationComplete];
 
     glClearColor(0.8f, 0.8f, 0.8f, 1.0f);
@@ -26,8 +25,6 @@
 
         [SharedProgressManager shared];
     }
-
-
 
     [SceneBase setScene:EST_MENU];
 

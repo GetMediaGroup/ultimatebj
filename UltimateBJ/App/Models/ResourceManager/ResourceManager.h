@@ -11,7 +11,6 @@
 
 @interface ResourceManager : NSObject
 
-
 //Returns point depending on which hand is used
 + (CGPoint)getPoint:(EPlaceType)type;
 

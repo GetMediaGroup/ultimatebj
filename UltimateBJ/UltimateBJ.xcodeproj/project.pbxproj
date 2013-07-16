@@ -7,91 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		67C532A00EF9DE8D551F41C0 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
-		67C5334474898FC850F3398E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
-		67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C531EFC99293118F20DE6A /* SharedProgressManager.m */; };
-		67C5339AEC3B93A0A90DF80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
-		67C53468959083FCB2025D1E /* cardBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C537C8A2D0F74B54F73ECE /* cardBox.png */; };
-		67C534757601FEE1EC639BC5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53F7D06C4478BC68C32EF /* Game.m */; };
-		67C5357E955876D6EF167C92 /* buttonMenuNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */; };
-		67C53645E4CEE85DA832D4F4 /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5354515A0192F9BAD039C /* ResourceManager.m */; };
-		67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */; };
-		67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5314A81692266CE8507B6 /* SceneGame.m */; };
-		67C537E6137EBDBFC6F88E7E /* background(640x960).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A4B56A97424622FF594 /* background(640x960).png */; };
-		67C5388CEF379A3C6BA6E0A6 /* CardBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C5398B859B3CA79011A10E /* CardBox.m */; };
-		67C5396A2F5F6BAA203D1D13 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532309651609964F481EB /* Card.m */; };
-		67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C533D48415600D79900775 /* SharedDeviceHelper.m */; };
-		67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532C2CC6661B30B32E64F /* SceneMenu.m */; };
-		67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C535E6539AA6B64F683EF7 /* SceneBase.m */; };
-		67C53DC9A450E666E1532B50 /* buttonMenuActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53784D06B8CC6D51F782C /* buttonMenuActive.png */; };
-		67C53F3F80F871654ECB702C /* background(640x1136).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53AAFE9AA39C36823A929 /* background(640x1136).png */; };
-		67C53FDBDDB3D4361C385995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53C6E106DB6A932C00505 /* AppDelegate.m */; };
-		67C53FE1734696FC5F4EAAFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C539016286C087DC5CE6B0 /* main.m */; };
-		AF6EF06A31BD4B0AB62134CB /* cardFace22.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF6F4D82E598D4136C4D4 /* cardFace22.png */; };
-		AF6EF0A7006EF6D35EA3D5BD /* cardFace16.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF7DE7F90F33E6EE8626D /* cardFace16.png */; };
-		AF6EF133D996E98C44C806CD /* cardFace21.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF1083B146524399DBE3C /* cardFace21.png */; };
-		AF6EF133EFADCFB080C3569D /* emptyPlace(60x79).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFF808723D16BDA2B3299 /* emptyPlace(60x79).png */; };
+		67C53003372E2EA66A2B4F6F /* cardBackBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53F68E7B9C93D0962BA3B /* cardBackBlue.png */; };
+		67C530623AD7F22FB9B7E5B6 /* cardFace7.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53EFE1AC2F7004BE936E7 /* cardFace7.png */; };
+		67C530825BF9100AFB251BAF /* activePlaceLeft(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5324AA6B9421D65F66215 /* activePlaceLeft(86x86).png */; };
+		67C530D75E4DD87099B77DA6 /* cardFace4.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53DE4FA05F8A65A91DB15 /* cardFace4.png */; };
+		67C53105941D714DA609FA50 /* cardFace46.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5348A2642E1E080894BE3 /* cardFace46.png */; };
+		67C5312BBEEFF5EABD3918F2 /* cardFace37.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53D6600001A88AFE30BEC /* cardFace37.png */; };
+		67C53156BE9D95F675740867 /* PlaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53D27ECB596E87354C59D /* PlaceView.m */; };
+		67C5317F90B5568B63444DBC /* cardFace8.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5370BBE48FA618AEB05BB /* cardFace8.png */; };
+		67C531A1F1F01C0758EAB463 /* cardFace27.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53C6F4A3AE49E325EE13A /* cardFace27.png */; };
+		67C531CCFA478580415857AD /* cardFace38.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A0630143D54F51EF49B /* cardFace38.png */; };
+		67C531DD34790E4421E839F4 /* cardFace21.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C531F1264B0F6819757D7C /* cardFace21.png */; };
+		67C532187D3AB28D4D7C27CA /* cardFace26.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5384FF63010D33B4FB63A /* cardFace26.png */; };
+		67C53237774DD81A8CCE2AF4 /* activePlace(60x79).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53EEE9755D8AAD2CC1FDE /* activePlace(60x79).png */; };
+		67C5324C34DD2B60881019B2 /* cardFace36.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53EF9AAB6B1A8F8D2A9F3 /* cardFace36.png */; };
+		67C5327EDD044FA5A95D3631 /* cardFace43.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C536978EB10667555F5B50 /* cardFace43.png */; };
+		67C532AD0BFE7A755CF23625 /* cardFace35.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A41EE8BDF25D65B742C /* cardFace35.png */; };
+		67C532BAAAA5C2962A0836E7 /* cardFace50.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5323AC748F73A064FD8F4 /* cardFace50.png */; };
+		67C532DDFD7A26AA90CA3861 /* cardFace1.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C539D32675A33DFD9AC54C /* cardFace1.png */; };
+		67C53393E9BA3F0E3C33DBB1 /* emptyPlace(60x79).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5325592F7000C8BC8A614 /* emptyPlace(60x79).png */; };
+		67C5339907F82B10D301D07E /* cardFace30.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53CCB8AB96817E2D0C79D /* cardFace30.png */; };
+		67C533BD3600A76ECC923AD9 /* cardBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C533DB71A2BAFC3040FE37 /* cardBox.png */; };
+		67C5340241823688E8B96045 /* cardFace19.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53B3FF601C99F37E10F82 /* cardFace19.png */; };
+		67C5345FD39A149E30BBFEB7 /* cardFace34.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53B7FD39A43C15C668E80 /* cardFace34.png */; };
+		67C53473A51A9E3D79947262 /* background(640x960).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53554826D20D3D852DBDD /* background(640x960).png */; };
+		67C534820C2A85BB5A99BADA /* activePlaceRight(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5369F8B756E354D5364A9 /* activePlaceRight(86x86).png */; };
+		67C534B012481EA43BE5BDFC /* cardFace40.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53BF8D09F83C0CC4CF711 /* cardFace40.png */; };
+		67C535278991C4A220FFA589 /* background(640x1136).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53C9A5761A8835C8AA0E2 /* background(640x1136).png */; };
+		67C5354737434F0DAC2EC354 /* cardFace11.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C539331A0E0C63CFEFDB89 /* cardFace11.png */; };
+		67C5357046FF88621DB516EE /* cardFace39.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5338BB051FFA44BD098E7 /* cardFace39.png */; };
+		67C535D08B7C507D6D3C7FB8 /* SharedDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53A8297F09645C054C2AF /* SharedDeviceHelper.m */; };
+		67C535EC9D88CA50F66C4341 /* cardFace24.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53CBFCC2FB3B748B0FCC9 /* cardFace24.png */; };
+		67C535FBB3C45B02EEBE09CA /* cardFace0.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C536D5544CF8F6D24A5C9A /* cardFace0.png */; };
+		67C5361F79D3EAE1CB9CB105 /* cardFace14.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53E495502DB362359D3C7 /* cardFace14.png */; };
+		67C53669CA0352B216F01A6A /* buttonMenuNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53CFD6D4AC2C9D3297C73 /* buttonMenuNormal.png */; };
+		67C53675BC354BC2D48FC9C5 /* cardFace2.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53CF71375D30484356652 /* cardFace2.png */; };
+		67C5369117FEEDAE6CE52F67 /* cardFace29.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5314253CB83C6F7DA9F9A /* cardFace29.png */; };
+		67C536FB8B85C4902F05C7DE /* SceneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53108044B47C3DA368D7A /* SceneGame.m */; };
+		67C5373BD36641C1E59C18DA /* ButtonMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53DA522F7C585C1968209 /* ButtonMenuView.m */; };
+		67C537C5EB608F3015D51094 /* cardFace17.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53C864902960EDC1BE771 /* cardFace17.png */; };
+		67C537D4099E9F2C9490DD89 /* cardFace31.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5381D7AB3F3AD0C583273 /* cardFace31.png */; };
+		67C53804E503C0CA6CB1724C /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C532745DA91EE4F73EBCDE /* HelloWorldLayer.m */; };
+		67C5383CD8B4C89F7478D685 /* cardFace20.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C533606055DFF56E31C264 /* cardFace20.png */; };
+		67C538AC6581BD4B52F2B377 /* cardFace42.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5384AC93678FD31347903 /* cardFace42.png */; };
+		67C5394376FB90FA01DB2940 /* cardFace12.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53473CEDFAADF236CE907 /* cardFace12.png */; };
+		67C5395B1B595EF9312DEDAD /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53F3A6C93989F629AFCAD /* Game.m */; };
+		67C5398B9F7AA3DA7F1E9762 /* cardFace5.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53B82C8572A9A75797777 /* cardFace5.png */; };
+		67C5399816BC810CBA61C65E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53B83C5B57AE74054F650 /* AppDelegate.m */; };
+		67C539AB7A931568A4BE8601 /* CardBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C534D464AAB22A9A99BEBF /* CardBox.m */; };
+		67C53A19A38F1FB126F7A319 /* cardFace44.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C536291E0C5C9E911EF462 /* cardFace44.png */; };
+		67C53A2EA478EEB7A8D1B0DC /* ButtonGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53A4343E796C78179FECA /* ButtonGameView.m */; };
+		67C53A45BC4BF5BF4D06A765 /* cardFace47.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53BC153D3729F80621347 /* cardFace47.png */; };
+		67C53A5736A4AAB1E4AF3950 /* emptyPlace(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = 67C536C97B07953562DFBB98 /* emptyPlace(86x86).png */; };
+		67C53A6C4B03AF3378B2D137 /* cardFace25.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C534883477614DA51844FA /* cardFace25.png */; };
+		67C53A757AFCDE6339607E97 /* SceneBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53CD022BFBD2CC6CC2991 /* SceneBase.m */; };
+		67C53A811711A28E74C8DA8A /* cardFace49.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C531B3CE3A59BAEA7FB72E /* cardFace49.png */; };
+		67C53AC80645D3249CD2712F /* cardFace33.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C530889970CE567EF76AB8 /* cardFace33.png */; };
+		67C53AE3C51DA0D41C2CCA24 /* cardFace28.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A55E542064A80EF690B /* cardFace28.png */; };
+		67C53B74F45925FA198AA10F /* SceneMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C535BCB41C5BE655BF1BA0 /* SceneMenu.m */; };
+		67C53BA3C97DE711CA48EACF /* cardFace15.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5361787EBA8F9103A702C /* cardFace15.png */; };
+		67C53BC11754878C0217CC24 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53D5D38CDAE3D0A16E638 /* Card.m */; };
+		67C53BD3225286D524F66BF8 /* cardFace16.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C530179A2464A8A2712A75 /* cardFace16.png */; };
+		67C53BE4FC7346B84F05B904 /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53864C47CD218F2A9C3D4 /* ResourceManager.m */; };
+		67C53C640F8A9BDD8BB28805 /* cardFace9.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53E2121DD6C3C4FE655F7 /* cardFace9.png */; };
+		67C53C82FAFF33FFE862D009 /* cardFace32.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5325AFCD3284A3B96C517 /* cardFace32.png */; };
+		67C53C94C8D1E87D29E0200B /* SharedProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53FCCFFDC9F8421F86CEA /* SharedProgressManager.m */; };
+		67C53CC3488474A329AE5E2A /* cardFace3.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53ACF9033BE1A6FB470FC /* cardFace3.png */; };
+		67C53CE520CCDAE5FFA24004 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53987013B95B69BBFB97E /* main.m */; };
+		67C53D212EE45C5DDA8D16C8 /* cardFace41.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53FDBC51B49EC288D3C38 /* cardFace41.png */; };
+		67C53D8D0FB27E85588D7AA0 /* cardFace45.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53ED2A8F34C936B7709D9 /* cardFace45.png */; };
+		67C53DEB2B777B7375F25F21 /* cardFace51.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53637E7537BF7DD708FD1 /* cardFace51.png */; };
+		67C53E0501F982DEA8F837BA /* cardFace6.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53C6CD34D1F552ACA8B02 /* cardFace6.png */; };
+		67C53E0AA95A032B83BA1B18 /* cardBackRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5383041154805B2C5D8CD /* cardBackRed.png */; };
+		67C53E29DD0E7A6DB08CC211 /* buttonMenuActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53A470A41FB729E2DFE3C /* buttonMenuActive.png */; };
+		67C53E8A61904900F2A98D81 /* cardFace48.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C532D24ED9B4D7930EF8FF /* cardFace48.png */; };
+		67C53EB56EAF9F641A085AC3 /* cardFace18.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5367E0E52DC348DCA393B /* cardFace18.png */; };
+		67C53EC6893B91505B6FEB28 /* cardFace13.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C531F7083808945BCC3F1D /* cardFace13.png */; };
+		67C53EDEABEF696FD724721E /* cardFace23.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C5316A1D21A27498B73893 /* cardFace23.png */; };
+		67C53F48BCED303FBE766605 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C53691894066CAE7EBAD0F /* CardView.m */; };
+		67C53F7399E2CBAB5911BA33 /* cardFace22.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C53614FF8ECA8C75C1D310 /* cardFace22.png */; };
+		67C53FA6CEAE362A83BE8A82 /* cardFace10.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C532942DC730A3A1D26C2B /* cardFace10.png */; };
+		67C53FB985CE5C6DF632F3D4 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C530D4A8F2562F0D70567A /* Place.m */; };
 		AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF40389F689D5F386FB06 /* CCButton.m */; };
-		AF6EF160DB842A66CDD9F930 /* cardFace43.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF348761396B1C7D92E8B /* cardFace43.png */; };
-		AF6EF1A25AA861ECDD8E2FCA /* cardFace33.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFCAA53AC0C56B80BA03D /* cardFace33.png */; };
-		AF6EF1BBDCA9672BE5C1965B /* ButtonGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EFF2D482433A150B06E9F /* ButtonGameView.m */; };
-		AF6EF21AF2DAE52DC25255C9 /* cardFace9.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF4A9AC4F1B69723E51BC /* cardFace9.png */; };
-		AF6EF2BA68304D645EFBCC8B /* cardFace2.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFAFA09611FC7D0A44BE1 /* cardFace2.png */; };
-		AF6EF2EE043BB7188FCF018B /* cardFace24.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF32D3F9797ABAFD99FEE /* cardFace24.png */; };
-		AF6EF33FB75DC3042498C1A3 /* cardBackRed.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF781DC04BC738764DCC3 /* cardBackRed.png */; };
-		AF6EF34FE99C417B6FF3BBA5 /* cardFace3.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFBE3F9DF2F561E84DA39 /* cardFace3.png */; };
-		AF6EF3A126F4A7E9B86084BA /* ButtonMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF551377902358A182785 /* ButtonMenuView.m */; };
-		AF6EF3DF1F24327B41184997 /* cardFace49.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF7FF6A6B140FF7A609AF /* cardFace49.png */; };
-		AF6EF452D70C6F283B1D9ACC /* cardFace48.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF5AB8C700C2F93252537 /* cardFace48.png */; };
-		AF6EF4D4DE15755EF7747B96 /* cardFace13.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF49CB2AD0F74468C49E0 /* cardFace13.png */; };
-		AF6EF4F384E8B0CCEE89B0C3 /* cardFace23.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFE1ED06CD6E4C8B4E21D /* cardFace23.png */; };
-		AF6EF5216F43BA544C5F9045 /* PlaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EFB393406F272A2755948 /* PlaceView.m */; };
-		AF6EF53DA58966C2E66051DA /* cardFace8.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF86CFCA51CC9BD649BD1 /* cardFace8.png */; };
-		AF6EF61EDE68D4B0D7DC4BE8 /* cardFace10.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF269213A53C7A0EA3B9C /* cardFace10.png */; };
-		AF6EF6315E23DC112D3D9C96 /* cardFace28.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF62F82CDE24718E8B104 /* cardFace28.png */; };
-		AF6EF6731F124C50864FA05A /* cardFace41.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFD4FC3FE9971D19B66B3 /* cardFace41.png */; };
-		AF6EF6BB2656A2682C79A956 /* cardFace44.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF1CC1C49A643813F7512 /* cardFace44.png */; };
-		AF6EF6BB3B02314E5E207D94 /* cardFace18.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFBEE0E914233F4B8E1C2 /* cardFace18.png */; };
-		AF6EF6C5F59913C2E30FBB5C /* cardFace34.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF20846983A691EFA59E4 /* cardFace34.png */; };
-		AF6EF6F2B61B355B8578F94C /* cardFace38.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF0A968E6C08F38161782 /* cardFace38.png */; };
-		AF6EF706C8AFA12C457C6FB5 /* cardFace20.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF110B9EFCEAD38D1F728 /* cardFace20.png */; };
-		AF6EF74A6812FC0C0E2863E5 /* cardFace12.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF44DA7B8FB0F8519FF33 /* cardFace12.png */; };
-		AF6EF78451F9187D29C605B3 /* cardFace37.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFD47B46CEF5EF54607FF /* cardFace37.png */; };
-		AF6EF78673986F5D9389D943 /* cardFace5.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF520B306A2F283372870 /* cardFace5.png */; };
-		AF6EF7B30CCDF0DA2D98E5BB /* cardFace29.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF6E4DF832F2B336316DC /* cardFace29.png */; };
-		AF6EF7F88F605BF1D56A97FE /* cardFace42.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF92645461E533A402214 /* cardFace42.png */; };
-		AF6EF80A558BD8A97113A09D /* cardFace11.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF04BEFF55C9D47A00068 /* cardFace11.png */; };
-		AF6EF841EFA6E1672AEFFBD7 /* activePlace(60x79).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF6C57EA59350802695F7 /* activePlace(60x79).png */; };
-		AF6EF86544703CDEA3803CA3 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF316DD6BA77ADCCD8C25 /* CardView.m */; };
-		AF6EF8ECEED4E9BD0D73D8C5 /* cardFace50.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF6CC8D24E4E2CD2CBC97 /* cardFace50.png */; };
-		AF6EF90F1C42C3280ED4A3F8 /* cardFace15.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF3104148EB62835AA114 /* cardFace15.png */; };
-		AF6EF92CC9CD1B91C641BAB6 /* cardFace40.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFC84041F908D40345405 /* cardFace40.png */; };
-		AF6EF96A7865B42DA7646F98 /* cardFace26.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFD532BA83EE224411818 /* cardFace26.png */; };
-		AF6EF974BA00E985E207A932 /* cardBackBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFBE7E3D9A54092A2BFF8 /* cardBackBlue.png */; };
-		AF6EF9BD88D708F4ABDADE8A /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6EF38F7E4BF5FAA1C86BC4 /* Place.m */; };
-		AF6EF9CD24C8EA5D53D53AD2 /* cardFace30.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF420AFEBD56AD72BBA48 /* cardFace30.png */; };
-		AF6EFA2EE6B26E7BE19F2536 /* cardFace47.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF099B990D75B16C72C1E /* cardFace47.png */; };
-		AF6EFA35AE73B39BF1884AA2 /* cardFace1.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF4E15101ADFD38B837B1 /* cardFace1.png */; };
-		AF6EFA450D896847FC321CFF /* cardFace51.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFAA5DB5F169C44AD8FCD /* cardFace51.png */; };
-		AF6EFAC84C3A858EC049A7B3 /* cardFace6.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF7BCC3B3B995280E93CC /* cardFace6.png */; };
-		AF6EFB404FF73657C8ACAA3F /* activePlaceLeft(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFB59263CB2247B4C941F /* activePlaceLeft(86x86).png */; };
-		AF6EFCF016D444C1C07D1B63 /* cardFace32.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF39E9256B5997CA1F439 /* cardFace32.png */; };
-		AF6EFCF539D2B44013B49C5A /* cardFace7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF0D1472607E4CB48AC67 /* cardFace7.png */; };
-		AF6EFD24597970EE4B8BEC9E /* cardFace4.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF628F134F39F09EBE002 /* cardFace4.png */; };
-		AF6EFD4C519B9EA101A88823 /* cardFace0.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF9B5189816F9F32FCFB6 /* cardFace0.png */; };
-		AF6EFD5D03604EC5399456B6 /* cardFace35.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFE1A3C295A243D2943EE /* cardFace35.png */; };
-		AF6EFD9A7DC310548447AACD /* cardFace31.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF15E85F979125353DC4A /* cardFace31.png */; };
-		AF6EFDAAA5A8C2F7B26C9743 /* cardFace25.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF2308CB9ABD9F61CD4A9 /* cardFace25.png */; };
-		AF6EFDB0497E8A9851041BBD /* cardFace14.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF858B9F31274AFF9E15C /* cardFace14.png */; };
-		AF6EFDBAE3B59ECAA4AFD3AC /* cardFace39.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFE8193B4D30F6D09EE52 /* cardFace39.png */; };
-		AF6EFE0F6962F8CFBAF37D1F /* cardFace46.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFFF4C52BBF082C9A0C47 /* cardFace46.png */; };
-		AF6EFE85903DCD6E54FAD29A /* cardFace27.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFF297ECB9DA5BFEAE38F /* cardFace27.png */; };
-		AF6EFE85F0CC2F9DFA6EF13A /* cardFace45.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFEC8C83EC35B3DCB2AC3 /* cardFace45.png */; };
-		AF6EFE8E99BE76FF7B98F72B /* cardFace17.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFFDE471B93605733020C /* cardFace17.png */; };
-		AF6EFEFF621176DF2D3D6415 /* activePlaceRight(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF2D51F82FE2678044A4F /* activePlaceRight(86x86).png */; };
-		AF6EFF73721336C1C09EF41C /* cardFace19.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF8792A0E265B4166F83D /* cardFace19.png */; };
-		AF6EFF7A6F3C885DBE3E39EF /* emptyPlace(86x86).png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EF2F41831C9497674E430 /* emptyPlace(86x86).png */; };
-		AF6EFF89C95AD568137FA6BC /* cardFace36.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6EFBB92E92D7612864DAB0 /* cardFace36.png */; };
 		DC1BE6A014F417CC00F49D25 /* Ubuntu-B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */; };
 		DC1BE6A114F417CC00F49D25 /* Ubuntu-BI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68D14F417CC00F49D25 /* Ubuntu-BI.ttf */; };
 		DC1BE6A214F417CC00F49D25 /* Ubuntu-C.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC1BE68E14F417CC00F49D25 /* Ubuntu-C.ttf */; };
@@ -150,114 +147,114 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		67C530C8B50D1477FCE71E22 /* ESceneType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESceneType.h; sourceTree = "<group>"; };
-		67C53109FE3B359D5E57AC89 /* SceneBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBase.h; sourceTree = "<group>"; };
-		67C53123061BAF36B06FDB31 /* CardBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardBox.h; sourceTree = "<group>"; };
-		67C5312520981B29C7D5865D /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		67C5314A81692266CE8507B6 /* SceneGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneGame.m; sourceTree = "<group>"; };
-		67C531A3D61BDE407650C0F2 /* ECardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECardType.h; sourceTree = "<group>"; };
-		67C531EFC99293118F20DE6A /* SharedProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedProgressManager.m; sourceTree = "<group>"; };
-		67C532309651609964F481EB /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
-		67C53266365E02302A3A48C9 /* ECardSuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECardSuit.h; sourceTree = "<group>"; };
-		67C532C2CC6661B30B32E64F /* SceneMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneMenu.m; sourceTree = "<group>"; };
-		67C5330F3A008DC6C36EF5AB /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		67C53385B63156F2B1FD0E32 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		67C533D48415600D79900775 /* SharedDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDeviceHelper.m; sourceTree = "<group>"; };
-		67C534474CC66D340962FF3D /* SceneMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneMenu.h; sourceTree = "<group>"; };
-		67C53509F68B98B87E10D49F /* ELanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELanguageType.h; sourceTree = "<group>"; };
-		67C5354515A0192F9BAD039C /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManager.m; sourceTree = "<group>"; };
-		67C535E6539AA6B64F683EF7 /* SceneBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneBase.m; sourceTree = "<group>"; };
-		67C536229A56BC019375BAF2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		67C53784D06B8CC6D51F782C /* buttonMenuActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuActive.png; sourceTree = "<group>"; };
-		67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuNormal.png; sourceTree = "<group>"; };
-		67C537C8A2D0F74B54F73ECE /* cardBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBox.png; sourceTree = "<group>"; };
-		67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDeviceHelper.h; sourceTree = "<group>"; };
-		67C539016286C087DC5CE6B0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		67C539549EDFAFAC55C0D08B /* EDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDeviceType.h; sourceTree = "<group>"; };
-		67C5398B859B3CA79011A10E /* CardBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardBox.m; sourceTree = "<group>"; };
-		67C53A4B56A97424622FF594 /* background(640x960).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x960).png"; sourceTree = "<group>"; };
-		67C53AAFE9AA39C36823A929 /* background(640x1136).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x1136).png"; sourceTree = "<group>"; };
-		67C53AE64E7C449F8341E6C1 /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
-		67C53AEDD6DA12E4AA111364 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
-		67C53C6E106DB6A932C00505 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
-		67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProgressManager.h; sourceTree = "<group>"; };
-		67C53F7D06C4478BC68C32EF /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		AF6EF04BEFF55C9D47A00068 /* cardFace11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace11.png; sourceTree = "<group>"; };
-		AF6EF099B990D75B16C72C1E /* cardFace47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace47.png; sourceTree = "<group>"; };
-		AF6EF0A968E6C08F38161782 /* cardFace38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace38.png; sourceTree = "<group>"; };
+		67C530179A2464A8A2712A75 /* cardFace16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace16.png; sourceTree = "<group>"; };
+		67C530889970CE567EF76AB8 /* cardFace33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace33.png; sourceTree = "<group>"; };
+		67C530D4A8F2562F0D70567A /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		67C530EA715EC6F9A10882BA /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		67C53108044B47C3DA368D7A /* SceneGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneGame.m; sourceTree = "<group>"; };
+		67C5314253CB83C6F7DA9F9A /* cardFace29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace29.png; sourceTree = "<group>"; };
+		67C5316A1D21A27498B73893 /* cardFace23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace23.png; sourceTree = "<group>"; };
+		67C531B3CE3A59BAEA7FB72E /* cardFace49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace49.png; sourceTree = "<group>"; };
+		67C531F1264B0F6819757D7C /* cardFace21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace21.png; sourceTree = "<group>"; };
+		67C531F7083808945BCC3F1D /* cardFace13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace13.png; sourceTree = "<group>"; };
+		67C5323AC748F73A064FD8F4 /* cardFace50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace50.png; sourceTree = "<group>"; };
+		67C5324AA6B9421D65F66215 /* activePlaceLeft(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceLeft(86x86).png"; sourceTree = "<group>"; };
+		67C5325592F7000C8BC8A614 /* emptyPlace(60x79).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyPlace(60x79).png"; sourceTree = "<group>"; };
+		67C5325AFCD3284A3B96C517 /* cardFace32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace32.png; sourceTree = "<group>"; };
+		67C532745DA91EE4F73EBCDE /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		67C532942DC730A3A1D26C2B /* cardFace10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace10.png; sourceTree = "<group>"; };
+		67C532D24ED9B4D7930EF8FF /* cardFace48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace48.png; sourceTree = "<group>"; };
+		67C532D5640FBC9440B226B6 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		67C53309C341868DFF157931 /* ELanguageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELanguageType.h; sourceTree = "<group>"; };
+		67C533606055DFF56E31C264 /* cardFace20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace20.png; sourceTree = "<group>"; };
+		67C5338BB051FFA44BD098E7 /* cardFace39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace39.png; sourceTree = "<group>"; };
+		67C533DB71A2BAFC3040FE37 /* cardBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBox.png; sourceTree = "<group>"; };
+		67C533DD4834FCA64E733C1C /* EButtonMenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EButtonMenuType.h; sourceTree = "<group>"; };
+		67C53473CEDFAADF236CE907 /* cardFace12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace12.png; sourceTree = "<group>"; };
+		67C53474AEEDBA0E3F3B55D7 /* SceneBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneBase.h; sourceTree = "<group>"; };
+		67C534883477614DA51844FA /* cardFace25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace25.png; sourceTree = "<group>"; };
+		67C5348A2642E1E080894BE3 /* cardFace46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace46.png; sourceTree = "<group>"; };
+		67C534D464AAB22A9A99BEBF /* CardBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardBox.m; sourceTree = "<group>"; };
+		67C534DC307AD1AB8CE96D70 /* SharedDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedDeviceHelper.h; sourceTree = "<group>"; };
+		67C53554826D20D3D852DBDD /* background(640x960).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x960).png"; sourceTree = "<group>"; };
+		67C535BCB41C5BE655BF1BA0 /* SceneMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneMenu.m; sourceTree = "<group>"; };
+		67C535C96E14014BB75C8BCB /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		67C53614FF8ECA8C75C1D310 /* cardFace22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace22.png; sourceTree = "<group>"; };
+		67C5361787EBA8F9103A702C /* cardFace15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace15.png; sourceTree = "<group>"; };
+		67C536291E0C5C9E911EF462 /* cardFace44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace44.png; sourceTree = "<group>"; };
+		67C53631ACAC1A5DDEB3622C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		67C53637E7537BF7DD708FD1 /* cardFace51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace51.png; sourceTree = "<group>"; };
+		67C5367E0E52DC348DCA393B /* cardFace18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace18.png; sourceTree = "<group>"; };
+		67C53691894066CAE7EBAD0F /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		67C536978EB10667555F5B50 /* cardFace43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace43.png; sourceTree = "<group>"; };
+		67C5369F8B756E354D5364A9 /* activePlaceRight(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceRight(86x86).png"; sourceTree = "<group>"; };
+		67C536C97B07953562DFBB98 /* emptyPlace(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyPlace(86x86).png"; sourceTree = "<group>"; };
+		67C536CFCB8DE05D8CABD0B0 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
+		67C536D5544CF8F6D24A5C9A /* cardFace0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace0.png; sourceTree = "<group>"; };
+		67C537068AE2EAADDDA9007B /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		67C5370BBE48FA618AEB05BB /* cardFace8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace8.png; sourceTree = "<group>"; };
+		67C5379EA44070B34930DAE8 /* ButtonGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGameView.h; sourceTree = "<group>"; };
+		67C537F8E4D8FF7B5FB41B89 /* EDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDeviceType.h; sourceTree = "<group>"; };
+		67C53816C3C4E988DD59A74F /* ECardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECardType.h; sourceTree = "<group>"; };
+		67C5381D7AB3F3AD0C583273 /* cardFace31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace31.png; sourceTree = "<group>"; };
+		67C5383041154805B2C5D8CD /* cardBackRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBackRed.png; sourceTree = "<group>"; };
+		67C5384AC93678FD31347903 /* cardFace42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace42.png; sourceTree = "<group>"; };
+		67C5384B03BAE68AE3487983 /* EPlaceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPlaceType.h; sourceTree = "<group>"; };
+		67C5384FF63010D33B4FB63A /* cardFace26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace26.png; sourceTree = "<group>"; };
+		67C53864C47CD218F2A9C3D4 /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManager.m; sourceTree = "<group>"; };
+		67C539331A0E0C63CFEFDB89 /* cardFace11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace11.png; sourceTree = "<group>"; };
+		67C53987013B95B69BBFB97E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67C539D32675A33DFD9AC54C /* cardFace1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace1.png; sourceTree = "<group>"; };
+		67C53A0630143D54F51EF49B /* cardFace38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace38.png; sourceTree = "<group>"; };
+		67C53A41EE8BDF25D65B742C /* cardFace35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace35.png; sourceTree = "<group>"; };
+		67C53A4343E796C78179FECA /* ButtonGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGameView.m; sourceTree = "<group>"; };
+		67C53A470A41FB729E2DFE3C /* buttonMenuActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuActive.png; sourceTree = "<group>"; };
+		67C53A5408B87BFF1B488BB3 /* SharedProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedProgressManager.h; sourceTree = "<group>"; };
+		67C53A55E542064A80EF690B /* cardFace28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace28.png; sourceTree = "<group>"; };
+		67C53A7EC7C7065F29953C1B /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		67C53A8297F09645C054C2AF /* SharedDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedDeviceHelper.m; sourceTree = "<group>"; };
+		67C53A98E67D0D08382272AF /* CardBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardBox.h; sourceTree = "<group>"; };
+		67C53ACF9033BE1A6FB470FC /* cardFace3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace3.png; sourceTree = "<group>"; };
+		67C53B3FF601C99F37E10F82 /* cardFace19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace19.png; sourceTree = "<group>"; };
+		67C53B643B808E10F093BFFD /* ECardSuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECardSuit.h; sourceTree = "<group>"; };
+		67C53B7A32F1CD01B099FF4E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		67C53B7FD39A43C15C668E80 /* cardFace34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace34.png; sourceTree = "<group>"; };
+		67C53B82C8572A9A75797777 /* cardFace5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace5.png; sourceTree = "<group>"; };
+		67C53B83C5B57AE74054F650 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		67C53BA6F406F76B532B0087 /* EButtonGameType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EButtonGameType.h; sourceTree = "<group>"; };
+		67C53BC153D3729F80621347 /* cardFace47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace47.png; sourceTree = "<group>"; };
+		67C53BF8D09F83C0CC4CF711 /* cardFace40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace40.png; sourceTree = "<group>"; };
+		67C53C4966D6EBB841BD023E /* ESceneType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESceneType.h; sourceTree = "<group>"; };
+		67C53C61BACD93152A71B626 /* ButtonMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonMenuView.h; sourceTree = "<group>"; };
+		67C53C6CD34D1F552ACA8B02 /* cardFace6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace6.png; sourceTree = "<group>"; };
+		67C53C6F4A3AE49E325EE13A /* cardFace27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace27.png; sourceTree = "<group>"; };
+		67C53C864902960EDC1BE771 /* cardFace17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace17.png; sourceTree = "<group>"; };
+		67C53C9A5761A8835C8AA0E2 /* background(640x1136).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background(640x1136).png"; sourceTree = "<group>"; };
+		67C53CBFCC2FB3B748B0FCC9 /* cardFace24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace24.png; sourceTree = "<group>"; };
+		67C53CCB8AB96817E2D0C79D /* cardFace30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace30.png; sourceTree = "<group>"; };
+		67C53CD022BFBD2CC6CC2991 /* SceneBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneBase.m; sourceTree = "<group>"; };
+		67C53CF71375D30484356652 /* cardFace2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace2.png; sourceTree = "<group>"; };
+		67C53CFD6D4AC2C9D3297C73 /* buttonMenuNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonMenuNormal.png; sourceTree = "<group>"; };
+		67C53D27ECB596E87354C59D /* PlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceView.m; sourceTree = "<group>"; };
+		67C53D5D38CDAE3D0A16E638 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		67C53D6600001A88AFE30BEC /* cardFace37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace37.png; sourceTree = "<group>"; };
+		67C53DA522F7C585C1968209 /* ButtonMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonMenuView.m; sourceTree = "<group>"; };
+		67C53DE4FA05F8A65A91DB15 /* cardFace4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace4.png; sourceTree = "<group>"; };
+		67C53E1DB549C960BFD03710 /* PlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceView.h; sourceTree = "<group>"; };
+		67C53E2121DD6C3C4FE655F7 /* cardFace9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace9.png; sourceTree = "<group>"; };
+		67C53E495502DB362359D3C7 /* cardFace14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace14.png; sourceTree = "<group>"; };
+		67C53EAB163DEE64DDE28998 /* SceneMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneMenu.h; sourceTree = "<group>"; };
+		67C53ED2A8F34C936B7709D9 /* cardFace45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace45.png; sourceTree = "<group>"; };
+		67C53EEE9755D8AAD2CC1FDE /* activePlace(60x79).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlace(60x79).png"; sourceTree = "<group>"; };
+		67C53EF9AAB6B1A8F8D2A9F3 /* cardFace36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace36.png; sourceTree = "<group>"; };
+		67C53EFE1AC2F7004BE936E7 /* cardFace7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace7.png; sourceTree = "<group>"; };
+		67C53F3A6C93989F629AFCAD /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		67C53F68E7B9C93D0962BA3B /* cardBackBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBackBlue.png; sourceTree = "<group>"; };
+		67C53FCCFFDC9F8421F86CEA /* SharedProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedProgressManager.m; sourceTree = "<group>"; };
+		67C53FDBC51B49EC288D3C38 /* cardFace41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace41.png; sourceTree = "<group>"; };
 		AF6EF0B7C418A78EAB4F7966 /* CCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButton.h; sourceTree = "<group>"; };
-		AF6EF0D1472607E4CB48AC67 /* cardFace7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace7.png; sourceTree = "<group>"; };
-		AF6EF1083B146524399DBE3C /* cardFace21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace21.png; sourceTree = "<group>"; };
-		AF6EF110B9EFCEAD38D1F728 /* cardFace20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace20.png; sourceTree = "<group>"; };
-		AF6EF15E85F979125353DC4A /* cardFace31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace31.png; sourceTree = "<group>"; };
-		AF6EF1CC1C49A643813F7512 /* cardFace44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace44.png; sourceTree = "<group>"; };
-		AF6EF20846983A691EFA59E4 /* cardFace34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace34.png; sourceTree = "<group>"; };
-		AF6EF2308CB9ABD9F61CD4A9 /* cardFace25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace25.png; sourceTree = "<group>"; };
-		AF6EF269213A53C7A0EA3B9C /* cardFace10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace10.png; sourceTree = "<group>"; };
-		AF6EF2D51F82FE2678044A4F /* activePlaceRight(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceRight(86x86).png"; sourceTree = "<group>"; };
-		AF6EF2F41831C9497674E430 /* emptyPlace(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyPlace(86x86).png"; sourceTree = "<group>"; };
-		AF6EF3104148EB62835AA114 /* cardFace15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace15.png; sourceTree = "<group>"; };
-		AF6EF316DD6BA77ADCCD8C25 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
-		AF6EF32D3F9797ABAFD99FEE /* cardFace24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace24.png; sourceTree = "<group>"; };
-		AF6EF3341F3CF5E11D2B14FA /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
-		AF6EF348761396B1C7D92E8B /* cardFace43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace43.png; sourceTree = "<group>"; };
-		AF6EF38F7E4BF5FAA1C86BC4 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
-		AF6EF39E9256B5997CA1F439 /* cardFace32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace32.png; sourceTree = "<group>"; };
 		AF6EF40389F689D5F386FB06 /* CCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCButton.m; sourceTree = "<group>"; };
-		AF6EF420AFEBD56AD72BBA48 /* cardFace30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace30.png; sourceTree = "<group>"; };
-		AF6EF43741FA3090A498305E /* ButtonGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonGameView.h; sourceTree = "<group>"; };
-		AF6EF44DA7B8FB0F8519FF33 /* cardFace12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace12.png; sourceTree = "<group>"; };
-		AF6EF49CB2AD0F74468C49E0 /* cardFace13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace13.png; sourceTree = "<group>"; };
-		AF6EF4A18B51160220C9779C /* PlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceView.h; sourceTree = "<group>"; };
-		AF6EF4A9AC4F1B69723E51BC /* cardFace9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace9.png; sourceTree = "<group>"; };
-		AF6EF4E15101ADFD38B837B1 /* cardFace1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace1.png; sourceTree = "<group>"; };
-		AF6EF520B306A2F283372870 /* cardFace5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace5.png; sourceTree = "<group>"; };
-		AF6EF551377902358A182785 /* ButtonMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonMenuView.m; sourceTree = "<group>"; };
-		AF6EF5AB8C700C2F93252537 /* cardFace48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace48.png; sourceTree = "<group>"; };
-		AF6EF628F134F39F09EBE002 /* cardFace4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace4.png; sourceTree = "<group>"; };
-		AF6EF62F82CDE24718E8B104 /* cardFace28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace28.png; sourceTree = "<group>"; };
-		AF6EF6C57EA59350802695F7 /* activePlace(60x79).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlace(60x79).png"; sourceTree = "<group>"; };
-		AF6EF6CC8D24E4E2CD2CBC97 /* cardFace50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace50.png; sourceTree = "<group>"; };
-		AF6EF6E4DF832F2B336316DC /* cardFace29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace29.png; sourceTree = "<group>"; };
-		AF6EF6F4D82E598D4136C4D4 /* cardFace22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace22.png; sourceTree = "<group>"; };
-		AF6EF781DC04BC738764DCC3 /* cardBackRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBackRed.png; sourceTree = "<group>"; };
-		AF6EF7BCC3B3B995280E93CC /* cardFace6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace6.png; sourceTree = "<group>"; };
-		AF6EF7DE7F90F33E6EE8626D /* cardFace16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace16.png; sourceTree = "<group>"; };
-		AF6EF7FF6A6B140FF7A609AF /* cardFace49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace49.png; sourceTree = "<group>"; };
-		AF6EF858B9F31274AFF9E15C /* cardFace14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace14.png; sourceTree = "<group>"; };
-		AF6EF86CFCA51CC9BD649BD1 /* cardFace8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace8.png; sourceTree = "<group>"; };
-		AF6EF8792A0E265B4166F83D /* cardFace19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace19.png; sourceTree = "<group>"; };
-		AF6EF92645461E533A402214 /* cardFace42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace42.png; sourceTree = "<group>"; };
-		AF6EF99EBD051EC520C9B2B2 /* EButtonGameType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EButtonGameType.h; sourceTree = "<group>"; };
-		AF6EF9B5189816F9F32FCFB6 /* cardFace0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace0.png; sourceTree = "<group>"; };
-		AF6EFA024E42E3ADBC887C9D /* ButtonMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonMenuView.h; sourceTree = "<group>"; };
-		AF6EFA619F44C0F0555EAFA3 /* EButtonMenuType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EButtonMenuType.h; sourceTree = "<group>"; };
-		AF6EFAA5DB5F169C44AD8FCD /* cardFace51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace51.png; sourceTree = "<group>"; };
-		AF6EFAFA09611FC7D0A44BE1 /* cardFace2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace2.png; sourceTree = "<group>"; };
-		AF6EFB393406F272A2755948 /* PlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceView.m; sourceTree = "<group>"; };
-		AF6EFB59263CB2247B4C941F /* activePlaceLeft(86x86).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activePlaceLeft(86x86).png"; sourceTree = "<group>"; };
-		AF6EFBB92E92D7612864DAB0 /* cardFace36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace36.png; sourceTree = "<group>"; };
-		AF6EFBE3F9DF2F561E84DA39 /* cardFace3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace3.png; sourceTree = "<group>"; };
-		AF6EFBE7E3D9A54092A2BFF8 /* cardBackBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardBackBlue.png; sourceTree = "<group>"; };
-		AF6EFBEE0E914233F4B8E1C2 /* cardFace18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace18.png; sourceTree = "<group>"; };
-		AF6EFC84041F908D40345405 /* cardFace40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace40.png; sourceTree = "<group>"; };
-		AF6EFCAA53AC0C56B80BA03D /* cardFace33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace33.png; sourceTree = "<group>"; };
-		AF6EFD287A147BE5C65A558C /* EPlaceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPlaceType.h; sourceTree = "<group>"; };
-		AF6EFD47B46CEF5EF54607FF /* cardFace37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace37.png; sourceTree = "<group>"; };
-		AF6EFD4FC3FE9971D19B66B3 /* cardFace41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace41.png; sourceTree = "<group>"; };
-		AF6EFD532BA83EE224411818 /* cardFace26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace26.png; sourceTree = "<group>"; };
-		AF6EFE1A3C295A243D2943EE /* cardFace35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace35.png; sourceTree = "<group>"; };
-		AF6EFE1ED06CD6E4C8B4E21D /* cardFace23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace23.png; sourceTree = "<group>"; };
-		AF6EFE8193B4D30F6D09EE52 /* cardFace39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace39.png; sourceTree = "<group>"; };
 		AF6EFE9EC579F2391F5D47F7 /* CCButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCButtonDelegate.h; sourceTree = "<group>"; };
-		AF6EFEC8C83EC35B3DCB2AC3 /* cardFace45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace45.png; sourceTree = "<group>"; };
-		AF6EFF297ECB9DA5BFEAE38F /* cardFace27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace27.png; sourceTree = "<group>"; };
-		AF6EFF2D482433A150B06E9F /* ButtonGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonGameView.m; sourceTree = "<group>"; };
-		AF6EFF720970E0C004185F9E /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
-		AF6EFF808723D16BDA2B3299 /* emptyPlace(60x79).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyPlace(60x79).png"; sourceTree = "<group>"; };
-		AF6EFFDE471B93605733020C /* cardFace17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace17.png; sourceTree = "<group>"; };
-		AF6EFFF4C52BBF082C9A0C47 /* cardFace46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardFace46.png; sourceTree = "<group>"; };
 		DC1BE68614F417CC00F49D25 /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		DC1BE68914F417CC00F49D25 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		DC1BE68C14F417CC00F49D25 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
@@ -359,157 +356,252 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		67C532CE5016C2DB2D42305E /* Resources */ = {
+		67C5315641C554399CE64141 /* SharedDeviceHelper */ = {
 			isa = PBXGroup;
 			children = (
-				67C53784D06B8CC6D51F782C /* buttonMenuActive.png */,
-				67C5379811D9849B50D4FD4B /* buttonMenuNormal.png */,
-				67C53A4B56A97424622FF594 /* background(640x960).png */,
-				67C53AAFE9AA39C36823A929 /* background(640x1136).png */,
-				67C537C8A2D0F74B54F73ECE /* cardBox.png */,
-				AF6EF6C57EA59350802695F7 /* activePlace(60x79).png */,
-				AF6EFB59263CB2247B4C941F /* activePlaceLeft(86x86).png */,
-				AF6EF2D51F82FE2678044A4F /* activePlaceRight(86x86).png */,
-				AF6EFF808723D16BDA2B3299 /* emptyPlace(60x79).png */,
-				AF6EF2F41831C9497674E430 /* emptyPlace(86x86).png */,
-				AF6EFCD9DEB45BB4296A397D /* cards */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		67C5348D56D936E07DCD92D8 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				67C53BC50FB1776A4FDB37BB /* Controllers */,
-				67C53C25BCEE6DBE2D33806B /* Models */,
-				67C53625023B93C8E8604203 /* System */,
-				67C532CE5016C2DB2D42305E /* Resources */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		67C53625023B93C8E8604203 /* System */ = {
-			isa = PBXGroup;
-			children = (
-				67C53DEF011737C1C84AC6BE /* HelloWorldLayer.m */,
-				67C53C6E106DB6A932C00505 /* AppDelegate.m */,
-				67C53385B63156F2B1FD0E32 /* AppDelegate.h */,
-				67C5330F3A008DC6C36EF5AB /* HelloWorldLayer.h */,
-				67C539016286C087DC5CE6B0 /* main.m */,
-			);
-			path = System;
-			sourceTree = "<group>";
-		};
-		67C53771E3414400F6FA829D /* SceneBase */ = {
-			isa = PBXGroup;
-			children = (
-				67C53109FE3B359D5E57AC89 /* SceneBase.h */,
-				67C535E6539AA6B64F683EF7 /* SceneBase.m */,
-			);
-			path = SceneBase;
-			sourceTree = "<group>";
-		};
-		67C5388E51E91751C383E6FC /* Card */ = {
-			isa = PBXGroup;
-			children = (
-				67C532309651609964F481EB /* Card.m */,
-				67C5312520981B29C7D5865D /* Card.h */,
-				67C531A3D61BDE407650C0F2 /* ECardType.h */,
-				67C53266365E02302A3A48C9 /* ECardSuit.h */,
-				67C5398B859B3CA79011A10E /* CardBox.m */,
-				67C53123061BAF36B06FDB31 /* CardBox.h */,
-			);
-			path = Card;
-			sourceTree = "<group>";
-		};
-		67C5397675D2E3D0767B75AB /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				67C53771E3414400F6FA829D /* SceneBase */,
-				67C53A1477D3D8CF581920A2 /* SceneGame */,
-				67C530C8B50D1477FCE71E22 /* ESceneType.h */,
-				67C53D9690075BB177FCDFB6 /* SceneMenu */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		67C53A1477D3D8CF581920A2 /* SceneGame */ = {
-			isa = PBXGroup;
-			children = (
-				67C5314A81692266CE8507B6 /* SceneGame.m */,
-				67C53AEDD6DA12E4AA111364 /* SceneGame.h */,
-				AF6EFC921F32C9D0C8840E08 /* views */,
-			);
-			path = SceneGame;
-			sourceTree = "<group>";
-		};
-		67C53BC50FB1776A4FDB37BB /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				67C5397675D2E3D0767B75AB /* Scenes */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		67C53BEC64CC3E3350CFEE3C /* SharedProgressManager */ = {
-			isa = PBXGroup;
-			children = (
-				67C53E12A265EEEF2D36CBF8 /* SharedProgressManager.h */,
-				67C531EFC99293118F20DE6A /* SharedProgressManager.m */,
-			);
-			path = SharedProgressManager;
-			sourceTree = "<group>";
-		};
-		67C53C25BCEE6DBE2D33806B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				67C53BEC64CC3E3350CFEE3C /* SharedProgressManager */,
-				67C53D71B7C11C31B4FA21AD /* Game */,
-				67C53F1EBBA0F729EFE4C369 /* SharedDeviceHelper */,
-				67C5388E51E91751C383E6FC /* Card */,
-				AF6EF24B6C042743F57DB3FA /* Place */,
-				67C53F92C5B017F61E47D4DC /* ResourceManager */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		67C53D71B7C11C31B4FA21AD /* Game */ = {
-			isa = PBXGroup;
-			children = (
-				67C53F7D06C4478BC68C32EF /* Game.m */,
-				67C536229A56BC019375BAF2 /* Game.h */,
-			);
-			path = Game;
-			sourceTree = "<group>";
-		};
-		67C53D9690075BB177FCDFB6 /* SceneMenu */ = {
-			isa = PBXGroup;
-			children = (
-				67C532C2CC6661B30B32E64F /* SceneMenu.m */,
-				67C534474CC66D340962FF3D /* SceneMenu.h */,
-				AF6EFEDBA218F0ADFFA38D2D /* views */,
-			);
-			path = SceneMenu;
-			sourceTree = "<group>";
-		};
-		67C53F1EBBA0F729EFE4C369 /* SharedDeviceHelper */ = {
-			isa = PBXGroup;
-			children = (
-				67C539549EDFAFAC55C0D08B /* EDeviceType.h */,
-				67C533D48415600D79900775 /* SharedDeviceHelper.m */,
-				67C53509F68B98B87E10D49F /* ELanguageType.h */,
-				67C538CC8506C214AA44F513 /* SharedDeviceHelper.h */,
+				67C537F8E4D8FF7B5FB41B89 /* EDeviceType.h */,
+				67C53309C341868DFF157931 /* ELanguageType.h */,
+				67C534DC307AD1AB8CE96D70 /* SharedDeviceHelper.h */,
+				67C53A8297F09645C054C2AF /* SharedDeviceHelper.m */,
 			);
 			path = SharedDeviceHelper;
 			sourceTree = "<group>";
 		};
-		67C53F92C5B017F61E47D4DC /* ResourceManager */ = {
+		67C53177D050AC9E0A3872E3 /* SceneBase */ = {
 			isa = PBXGroup;
 			children = (
-				67C5354515A0192F9BAD039C /* ResourceManager.m */,
-				67C53AE64E7C449F8341E6C1 /* ResourceManager.h */,
+				67C53474AEEDBA0E3F3B55D7 /* SceneBase.h */,
+				67C53CD022BFBD2CC6CC2991 /* SceneBase.m */,
+			);
+			path = SceneBase;
+			sourceTree = "<group>";
+		};
+		67C531E733B7D05EA614E15D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				67C53987013B95B69BBFB97E /* main.m */,
+				67C53B7A32F1CD01B099FF4E /* AppDelegate.h */,
+				67C53B83C5B57AE74054F650 /* AppDelegate.m */,
+				67C535C96E14014BB75C8BCB /* HelloWorldLayer.h */,
+				67C532745DA91EE4F73EBCDE /* HelloWorldLayer.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		67C533B721AB16F14F9D228B /* SceneGame */ = {
+			isa = PBXGroup;
+			children = (
+				67C53BE64427C48BEDD34693 /* views */,
+				67C536CFCB8DE05D8CABD0B0 /* SceneGame.h */,
+				67C53108044B47C3DA368D7A /* SceneGame.m */,
+			);
+			path = SceneGame;
+			sourceTree = "<group>";
+		};
+		67C534A38064044343ADDE1F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				67C53A905724E119FC77FD55 /* Models */,
+				67C531E733B7D05EA614E15D /* System */,
+				67C53F19CB6328BC41F6A871 /* Resources */,
+				67C53759169E15288E1F79A9 /* Controllers */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		67C53643719D7292966BF85E /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				67C532D5640FBC9440B226B6 /* Place.h */,
+				67C530D4A8F2562F0D70567A /* Place.m */,
+				67C5384B03BAE68AE3487983 /* EPlaceType.h */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		67C53723DC4454C071E709CB /* cards */ = {
+			isa = PBXGroup;
+			children = (
+				67C536D5544CF8F6D24A5C9A /* cardFace0.png */,
+				67C539D32675A33DFD9AC54C /* cardFace1.png */,
+				67C53CF71375D30484356652 /* cardFace2.png */,
+				67C53ACF9033BE1A6FB470FC /* cardFace3.png */,
+				67C53DE4FA05F8A65A91DB15 /* cardFace4.png */,
+				67C53B82C8572A9A75797777 /* cardFace5.png */,
+				67C53C6CD34D1F552ACA8B02 /* cardFace6.png */,
+				67C53EFE1AC2F7004BE936E7 /* cardFace7.png */,
+				67C5370BBE48FA618AEB05BB /* cardFace8.png */,
+				67C53E2121DD6C3C4FE655F7 /* cardFace9.png */,
+				67C532942DC730A3A1D26C2B /* cardFace10.png */,
+				67C539331A0E0C63CFEFDB89 /* cardFace11.png */,
+				67C53473CEDFAADF236CE907 /* cardFace12.png */,
+				67C531F7083808945BCC3F1D /* cardFace13.png */,
+				67C53E495502DB362359D3C7 /* cardFace14.png */,
+				67C5361787EBA8F9103A702C /* cardFace15.png */,
+				67C530179A2464A8A2712A75 /* cardFace16.png */,
+				67C53C864902960EDC1BE771 /* cardFace17.png */,
+				67C5367E0E52DC348DCA393B /* cardFace18.png */,
+				67C53B3FF601C99F37E10F82 /* cardFace19.png */,
+				67C533606055DFF56E31C264 /* cardFace20.png */,
+				67C531F1264B0F6819757D7C /* cardFace21.png */,
+				67C53614FF8ECA8C75C1D310 /* cardFace22.png */,
+				67C5316A1D21A27498B73893 /* cardFace23.png */,
+				67C53CBFCC2FB3B748B0FCC9 /* cardFace24.png */,
+				67C534883477614DA51844FA /* cardFace25.png */,
+				67C5384FF63010D33B4FB63A /* cardFace26.png */,
+				67C53C6F4A3AE49E325EE13A /* cardFace27.png */,
+				67C53A55E542064A80EF690B /* cardFace28.png */,
+				67C5314253CB83C6F7DA9F9A /* cardFace29.png */,
+				67C53CCB8AB96817E2D0C79D /* cardFace30.png */,
+				67C5381D7AB3F3AD0C583273 /* cardFace31.png */,
+				67C5325AFCD3284A3B96C517 /* cardFace32.png */,
+				67C530889970CE567EF76AB8 /* cardFace33.png */,
+				67C53B7FD39A43C15C668E80 /* cardFace34.png */,
+				67C53A41EE8BDF25D65B742C /* cardFace35.png */,
+				67C53EF9AAB6B1A8F8D2A9F3 /* cardFace36.png */,
+				67C53D6600001A88AFE30BEC /* cardFace37.png */,
+				67C53A0630143D54F51EF49B /* cardFace38.png */,
+				67C5338BB051FFA44BD098E7 /* cardFace39.png */,
+				67C53BF8D09F83C0CC4CF711 /* cardFace40.png */,
+				67C53FDBC51B49EC288D3C38 /* cardFace41.png */,
+				67C5384AC93678FD31347903 /* cardFace42.png */,
+				67C536978EB10667555F5B50 /* cardFace43.png */,
+				67C536291E0C5C9E911EF462 /* cardFace44.png */,
+				67C53ED2A8F34C936B7709D9 /* cardFace45.png */,
+				67C5348A2642E1E080894BE3 /* cardFace46.png */,
+				67C53BC153D3729F80621347 /* cardFace47.png */,
+				67C532D24ED9B4D7930EF8FF /* cardFace48.png */,
+				67C531B3CE3A59BAEA7FB72E /* cardFace49.png */,
+				67C5323AC748F73A064FD8F4 /* cardFace50.png */,
+				67C53637E7537BF7DD708FD1 /* cardFace51.png */,
+				67C5383041154805B2C5D8CD /* cardBackRed.png */,
+				67C53F68E7B9C93D0962BA3B /* cardBackBlue.png */,
+			);
+			path = cards;
+			sourceTree = "<group>";
+		};
+		67C53759169E15288E1F79A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				67C53FA17986290E885EAB98 /* Scenes */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		67C537FC0E517A62F7C1502F /* SharedProgressManager */ = {
+			isa = PBXGroup;
+			children = (
+				67C53A5408B87BFF1B488BB3 /* SharedProgressManager.h */,
+				67C53FCCFFDC9F8421F86CEA /* SharedProgressManager.m */,
+			);
+			path = SharedProgressManager;
+			sourceTree = "<group>";
+		};
+		67C539EC3640D76C32FC614F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				67C53C61BACD93152A71B626 /* ButtonMenuView.h */,
+				67C53DA522F7C585C1968209 /* ButtonMenuView.m */,
+				67C533DD4834FCA64E733C1C /* EButtonMenuType.h */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		67C53A905724E119FC77FD55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67C53D8A124C1280FA98264F /* Card */,
+				67C53C5699847F434FDB9D02 /* Game */,
+				67C53643719D7292966BF85E /* Place */,
+				67C53C6E4A55A3F947C8F98F /* ResourceManager */,
+				67C5315641C554399CE64141 /* SharedDeviceHelper */,
+				67C537FC0E517A62F7C1502F /* SharedProgressManager */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67C53BE64427C48BEDD34693 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				67C53A7EC7C7065F29953C1B /* CardView.h */,
+				67C53691894066CAE7EBAD0F /* CardView.m */,
+				67C53E1DB549C960BFD03710 /* PlaceView.h */,
+				67C53D27ECB596E87354C59D /* PlaceView.m */,
+				67C5379EA44070B34930DAE8 /* ButtonGameView.h */,
+				67C53A4343E796C78179FECA /* ButtonGameView.m */,
+				67C53BA6F406F76B532B0087 /* EButtonGameType.h */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		67C53C5699847F434FDB9D02 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				67C53631ACAC1A5DDEB3622C /* Game.h */,
+				67C53F3A6C93989F629AFCAD /* Game.m */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		67C53C6E4A55A3F947C8F98F /* ResourceManager */ = {
+			isa = PBXGroup;
+			children = (
+				67C530EA715EC6F9A10882BA /* ResourceManager.h */,
+				67C53864C47CD218F2A9C3D4 /* ResourceManager.m */,
 			);
 			path = ResourceManager;
+			sourceTree = "<group>";
+		};
+		67C53CAE21BCDCCD24E56C01 /* SceneMenu */ = {
+			isa = PBXGroup;
+			children = (
+				67C539EC3640D76C32FC614F /* views */,
+				67C53EAB163DEE64DDE28998 /* SceneMenu.h */,
+				67C535BCB41C5BE655BF1BA0 /* SceneMenu.m */,
+			);
+			path = SceneMenu;
+			sourceTree = "<group>";
+		};
+		67C53D8A124C1280FA98264F /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				67C537068AE2EAADDDA9007B /* Card.h */,
+				67C53D5D38CDAE3D0A16E638 /* Card.m */,
+				67C53A98E67D0D08382272AF /* CardBox.h */,
+				67C534D464AAB22A9A99BEBF /* CardBox.m */,
+				67C53B643B808E10F093BFFD /* ECardSuit.h */,
+				67C53816C3C4E988DD59A74F /* ECardType.h */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		67C53F19CB6328BC41F6A871 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67C53723DC4454C071E709CB /* cards */,
+				67C533DB71A2BAFC3040FE37 /* cardBox.png */,
+				67C53A470A41FB729E2DFE3C /* buttonMenuActive.png */,
+				67C53CFD6D4AC2C9D3297C73 /* buttonMenuNormal.png */,
+				67C5325592F7000C8BC8A614 /* emptyPlace(60x79).png */,
+				67C536C97B07953562DFBB98 /* emptyPlace(86x86).png */,
+				67C53EEE9755D8AAD2CC1FDE /* activePlace(60x79).png */,
+				67C53554826D20D3D852DBDD /* background(640x960).png */,
+				67C53C9A5761A8835C8AA0E2 /* background(640x1136).png */,
+				67C5324AA6B9421D65F66215 /* activePlaceLeft(86x86).png */,
+				67C5369F8B756E354D5364A9 /* activePlaceRight(86x86).png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67C53FA17986290E885EAB98 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				67C53177D050AC9E0A3872E3 /* SceneBase */,
+				67C533B721AB16F14F9D228B /* SceneGame */,
+				67C53CAE21BCDCCD24E56C01 /* SceneMenu */,
+				67C53C4966D6EBB841BD023E /* ESceneType.h */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		AF6EF1C76FA3DC4A47B43E04 /* Cocos2dAdditions */ = {
@@ -520,101 +612,6 @@
 				AF6EF0B7C418A78EAB4F7966 /* CCButton.h */,
 			);
 			path = Cocos2dAdditions;
-			sourceTree = "<group>";
-		};
-		AF6EF24B6C042743F57DB3FA /* Place */ = {
-			isa = PBXGroup;
-			children = (
-				AF6EF3341F3CF5E11D2B14FA /* Place.h */,
-				AF6EF38F7E4BF5FAA1C86BC4 /* Place.m */,
-				AF6EFD287A147BE5C65A558C /* EPlaceType.h */,
-			);
-			path = Place;
-			sourceTree = "<group>";
-		};
-		AF6EFC921F32C9D0C8840E08 /* views */ = {
-			isa = PBXGroup;
-			children = (
-				AF6EFF720970E0C004185F9E /* CardView.h */,
-				AF6EF316DD6BA77ADCCD8C25 /* CardView.m */,
-				AF6EF4A18B51160220C9779C /* PlaceView.h */,
-				AF6EFB393406F272A2755948 /* PlaceView.m */,
-				AF6EFF2D482433A150B06E9F /* ButtonGameView.m */,
-				AF6EF43741FA3090A498305E /* ButtonGameView.h */,
-				AF6EF99EBD051EC520C9B2B2 /* EButtonGameType.h */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		AF6EFCD9DEB45BB4296A397D /* cards */ = {
-			isa = PBXGroup;
-			children = (
-				AF6EFBE7E3D9A54092A2BFF8 /* cardBackBlue.png */,
-				AF6EF781DC04BC738764DCC3 /* cardBackRed.png */,
-				AF6EF9B5189816F9F32FCFB6 /* cardFace0.png */,
-				AF6EF4E15101ADFD38B837B1 /* cardFace1.png */,
-				AF6EFAFA09611FC7D0A44BE1 /* cardFace2.png */,
-				AF6EFBE3F9DF2F561E84DA39 /* cardFace3.png */,
-				AF6EF628F134F39F09EBE002 /* cardFace4.png */,
-				AF6EF520B306A2F283372870 /* cardFace5.png */,
-				AF6EF7BCC3B3B995280E93CC /* cardFace6.png */,
-				AF6EF0D1472607E4CB48AC67 /* cardFace7.png */,
-				AF6EF86CFCA51CC9BD649BD1 /* cardFace8.png */,
-				AF6EF4A9AC4F1B69723E51BC /* cardFace9.png */,
-				AF6EF269213A53C7A0EA3B9C /* cardFace10.png */,
-				AF6EF04BEFF55C9D47A00068 /* cardFace11.png */,
-				AF6EF44DA7B8FB0F8519FF33 /* cardFace12.png */,
-				AF6EF49CB2AD0F74468C49E0 /* cardFace13.png */,
-				AF6EF858B9F31274AFF9E15C /* cardFace14.png */,
-				AF6EF3104148EB62835AA114 /* cardFace15.png */,
-				AF6EF7DE7F90F33E6EE8626D /* cardFace16.png */,
-				AF6EFFDE471B93605733020C /* cardFace17.png */,
-				AF6EFBEE0E914233F4B8E1C2 /* cardFace18.png */,
-				AF6EF8792A0E265B4166F83D /* cardFace19.png */,
-				AF6EF110B9EFCEAD38D1F728 /* cardFace20.png */,
-				AF6EF1083B146524399DBE3C /* cardFace21.png */,
-				AF6EF6F4D82E598D4136C4D4 /* cardFace22.png */,
-				AF6EFE1ED06CD6E4C8B4E21D /* cardFace23.png */,
-				AF6EF32D3F9797ABAFD99FEE /* cardFace24.png */,
-				AF6EF2308CB9ABD9F61CD4A9 /* cardFace25.png */,
-				AF6EFD532BA83EE224411818 /* cardFace26.png */,
-				AF6EFF297ECB9DA5BFEAE38F /* cardFace27.png */,
-				AF6EF62F82CDE24718E8B104 /* cardFace28.png */,
-				AF6EF6E4DF832F2B336316DC /* cardFace29.png */,
-				AF6EF420AFEBD56AD72BBA48 /* cardFace30.png */,
-				AF6EF15E85F979125353DC4A /* cardFace31.png */,
-				AF6EF39E9256B5997CA1F439 /* cardFace32.png */,
-				AF6EFCAA53AC0C56B80BA03D /* cardFace33.png */,
-				AF6EF20846983A691EFA59E4 /* cardFace34.png */,
-				AF6EFE1A3C295A243D2943EE /* cardFace35.png */,
-				AF6EFBB92E92D7612864DAB0 /* cardFace36.png */,
-				AF6EFD47B46CEF5EF54607FF /* cardFace37.png */,
-				AF6EF0A968E6C08F38161782 /* cardFace38.png */,
-				AF6EFE8193B4D30F6D09EE52 /* cardFace39.png */,
-				AF6EFC84041F908D40345405 /* cardFace40.png */,
-				AF6EFD4FC3FE9971D19B66B3 /* cardFace41.png */,
-				AF6EF92645461E533A402214 /* cardFace42.png */,
-				AF6EF348761396B1C7D92E8B /* cardFace43.png */,
-				AF6EF1CC1C49A643813F7512 /* cardFace44.png */,
-				AF6EFEC8C83EC35B3DCB2AC3 /* cardFace45.png */,
-				AF6EFFF4C52BBF082C9A0C47 /* cardFace46.png */,
-				AF6EF099B990D75B16C72C1E /* cardFace47.png */,
-				AF6EF5AB8C700C2F93252537 /* cardFace48.png */,
-				AF6EF7FF6A6B140FF7A609AF /* cardFace49.png */,
-				AF6EF6CC8D24E4E2CD2CBC97 /* cardFace50.png */,
-				AF6EFAA5DB5F169C44AD8FCD /* cardFace51.png */,
-			);
-			path = cards;
-			sourceTree = "<group>";
-		};
-		AF6EFEDBA218F0ADFFA38D2D /* views */ = {
-			isa = PBXGroup;
-			children = (
-				AF6EF551377902358A182785 /* ButtonMenuView.m */,
-				AF6EFA024E42E3ADBC887C9D /* ButtonMenuView.h */,
-				AF6EFA619F44C0F0555EAFA3 /* EButtonMenuType.h */,
-			);
-			path = views;
 			sourceTree = "<group>";
 		};
 		AF6EFFF413D3553696E93B76 /* Vendors */ = {
@@ -656,8 +653,8 @@
 				DCFA90ED13B4F6A0009DD35A /* BuildSettings */,
 				DCC1A0E613A94ED5005BD75D /* Frameworks */,
 				DCC1A0E413A94ED5005BD75D /* Products */,
-				67C5348D56D936E07DCD92D8 /* App */,
 				AF6EFFF413D3553696E93B76 /* Vendors */,
+				67C534A38064044343ADDE1F /* App */,
 			);
 			sourceTree = "<group>";
 		};
@@ -874,70 +871,70 @@
 				DC65617315114B4A00E59F8A /* fps_images-ipadhd.png in Resources */,
 				DC2721A2160CAEB600D88944 /* Default-568h@2x.png in Resources */,
 				DC2721AA160CAFC700D88944 /* iTunesArtwork in Resources */,
-				67C53DC9A450E666E1532B50 /* buttonMenuActive.png in Resources */,
-				67C5357E955876D6EF167C92 /* buttonMenuNormal.png in Resources */,
-				67C537E6137EBDBFC6F88E7E /* background(640x960).png in Resources */,
-				67C53F3F80F871654ECB702C /* background(640x1136).png in Resources */,
-				67C53468959083FCB2025D1E /* cardBox.png in Resources */,
-				AF6EF841EFA6E1672AEFFBD7 /* activePlace(60x79).png in Resources */,
-				AF6EFB404FF73657C8ACAA3F /* activePlaceLeft(86x86).png in Resources */,
-				AF6EFEFF621176DF2D3D6415 /* activePlaceRight(86x86).png in Resources */,
-				AF6EF133EFADCFB080C3569D /* emptyPlace(60x79).png in Resources */,
-				AF6EFF7A6F3C885DBE3E39EF /* emptyPlace(86x86).png in Resources */,
-				AF6EF974BA00E985E207A932 /* cardBackBlue.png in Resources */,
-				AF6EF33FB75DC3042498C1A3 /* cardBackRed.png in Resources */,
-				AF6EFD4C519B9EA101A88823 /* cardFace0.png in Resources */,
-				AF6EFA35AE73B39BF1884AA2 /* cardFace1.png in Resources */,
-				AF6EF2BA68304D645EFBCC8B /* cardFace2.png in Resources */,
-				AF6EF34FE99C417B6FF3BBA5 /* cardFace3.png in Resources */,
-				AF6EFD24597970EE4B8BEC9E /* cardFace4.png in Resources */,
-				AF6EF78673986F5D9389D943 /* cardFace5.png in Resources */,
-				AF6EFAC84C3A858EC049A7B3 /* cardFace6.png in Resources */,
-				AF6EFCF539D2B44013B49C5A /* cardFace7.png in Resources */,
-				AF6EF53DA58966C2E66051DA /* cardFace8.png in Resources */,
-				AF6EF21AF2DAE52DC25255C9 /* cardFace9.png in Resources */,
-				AF6EF61EDE68D4B0D7DC4BE8 /* cardFace10.png in Resources */,
-				AF6EF80A558BD8A97113A09D /* cardFace11.png in Resources */,
-				AF6EF74A6812FC0C0E2863E5 /* cardFace12.png in Resources */,
-				AF6EF4D4DE15755EF7747B96 /* cardFace13.png in Resources */,
-				AF6EFDB0497E8A9851041BBD /* cardFace14.png in Resources */,
-				AF6EF90F1C42C3280ED4A3F8 /* cardFace15.png in Resources */,
-				AF6EF0A7006EF6D35EA3D5BD /* cardFace16.png in Resources */,
-				AF6EFE8E99BE76FF7B98F72B /* cardFace17.png in Resources */,
-				AF6EF6BB3B02314E5E207D94 /* cardFace18.png in Resources */,
-				AF6EFF73721336C1C09EF41C /* cardFace19.png in Resources */,
-				AF6EF706C8AFA12C457C6FB5 /* cardFace20.png in Resources */,
-				AF6EF133D996E98C44C806CD /* cardFace21.png in Resources */,
-				AF6EF06A31BD4B0AB62134CB /* cardFace22.png in Resources */,
-				AF6EF4F384E8B0CCEE89B0C3 /* cardFace23.png in Resources */,
-				AF6EF2EE043BB7188FCF018B /* cardFace24.png in Resources */,
-				AF6EFDAAA5A8C2F7B26C9743 /* cardFace25.png in Resources */,
-				AF6EF96A7865B42DA7646F98 /* cardFace26.png in Resources */,
-				AF6EFE85903DCD6E54FAD29A /* cardFace27.png in Resources */,
-				AF6EF6315E23DC112D3D9C96 /* cardFace28.png in Resources */,
-				AF6EF7B30CCDF0DA2D98E5BB /* cardFace29.png in Resources */,
-				AF6EF9CD24C8EA5D53D53AD2 /* cardFace30.png in Resources */,
-				AF6EFD9A7DC310548447AACD /* cardFace31.png in Resources */,
-				AF6EFCF016D444C1C07D1B63 /* cardFace32.png in Resources */,
-				AF6EF1A25AA861ECDD8E2FCA /* cardFace33.png in Resources */,
-				AF6EF6C5F59913C2E30FBB5C /* cardFace34.png in Resources */,
-				AF6EFD5D03604EC5399456B6 /* cardFace35.png in Resources */,
-				AF6EFF89C95AD568137FA6BC /* cardFace36.png in Resources */,
-				AF6EF78451F9187D29C605B3 /* cardFace37.png in Resources */,
-				AF6EF6F2B61B355B8578F94C /* cardFace38.png in Resources */,
-				AF6EFDBAE3B59ECAA4AFD3AC /* cardFace39.png in Resources */,
-				AF6EF92CC9CD1B91C641BAB6 /* cardFace40.png in Resources */,
-				AF6EF6731F124C50864FA05A /* cardFace41.png in Resources */,
-				AF6EF7F88F605BF1D56A97FE /* cardFace42.png in Resources */,
-				AF6EF160DB842A66CDD9F930 /* cardFace43.png in Resources */,
-				AF6EF6BB2656A2682C79A956 /* cardFace44.png in Resources */,
-				AF6EFE85F0CC2F9DFA6EF13A /* cardFace45.png in Resources */,
-				AF6EFE0F6962F8CFBAF37D1F /* cardFace46.png in Resources */,
-				AF6EFA2EE6B26E7BE19F2536 /* cardFace47.png in Resources */,
-				AF6EF452D70C6F283B1D9ACC /* cardFace48.png in Resources */,
-				AF6EF3DF1F24327B41184997 /* cardFace49.png in Resources */,
-				AF6EF8ECEED4E9BD0D73D8C5 /* cardFace50.png in Resources */,
-				AF6EFA450D896847FC321CFF /* cardFace51.png in Resources */,
+				67C535FBB3C45B02EEBE09CA /* cardFace0.png in Resources */,
+				67C532DDFD7A26AA90CA3861 /* cardFace1.png in Resources */,
+				67C53675BC354BC2D48FC9C5 /* cardFace2.png in Resources */,
+				67C53CC3488474A329AE5E2A /* cardFace3.png in Resources */,
+				67C530D75E4DD87099B77DA6 /* cardFace4.png in Resources */,
+				67C5398B9F7AA3DA7F1E9762 /* cardFace5.png in Resources */,
+				67C53E0501F982DEA8F837BA /* cardFace6.png in Resources */,
+				67C530623AD7F22FB9B7E5B6 /* cardFace7.png in Resources */,
+				67C5317F90B5568B63444DBC /* cardFace8.png in Resources */,
+				67C53C640F8A9BDD8BB28805 /* cardFace9.png in Resources */,
+				67C53FA6CEAE362A83BE8A82 /* cardFace10.png in Resources */,
+				67C5354737434F0DAC2EC354 /* cardFace11.png in Resources */,
+				67C5394376FB90FA01DB2940 /* cardFace12.png in Resources */,
+				67C53EC6893B91505B6FEB28 /* cardFace13.png in Resources */,
+				67C5361F79D3EAE1CB9CB105 /* cardFace14.png in Resources */,
+				67C53BA3C97DE711CA48EACF /* cardFace15.png in Resources */,
+				67C53BD3225286D524F66BF8 /* cardFace16.png in Resources */,
+				67C537C5EB608F3015D51094 /* cardFace17.png in Resources */,
+				67C53EB56EAF9F641A085AC3 /* cardFace18.png in Resources */,
+				67C5340241823688E8B96045 /* cardFace19.png in Resources */,
+				67C5383CD8B4C89F7478D685 /* cardFace20.png in Resources */,
+				67C531DD34790E4421E839F4 /* cardFace21.png in Resources */,
+				67C53F7399E2CBAB5911BA33 /* cardFace22.png in Resources */,
+				67C53EDEABEF696FD724721E /* cardFace23.png in Resources */,
+				67C535EC9D88CA50F66C4341 /* cardFace24.png in Resources */,
+				67C53A6C4B03AF3378B2D137 /* cardFace25.png in Resources */,
+				67C532187D3AB28D4D7C27CA /* cardFace26.png in Resources */,
+				67C531A1F1F01C0758EAB463 /* cardFace27.png in Resources */,
+				67C53AE3C51DA0D41C2CCA24 /* cardFace28.png in Resources */,
+				67C5369117FEEDAE6CE52F67 /* cardFace29.png in Resources */,
+				67C5339907F82B10D301D07E /* cardFace30.png in Resources */,
+				67C537D4099E9F2C9490DD89 /* cardFace31.png in Resources */,
+				67C53C82FAFF33FFE862D009 /* cardFace32.png in Resources */,
+				67C53AC80645D3249CD2712F /* cardFace33.png in Resources */,
+				67C5345FD39A149E30BBFEB7 /* cardFace34.png in Resources */,
+				67C532AD0BFE7A755CF23625 /* cardFace35.png in Resources */,
+				67C5324C34DD2B60881019B2 /* cardFace36.png in Resources */,
+				67C5312BBEEFF5EABD3918F2 /* cardFace37.png in Resources */,
+				67C531CCFA478580415857AD /* cardFace38.png in Resources */,
+				67C5357046FF88621DB516EE /* cardFace39.png in Resources */,
+				67C534B012481EA43BE5BDFC /* cardFace40.png in Resources */,
+				67C53D212EE45C5DDA8D16C8 /* cardFace41.png in Resources */,
+				67C538AC6581BD4B52F2B377 /* cardFace42.png in Resources */,
+				67C5327EDD044FA5A95D3631 /* cardFace43.png in Resources */,
+				67C53A19A38F1FB126F7A319 /* cardFace44.png in Resources */,
+				67C53D8D0FB27E85588D7AA0 /* cardFace45.png in Resources */,
+				67C53105941D714DA609FA50 /* cardFace46.png in Resources */,
+				67C53A45BC4BF5BF4D06A765 /* cardFace47.png in Resources */,
+				67C53E8A61904900F2A98D81 /* cardFace48.png in Resources */,
+				67C53A811711A28E74C8DA8A /* cardFace49.png in Resources */,
+				67C532BAAAA5C2962A0836E7 /* cardFace50.png in Resources */,
+				67C53DEB2B777B7375F25F21 /* cardFace51.png in Resources */,
+				67C53E0AA95A032B83BA1B18 /* cardBackRed.png in Resources */,
+				67C53003372E2EA66A2B4F6F /* cardBackBlue.png in Resources */,
+				67C533BD3600A76ECC923AD9 /* cardBox.png in Resources */,
+				67C53E29DD0E7A6DB08CC211 /* buttonMenuActive.png in Resources */,
+				67C53669CA0352B216F01A6A /* buttonMenuNormal.png in Resources */,
+				67C53393E9BA3F0E3C33DBB1 /* emptyPlace(60x79).png in Resources */,
+				67C53A5736A4AAB1E4AF3950 /* emptyPlace(86x86).png in Resources */,
+				67C53237774DD81A8CCE2AF4 /* activePlace(60x79).png in Resources */,
+				67C53473A51A9E3D79947262 /* background(640x960).png in Resources */,
+				67C535278991C4A220FFA589 /* background(640x1136).png in Resources */,
+				67C530825BF9100AFB251BAF /* activePlaceLeft(86x86).png in Resources */,
+				67C534820C2A85BB5A99BADA /* activePlaceRight(86x86).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,24 +961,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C53D33A3308B940D1E6053 /* SceneBase.m in Sources */,
-				67C537C03EFC9AF392EBB17D /* SceneGame.m in Sources */,
-				67C5337C6437F0485CF6428A /* SharedProgressManager.m in Sources */,
-				67C534757601FEE1EC639BC5 /* Game.m in Sources */,
-				67C53B97B7AEE2635848AF24 /* SharedDeviceHelper.m in Sources */,
-				67C53705B6C49575A77DD89F /* HelloWorldLayer.m in Sources */,
-				67C53FDBDDB3D4361C385995 /* AppDelegate.m in Sources */,
-				67C53FE1734696FC5F4EAAFF /* main.m in Sources */,
-				67C53C8D19487C2D60D860ED /* SceneMenu.m in Sources */,
 				AF6EF13A2FBC9B816074F4F9 /* CCButton.m in Sources */,
-				AF6EF3A126F4A7E9B86084BA /* ButtonMenuView.m in Sources */,
-				67C5396A2F5F6BAA203D1D13 /* Card.m in Sources */,
-				67C5388CEF379A3C6BA6E0A6 /* CardBox.m in Sources */,
-				AF6EF9BD88D708F4ABDADE8A /* Place.m in Sources */,
-				AF6EF86544703CDEA3803CA3 /* CardView.m in Sources */,
-				AF6EF5216F43BA544C5F9045 /* PlaceView.m in Sources */,
-				AF6EF1BBDCA9672BE5C1965B /* ButtonGameView.m in Sources */,
-				67C53645E4CEE85DA832D4F4 /* ResourceManager.m in Sources */,
+				67C53BC11754878C0217CC24 /* Card.m in Sources */,
+				67C539AB7A931568A4BE8601 /* CardBox.m in Sources */,
+				67C5395B1B595EF9312DEDAD /* Game.m in Sources */,
+				67C53FB985CE5C6DF632F3D4 /* Place.m in Sources */,
+				67C53BE4FC7346B84F05B904 /* ResourceManager.m in Sources */,
+				67C535D08B7C507D6D3C7FB8 /* SharedDeviceHelper.m in Sources */,
+				67C53C94C8D1E87D29E0200B /* SharedProgressManager.m in Sources */,
+				67C53CE520CCDAE5FFA24004 /* main.m in Sources */,
+				67C5399816BC810CBA61C65E /* AppDelegate.m in Sources */,
+				67C53804E503C0CA6CB1724C /* HelloWorldLayer.m in Sources */,
+				67C53A757AFCDE6339607E97 /* SceneBase.m in Sources */,
+				67C53F48BCED303FBE766605 /* CardView.m in Sources */,
+				67C53156BE9D95F675740867 /* PlaceView.m in Sources */,
+				67C53A2EA478EEB7A8D1B0DC /* ButtonGameView.m in Sources */,
+				67C536FB8B85C4902F05C7DE /* SceneGame.m in Sources */,
+				67C5373BD36641C1E59C18DA /* ButtonMenuView.m in Sources */,
+				67C53B74F45925FA198AA10F /* SceneMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,9 +986,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C532A00EF9DE8D551F41C0 /* HelloWorldLayer.m in Sources */,
-				67C5339AEC3B93A0A90DF80F /* AppDelegate.m in Sources */,
-				67C5334474898FC850F3398E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

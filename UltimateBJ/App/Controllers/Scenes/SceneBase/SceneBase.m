@@ -26,8 +26,6 @@
 
 static SceneBase *_currentScene = nil;
 
-static CCScene *_allocatedScene;
-
 + (SceneBase *)currentScene
 {
     return _currentScene;
@@ -36,11 +34,11 @@ static CCScene *_allocatedScene;
 + (void)setScene:(ESceneType)type
 {
     [self performSelectorInBackground:@selector(_setScene:) withObject:[NSNumber numberWithInt:type]];
+//    [self performSelectorOnMainThread:@selector(_setScene:) withObject:[NSNumber numberWithInt:type] waitUntilDone:YES];
 }
 
 + (void)_setScene:(NSNumber *)typeObj
 {
-    BOOL firstLoad = YES;
     ESceneType type = (ESceneType) [typeObj integerValue];
 
 
@@ -51,7 +49,6 @@ static CCScene *_allocatedScene;
         [_currentScene _clearScene];
 
         _currentScene = nil;
-        firstLoad = NO;
     }
 
     switch (type)

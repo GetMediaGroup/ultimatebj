@@ -14,7 +14,6 @@
 @implementation Place
 {
     Game *_game;
-//    NSMutableArray *_cards;
 }
 
 - (id)init:(EPlaceType)type scene:(SceneGame *)scene game:(Game *)game;
@@ -38,6 +37,7 @@
 - (void)_prepare:(EPlaceType)type  scene:(SceneGame *)scene
 {
     _placeMoney = 0;
+
     if (type == EPT_CROUPIER)
     {
         _active = YES;
@@ -59,14 +59,6 @@
     _view = nil;
 }
 
-
-- (NSUInteger)returnMoney
-{
-    NSUInteger result = _placeMoney;
-    _placeMoney = 0;
-    return result;
-}
-
 - (void)addMoneyToPlace:(NSUInteger)money
 {
     _placeMoney += money;
@@ -81,19 +73,6 @@
 - (void)addCardToPlace:(Card *)card
 {
     [_cards addObject:card];
-}
-
--(void)removeCardsFromPlace
-{
-    for (Card * card in _cards)
-    {
-      [self _removeCard:card];
-    }
-}
-
--(void) _removeCard:(Card *) card
-{
-    [_cards removeObject:card];
 }
 
 @end

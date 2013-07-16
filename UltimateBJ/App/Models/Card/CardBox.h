@@ -10,9 +10,7 @@
 @class SceneGame;
 @class Card;
 
-
 @interface CardBox : NSObject
-
 
 //Designated initializer
 - (id)initWithObject:(SceneGame *)scene;
@@ -23,12 +21,6 @@
 
 - (void)shuffleCards;
 
-
-- (void)showCards;
-
 - (void)destroyViews;
-
-//! Returns game scene which the cardBox is posted on
-@property(nonatomic, readonly) SceneGame *gameScene;
 
 @end

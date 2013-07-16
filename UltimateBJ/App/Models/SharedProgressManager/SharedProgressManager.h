@@ -21,10 +21,6 @@
 
 @property (nonatomic, readonly) Game *game;
 
-@property (nonatomic, readonly) CardBox *cardbox;
-
-
-
 /*
  * methods
  */

@@ -14,9 +14,10 @@
 
 }
 
-+(CGPoint) getPoint: (EPlaceType) type
++ (CGPoint)getPoint:(EPlaceType)type
 {
-    CGPoint result;
+    CGPoint result = ccp(0, 0);
+
     switch (type)
     {
         case EPT_HAND2:
@@ -26,7 +27,6 @@
         }
         case EPT_HAND3:
         {
-
             result = ccp(228, 105);
             break;
         }
@@ -46,6 +46,7 @@
             break;
         }
     }
+
     return result;
 }
 

@@ -154,7 +154,7 @@
 
 - (void)updateScoreLabel :(ECardType)type
 {
-    if (type == nil)
+    if (type == ECT_COUNT)
     {
         [_scoreLabel setString:[NSString stringWithFormat:@"%d", _owner.score]];
     }

@@ -110,11 +110,6 @@
     }
 }
 
-- (void)showCards
-{
-    [self _addCardsToScene];
-}
-
 - (void)_addCardToScene:(Card *)card
 {
     NSInteger xStart = 390;
@@ -127,18 +122,6 @@
     card.view.rootView.scale = 0.65;
 
     [_gameScene addChild:card.view.rootView];
-}
-
-- (void)_addCardsToScene
-{
-    NSInteger xStart = 390;
-    NSInteger yStart = 260;
-
-
-    for (Card *card in _cards)
-    {
-        [self _addCardToScene:card];
-    }
 }
 
 - (void)destroyViews

@@ -34,7 +34,8 @@ static SharedProgressManager *_instance = nil;
 
 + (NSUInteger)getScoreToAdd :(ECardType)type
 {
-    NSUInteger result;
+    NSUInteger result = 0;
+
     switch (type)
     {
         case ECT_2:
@@ -104,9 +105,11 @@ static SharedProgressManager *_instance = nil;
         }
         default:
         {
-         NSAssert(NO,@"Card type must be set");
+            NSAssert(NO, @"Card type must be set");
+            break;
         }
     }
+
     return result;
 }
 

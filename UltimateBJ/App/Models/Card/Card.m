@@ -21,7 +21,6 @@
     {
         _suit = suit;
         _type = type;
-        _faceUp = NO;
 
         [self _prepare];
     }

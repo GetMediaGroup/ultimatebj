@@ -29,14 +29,11 @@
 
     CCNode *_moneyView;
     CCLabelTTF *_moneyLabel;
-    Card *testCard; //Todo delete
-
 }
 
 //! Designated initializer
 - (id)initWithObject:(SceneGame *)sceneGame
 {
-
     self = [super init];
 
     if (self)
@@ -54,7 +51,6 @@
     [self _initPlaces];
     [self _initButtons];
     [self _initMoney];
-
 }
 
 - (void)_initMoney
@@ -67,7 +63,7 @@
                                      fontName:@"Marker Felt"
                                      fontSize:50];
 
-    _moneyLabel.position = CGPointMake(60, 20);
+    _moneyLabel.position = ccp(60, 20);
     _moneyLabel.color = ccWHITE;
     [_moneyView addChild:_moneyLabel];
     [_gameScene addChild:_moneyView];
@@ -81,6 +77,7 @@
 - (void)_initPlaces
 {
     _places = [NSMutableArray array];
+
     for (EPlaceType placeType = EPT_HAND1; placeType < EPT_COUNT; placeType++)
     {
         [_places addObject:[[Place alloc] init:placeType scene:_gameScene game:self]];
@@ -94,18 +91,20 @@
 
     for (EButtonGameType gameType = EBGT_DOUBLE; gameType < EBGT_COUNT - 1; gameType++)
     {
-        if (gameType != EBGT_SPLIT)
-        {
-            ButtonGameView *_buttonCurrent = [[ButtonGameView alloc] init:gameType scene:_gameScene game:self];
-            [_buttonCurrent setPosition:ccp(480 - [_buttonCurrent getSize].width * 0.2 - _delta, 10)];
-            [_playingButtons addObject:_buttonCurrent];
-            _delta += [_buttonCurrent getSize].width * 0.2 + 10;
-        }
+        if (gameType == EBGT_SPLIT)
+            continue;
+
+        ButtonGameView *_buttonCurrent = [[ButtonGameView alloc] init:gameType scene:_gameScene game:self];
+        [_buttonCurrent setPosition:ccp(480 - [_buttonCurrent getSize].width * 0.2 - _delta, 10)];
+        [_playingButtons addObject:_buttonCurrent];
+
+        _delta += [_buttonCurrent getSize].width * 0.2 + 10;
     }
 
     _buttonDeal = [[ButtonGameView alloc] init:EBGT_DEAL scene:_gameScene game:self];
     [_buttonDeal switchOff];
     [_buttonDeal setPosition:ccp(480 - [_buttonDeal getSize].width * 0.2 - 10, 180)];
+
     [_playingButtons addObject:_buttonDeal];
 }
 
@@ -118,46 +117,49 @@
 - (void)makeDeal
 {
     NSUInteger countOfRuns = 0;
-    Card *tempCard;
 
+    Card *tempCard = nil;
 
-    NSLog(@"makedeal");
     for (NSUInteger i = 0; i < 2; i++)
     {
-        NSLog(@"loop");
         for (EPlaceType placeType = EPT_HAND1; placeType < EPT_COUNT; placeType++)
         {
-            if (((Place *) _places[placeType]).active == YES)
-            {
-                CGPoint pointDestination = [ResourceManager getPoint:placeType];
-                pointDestination =
-                        ccp(pointDestination.x + ((Place *) _places[placeType]).countOfCards * 4,
-                                pointDestination.y - ((Place *) _places[placeType]).countOfCards * 4);
+            Place *place = _places[placeType];
 
-                BOOL _isFlip = (placeType == EPT_CROUPIER && i == 0) ? NO : YES;
-                tempCard = [_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns++ flip:_isFlip];
-                [_places[placeType] addCardToPlace:tempCard];
-                if (_isFlip) countOfRuns++;
+            if (!place.active)
+                continue;
 
-                ((Place *) _places[placeType]).countOfCards++;
+            CGPoint pointDestination = [ResourceManager getPoint:placeType];
+            pointDestination =
+                    ccp(pointDestination.x + place.countOfCards * 4,
+                            pointDestination.y - place.countOfCards * 4);
 
-                ((Place *) _places[placeType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
+            BOOL _isFlip = (placeType == EPT_CROUPIER && i == 0) ? NO : YES;
+            tempCard = [_cardBox getCardFromBoxWithDelay:pointDestination countOfRuns:countOfRuns++ flip:_isFlip];
 
+            [_places[placeType] addCardToPlace:tempCard];
 
-                if (((Place *) _places[placeType]).countOfCards == 2 && placeType == EPT_CROUPIER)
-                {
-                    [((Place *) _places[placeType]).view updateScoreLabel:tempCard.type];
-                }
-                else
-                {
-                    [((Place *) _places[placeType]).view updateScoreLabel:nil];
-                }
+            if (_isFlip)
                 countOfRuns++;
 
-                if (((Place *) _places[placeType]).score == 21)
-                {
-                    [self _endGameForPlace:placeType WIN:YES];
-                }
+            place.countOfCards++;
+
+            place.score += [SharedProgressManager getScoreToAdd:tempCard.type];
+
+            if (place.countOfCards == 2 && placeType == EPT_CROUPIER)
+            {
+                [place.view updateScoreLabel:tempCard.type];
+            }
+            else
+            {
+                [place.view updateScoreLabel:ECT_COUNT];
+            }
+
+            countOfRuns++;
+
+            if (place.score == 21)
+            {
+                [self _endGameForPlace:placeType WIN:YES];
             }
         }
     }
@@ -169,42 +171,42 @@
 
 - (void)_endGameForPlace:(EPlaceType)placeType WIN:(NSUInteger)win
 {
+
+    Place *place = _places[placeType];
+
     if (win == 1)
     {
-        _gameMoney += ((Place *) _places[placeType]).placeMoney * 2;
+        _gameMoney += place.placeMoney * 2;
     }
     if (win == 2)
     {
-        _gameMoney += ((Place *) _places[placeType]).placeMoney;
+        _gameMoney += place.placeMoney;
     }
 
     if (placeType != EPT_CROUPIER)
     {
-        ((Place *) _places[placeType]).placeMoney = 0;
-        ((Place *) _places[placeType]).active = NO;
+        place.placeMoney = 0;
+        place.active = NO;
     }
 
     NSUInteger countOfRuns = 1;
-//TOdo : make another card remove appearence
-//
-//    for (NSUInteger i=(((Place *) _places[placeType]).cards.count); i>0; i--)
-//    {
-//        Card *card = ((Place *) _places[placeType]).cards[i];
-//        [_cardBox putCardToBox: card countOfRuns:countOfRuns++];
-//    }
-    for (Card *card in ((Place *) _places[placeType]).cards)
+
+    //TODO: make another card remove appearence
+
+    for (Card *card in place.cards)
     {
         [_cardBox putCardToBox:card countOfRuns:countOfRuns++];
     }
 
     if (placeType == EPT_CROUPIER)
     {
-        id delay = [CCDelayTime actionWithDuration:countOfRuns];
-        id destroyAction = [CCCallFunc actionWithTarget:_cardBox selector:@selector(destroyViews)];
+        CCDelayTime *delay = [CCDelayTime actionWithDuration:countOfRuns];
+        CCCallFunc *destroyAction = [CCCallFunc actionWithTarget:_cardBox selector:@selector(destroyViews)];
+
         CCAction *arcAction = [CCSequence actions:delay, destroyAction, nil];
+
         [_gameScene runAction:arcAction];
     }
-
 }
 
 - (void)_dealEnd
@@ -220,7 +222,7 @@
 {
     Place *tempPlace = _places[++_currentPlaceType];
 
-    while (tempPlace.active != YES && _currentPlaceType < EPT_CROUPIER)
+    while (!tempPlace.active && _currentPlaceType < EPT_CROUPIER)
     {
         _currentPlaceType++;
         tempPlace = _places[_currentPlaceType];
@@ -241,7 +243,7 @@
 
 - (void)makeHit
 {
-    Card *tempCard;
+    Card *tempCard = nil;
 
     for (EButtonGameType gameType = EBGT_DOUBLE; gameType < EBGT_COUNT - 2; gameType++)
     {
@@ -259,12 +261,12 @@
     ((Place *) _places[_currentPlaceType]).countOfCards++;
     ((Place *) _places[_currentPlaceType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
 
-    [((Place *) _places[_currentPlaceType]).view updateScoreLabel :nil];
+    [((Place *) _places[_currentPlaceType]).view updateScoreLabel :ECT_COUNT];
 
     if (((Place *) _places[_currentPlaceType]).score > 21)
     {
         [self _endGameForPlace:_currentPlaceType WIN:0];
-        [((Place *) _places[EPT_CROUPIER]).view updateScoreLabel:nil];
+        [((Place *) _places[EPT_CROUPIER]).view updateScoreLabel:ECT_COUNT];
         [self _nextPlace];
     }
 
@@ -278,8 +280,6 @@
 - (void)makeStand
 {
     [self _nextPlace];
-
-
 }
 
 - (void)makeDouble
@@ -311,7 +311,7 @@
         ((Place *) _places[_currentPlaceType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
 
     }
-    [((Place *) _places[_currentPlaceType]).view updateScoreLabel:nil];
+    [((Place *) _places[_currentPlaceType]).view updateScoreLabel:ECT_COUNT];
     NSUInteger _croupierScore;
     if (anyActive)
     {
@@ -365,26 +365,31 @@
     for (Place *place in _places)
     {
         [place.view deactivate];
-
-
     }
+
     [self _initButtons];
     [self _initPlaces];
 }
 
-- (BOOL) anyActivePlaces
+- (BOOL)anyActivePlaces
 {
+    BOOL result = NO;
+
     for (NSUInteger i = 0; i < EPT_COUNT - 1; i++)
     {
         if (((Place *) _places[i]).active)
-            return YES;
+        {
+            result = YES;
+            break;
+        }
     }
-    return NO;
+
+    return result;
 }
 
 - (void)switchDealOn
 {
-    [(ButtonGameView *) _playingButtons[EBGT_DEAL-1] switchOn];
+    [(ButtonGameView *) _playingButtons[EBGT_DEAL - 1] switchOn];
 }
 
 @end
