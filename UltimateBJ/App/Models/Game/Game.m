@@ -134,10 +134,18 @@
                 if (_isFlip) countOfRuns++;
 
                 ((Place *) _places[placeType]).countOfCards++;
+
                 ((Place *) _places[placeType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
 
 
-                [((Place *) _places[placeType]).view updateScoreLabel];
+                if (((Place *) _places[placeType]).countOfCards == 2 && placeType == EPT_CROUPIER)
+                {
+                    [((Place *) _places[placeType]).view updateScoreLabel:tempCard.type];
+                }
+                else
+                {
+                    [((Place *) _places[placeType]).view updateScoreLabel:nil];
+                }
                 countOfRuns++;
 
                 if (((Place *) _places[placeType]).score == 21)
@@ -237,11 +245,12 @@
     ((Place *) _places[_currentPlaceType]).countOfCards++;
     ((Place *) _places[_currentPlaceType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
 
-    [((Place *) _places[_currentPlaceType]).view updateScoreLabel];
+    [((Place *) _places[_currentPlaceType]).view updateScoreLabel :nil];
 
     if (((Place *) _places[_currentPlaceType]).score > 21)
     {
         [self _endGameForPlace:_currentPlaceType WIN:0];
+        [((Place *) _places[EPT_CROUPIER]).view updateScoreLabel:nil];
         [self _nextPlace];
     }
 
@@ -286,7 +295,7 @@
         ((Place *) _places[_currentPlaceType]).countOfCards++;
         ((Place *) _places[_currentPlaceType]).score += [SharedProgressManager getScoreToAdd:tempCard.type];
 
-        [((Place *) _places[_currentPlaceType]).view updateScoreLabel];
+        [((Place *) _places[_currentPlaceType]).view updateScoreLabel:nil];
     }
 
     NSUInteger _croupierScore;

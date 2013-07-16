@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "CCButtonDelegate.h"
 #import "EPlaceType.h"
+#import "ECardType.h"
 
 @class SceneGame;
 @class Place;
@@ -17,19 +18,19 @@
 
 @property(nonatomic, readonly) CCNode *rootView;
 
-@property (nonatomic, readwrite) CCLabelTTF * moneyLabel;
+@property(nonatomic, readwrite) CCLabelTTF *moneyLabel;
 
-@property (nonatomic, readwrite) CCLabelTTF * scoreLabel;
+@property(nonatomic, readwrite) CCLabelTTF *scoreLabel;
 
 - (id)init:(EPlaceType)type scene:(SceneGame *)scene owner:(Place *)owner;
 
--(void) updateScoreLabel;
+- (void)updateScoreLabel :(ECardType)type;
 
--(void) updateMoneyLabel;
+- (void)updateMoneyLabel;
 
 - (void)cleanup;
 
--(void) deactivate;
+- (void)deactivate;
 
 - (void)didButtonTouchBegan:(CCButton *)button touch:(UITouch *)touch;
 

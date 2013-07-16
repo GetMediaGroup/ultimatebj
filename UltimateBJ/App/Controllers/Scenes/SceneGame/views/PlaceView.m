@@ -10,6 +10,8 @@
 #import "EPlaceType.h"
 #import "SceneGame.h"
 #import "Place.h"
+#import "ECardType.h"
+#import "SharedProgressManager.h"
 
 
 @implementation PlaceView
@@ -149,9 +151,16 @@
     [_rootView removeAllChildren];
 }
 
-- (void)updateScoreLabel
+- (void)updateScoreLabel :(ECardType)type
 {
-    [_scoreLabel setString:[NSString stringWithFormat:@"%d", _owner.score]];
+    if (type == nil)
+    {
+        [_scoreLabel setString:[NSString stringWithFormat:@"%d", _owner.score]];
+    }
+    else
+    {
+        [_scoreLabel setString:[NSString stringWithFormat:@"%d", [SharedProgressManager getScoreToAdd:type]]];
+    }
 }
 
 - (void)updateMoneyLabel
